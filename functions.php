@@ -81,8 +81,8 @@ add_action('wp_ajax_nopriv_flueba_set_sachspende_done', 'flueba_set_sachspende_d
 
 /* OUTPUT A TERMIN POST, NEEDS TO BE CALLED IN THE LOOP */
 function the_termin($full = true) { ?>
+	<em class="pull-right text-muted"><?php date('Y.m.d', the_field('date')) ?></em>
 	<a href="<?php the_permalink(); ?>">
-		<em class="pull-right text-muted"><?php the_field('date') ?></em>
 		<h3><?php the_title(); ?></h3>
 	</a>
 

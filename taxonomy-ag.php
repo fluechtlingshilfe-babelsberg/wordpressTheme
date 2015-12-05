@@ -14,12 +14,12 @@
 		}
 	}
 
-	echo '<hr class="clearfix">';
-
 	$i = 1;
 	foreach ($ags as &$ag) { ?>
 		<a href="<?php echo get_term_link($ag) ?>" class="label <?php echo get_query_var('ag') == $ag->slug ? 'label-info' : 'label-default' ?>"><?php echo $ag->name ?></a>
 	<?php } ?>
+
+	<hr class="clearfix">
 
 	<?php
 		while (have_posts()) {
