@@ -20,6 +20,8 @@
 		<a href="<?php echo get_term_link($ag) ?>" class="label label-default"><?php echo $ag->name ?></a>
 	<?php } ?>
 
+	<hr class="clearfix">
+
 <?php
 $the_query = new WP_Query(array(
 	'numberposts' => -1,
