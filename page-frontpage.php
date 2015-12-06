@@ -85,7 +85,6 @@
 		<li>
 			<a href="<?php the_permalink(); ?>">
 				<?php the_title(); ?>
-				<span class="text-muted small">(<?php comments_number('Keine Kommentare', 'Ein Kommentar', '% Kommentare')?>)</small>
 			</a>
 		</li>
 	<?php
