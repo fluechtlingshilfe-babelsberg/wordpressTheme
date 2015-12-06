@@ -5,7 +5,7 @@
  <h1>Helfen</h1>
  <div class="col-md-6 columns helpBox">
     Babelsberg integriert – Sie wollen mithelfen? Dann tragen Sie
-sich bitte in das Formular ein - wir melden uns bei Ihnen!
+sich bitte in das Formular ein.
  <br /><br>
    <span class=question>Wobei würde ich helfen<br><span style="font-weight:normal;">(Bitte ankreuzen)</span> 
    <?php

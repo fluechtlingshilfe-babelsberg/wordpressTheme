@@ -10,7 +10,7 @@
 		}
 	?>
 
-	<h2>Wir planen folgende Arbeitsgruppen</h2>
+	<!--<h2>Wir planen folgende Arbeitsgruppen</h2>-->
 
 	<?php
 	$ags = get_terms('ag', array(
