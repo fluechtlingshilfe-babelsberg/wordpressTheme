@@ -1,6 +1,7 @@
 <?php
 
 require_once('lib/wp_bootstrap_navwalker.php');
+require("help-functions.php");
 
 /* THEME ASSETS */
 function flueba_register_assets() {
