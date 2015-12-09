@@ -8,13 +8,12 @@ $sql = "DELETE FROM `user` WHERE `user`.`id` = '" . mysqli_real_escape_string($m
 mysqli_query($mysqli, $sql);
 
 if(mysqli_affected_rows($mysqli) > 0){//success
-  echo "<h2>Erfolgreich gelöscht</h2>";
+  the_field('fluba_delete_success');
 }
 else{
-  echo "<h2>Löchen fehlgeschlagen!</h2>";
+  the_field('fluba_delete_error');
 }
 ?> 
-<a href='<?php echo site_url(); ?>'>Zurück zur Startseite</a>
 </div>
 </div>
 
