@@ -1,8 +1,13 @@
 <?php get_header(); ?>
 
 <div class="container">
-	<h1>Hilfe benötigt!</h1>
-	<p>Bei folgenden Aufgaben wird zur Zeit Hilfe benötigt. Klicken Sie auf die einzelnen Punkte, um per Kommentar Ihre Hilfe bereit zu stellen oder den momentanen Status zu erfahren.</p>
+	<?php
+		while (have_posts()) {
+			the_post();
+			echo '<h1>';the_title();echo '</h1>';
+			the_content();
+		}
+	?>
 	<ul>
 	<?php
 		$the_query = new WP_Query(array(

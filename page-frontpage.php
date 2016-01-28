@@ -33,6 +33,9 @@
 				$the_query = new WP_Query(array(
 					'numberposts' => -1,
 					'post_type' => 'termin',
+					'meta_key' => 'date',
+					'orderby' => 'meta_value',
+					'order' => 'ASC',
 					'meta_query' => array(
 						array(
 							'key'     => 'show_on_start_page',
@@ -47,7 +50,9 @@
 					)
 				));
 
+			$count = 0;
 			while ($the_query->have_posts()) {
+				$count++;
 				$the_query->the_post(); ?>
 				<h3><?php the_title(); ?></h3>
 				<?php the_field('subscript'); ?><br>
@@ -56,6 +61,16 @@
 			}
 			wp_reset_query();
 			?>
+			<?php
+			if($count == 0){
+				echo "<p>Im Moment leider keine aktuellen Termine!<br>";
+				?><a href="<?php echo get_page_link(238);?>">Zum Archiv ...</a></p><?php
+			}
+			else{
+			?>
+			<br><br>
+			<a href="<?php echo get_page_link(134);?>">Alle Termine ...</a>
+			<?php } ?>
 		</div>
   </div>
 

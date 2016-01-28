@@ -1,8 +1,13 @@
 <?php get_header(); ?>
 
 <div class="container">
-	<br>
 <?php
+while (have_posts()) {
+	the_post();
+	echo '<h1>';the_title();echo '</h1>';
+	the_content();
+}
+
 $btpgid = get_queried_object_id();
 $btmetanm = get_post_meta($btpgid, 'WP_Catid','true');
 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
@@ -11,15 +16,22 @@ $args = array(
 	'posts_per_page' => 10,
 	'category_name' => $btmetanm,
 	'paged' => $paged,
-	'post_type' => 'post'
+	'post_type' => 'termin',
+	'meta_key' => 'date',
+	'orderby' => 'meta_value',
+	'meta_query' => array(
+		array(
+			'key'     => 'date',
+			'value'   => date('Ymd'),
+			'compare' => '<'
+		)
+	)
 );
 $posts = new WP_Query($args);
 
 while ($posts->have_posts()) {
 	$posts->the_post(); ?>
-	<em class="pull-right text-muted"><small><?php the_date(); ?></small></em>
-	<a href="<?php the_permalink();?>"><h1><?php the_title(); ?></h1></a>
-	<?php the_content(); ?>
+	<?php the_termin(false); ?>
 	<hr>
 <?php }
 next_posts_link('&laquo; Ältere Einträge', $posts->max_num_pages);

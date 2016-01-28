@@ -26,6 +26,9 @@
 $the_query = new WP_Query(array(
 	'numberposts' => -1,
 	'post_type' => 'termin',
+	'meta_key' => 'date',
+	'orderby' => 'meta_value',
+	'order' => 'ASC',
 	'meta_query' => array(
 		array(
 			'key'     => 'date',

@@ -272,3 +272,12 @@ input[type='submit'] , input[type='button']{
 	color: #fff;
 }
 
+/* make sure images can scale on smaller devices */
+@media screen and (max-width: 720px) {
+	.container img {
+		height: auto;
+		max-width: 100%;
+		display: block;
+		margin: auto;
+	}
+}
