@@ -36,7 +36,7 @@
 	<h1>
 		<?php the_title(); ?>
 	</h1>
-
+	<!--
 	<div>
 		<span id="status-label" class="label <?php echo $done ? 'label-success' : 'label-warning' ?>">
 			<?php echo $done ? 'Erledigt' : 'Ausstehend' ?>
@@ -48,6 +48,7 @@
 		</span>
 		<?php } ?>
 	</div>
+	-->
 	<br>
 
 	<?php the_content(); ?>
