@@ -19,11 +19,13 @@ while ($posts->have_posts()) {
 	$posts->the_post(); ?>
 	<em class="pull-right text-muted"><small><?php the_date(); ?></small></em>
 	<a href="<?php the_permalink();?>"><h1><?php the_title(); ?></h1></a>
-	<?php the_content(); ?>
+	
+	<?php the_excerpt(); ?>
+	<a href="<?php the_permalink();?>">Weiterlesen ... »</a>
 	<hr>
 <?php }
-next_posts_link('&laquo; Ältere Einträge', $posts->max_num_pages);
-previous_posts_link('Neuere Einträge &raquo;'); 
+previous_posts_link('&laquo; Neuere Einträge'); 
+next_posts_link(' Ältere Einträge&raquo;', $posts->max_num_pages);
 
 wp_reset_postdata(); 
 ?>
