@@ -293,3 +293,15 @@ input[type='submit'] , input[type='button']{
 		margin: auto;
 	}
 }
+
+/* elements for the front page */
+.circle-image {
+	width: 200px;
+	height: 200px;
+	border-radius: 200px;
+	border: 1px solid rgba(0,0,0,0.3);
+	background-size: cover;
+	background-position: center center;
+	display: inline-block;
+	margin: 24px;
+}

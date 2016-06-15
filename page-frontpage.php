@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 <?php
+	$assetsDir = get_stylesheet_directory_uri();
 	while (have_posts()) {
 					the_post();
 ?>
@@ -19,7 +20,7 @@
 
 	<div class="row main-items">
 		<div class="col-md-offset-1 col-md-5 helpMain">
-			<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/heart316.svg" width="100px" style="opacity:0.8; margin-bottom: 24px;">
+			<img src="<?= $assetsDir ?>/images/heart316.svg" width="100px" style="opacity:0.8; margin-bottom: 24px;">
 			<?php the_field('flueba_aside_text'); ?>
 					
 			<!--<p>Ob Deutschunterricht, Begleitung zu Behörden und Ärzten, gemeinsame Unternehmungen (z. B. Führungen durch Babelsberg) – Sie können sich auf unterschiedliche Weise einbringen. Hierzu werden wir Arbeitsgruppen bilden: Sprache – Integration – Begleitung – Ausbildung/Arbeit – Veranstaltungen – Kommunikation/Organisation.</p>-->
@@ -111,9 +112,16 @@
 
 <div class="container-fluid annoucement-box intro-section">
 	<div class="container">
-		<p>Das Netzwerk Flüchtlingshilfe Babelsberg wird getragen von einem anerkannt gemeinnützigen Verein, der Flüchtlingshilfe Babelsberg e.V. mit Sitz in Potsdam, der derzeit ca. 70 Vereinsmitglieder hat (siehe <a href="https://fluechtlingshilfe-babelsberg.de/vereinsmitglied-werden/">https://fluechtlingshilfe-babelsberg.de/vereinsmitglied-werden/</a>). Die Leitidee des Netzwerks Flüchtlingshilfe Babelsberg ist: sozial und engagiert, menschlich, nah und nachbarschaftlich, direkt und unkompliziert, gemeinnützig und unabhängig. Wir wollen gesellschaftliche Teilhabe ermöglichen und den Austausch und gesellschaftlichen Zusammenhalt in der Potsdamer Bevölkerung stärken.</p>
+		<p>Das Netzwerk Flüchtlingshilfe Babelsberg wird getragen von einem anerkannt gemeinnützigen Verein, der Flüchtlingshilfe Babelsberg e.V. mit Sitz in Potsdam, der derzeit ca. 70 Vereinsmitglieder hat (siehe <a href="https://fluechtlingshilfe-babelsberg.de/vereinsmitglied-werden/">fluechtlingshilfe-babelsberg.de/vereinsmitglied-werden/</a>). Die Leitidee des Netzwerks Flüchtlingshilfe Babelsberg ist: sozial und engagiert, menschlich, nah und nachbarschaftlich, direkt und unkompliziert, gemeinnützig und unabhängig. Wir wollen gesellschaftliche Teilhabe ermöglichen und den Austausch und gesellschaftlichen Zusammenhalt in der Potsdamer Bevölkerung stärken.</p>
 		<p>Derzeit arbeiten wir zum einen intensiv daran, Strukturen zu schaffen, um Flüchtlinge beim Eintritt in den Arbeitsmarkt zu unterstützen. Denn sobald die Flüchtlinge ausreichend Deutsch können, ist dies der nächste wichtige Schritt zur Integration. Zum anderen bereitet die Flüchtlingshilfe Babelsberg sich darauf vor, weitere Flüchtlinge zu begleiten, denn in den kommenden Wochen werden zusätzlich 60 Flüchtlinge, v.a. Familien mit Frauen und Kindern in Potsdam-Babelsberg untergebracht.</p>
-	<br>
+
+	<div class="text-center">
+		<div class="circle-image" style="background-image: url(<?= $assetsDir ?>/images/frontpage/circle01.jpg)"></div>
+		<div class="circle-image" style="background-image: url(<?= $assetsDir ?>/images/frontpage/circle02.jpg)"></div>
+		<div class="circle-image" style="background-image: url(<?= $assetsDir ?>/images/frontpage/circle03.jpg)"></div>
+		<div class="circle-image" style="background-image: url(<?= $assetsDir ?>/images/frontpage/circle04.jpg)"></div>
+	</div>
+
 	<p>Auf Sie warten also tolle Projekte und wir warten auf Ihre tollen Ideen. Es werden jetzt viele Hände und Köpfe gebraucht, denn Potsdam integriert!</p>
 	</div>
 </div>
@@ -136,11 +144,11 @@
 
 <div class="container-fluid annoucement-box intro-section">
 	<div class="container">
-		<p>Bisherige Projekte unseres Netzwerks sind u.a. (siehe <a href="https://fluechtlingshilfe-babelsberg.de/news/">https://fluechtlingshilfe-babelsberg.de/news/</a>):</p>
+		<p>Bisherige Projekte unseres Netzwerks sind u.a. (siehe <a href="https://fluechtlingshilfe-babelsberg.de/news/">fluechtlingshilfe-babelsberg.de/news/</a>):</p>
 		<li>rund 1.200 Zeit-Stunden ehrenamtlicher Deutsch-Unterricht</li>
 		<li>Betrieb eines nachmittäglichen Begegnungscafes (Tea and Talk) an drei Wochentagen, zusammen mit dem Lindenpark</li>
 		<li>Betrieb einer Fahrradwerkstatt mit/für Geflüchtete, zusammen mit dem Projekthaus Babelsberg; Zurverfügungstellung von über 80 verkehrssicheren Fahrrädern an Geflüchtete</li>
-		<li>Gründung und Betrieb einer kostenfreien Rechtsberatungsstelle für Geflüchtete und Flüchtlingsorganisationen in Brandenburg, zusammen mit der Juristischen Fakultät der Universität Potsdam, Lehrstuhl Professor Dr. Götz Schulze (sog. Law Clinic, siehe <a href="https://fluechtlingshilfe-babelsberg.de/rechtsberatunglaw-clinic/">https://fluechtlingshilfe-babelsberg.de/rechtsberatunglaw-clinic/</a>),</li>
+		<li>Gründung und Betrieb einer kostenfreien Rechtsberatungsstelle für Geflüchtete und Flüchtlingsorganisationen in Brandenburg, zusammen mit der Juristischen Fakultät der Universität Potsdam, Lehrstuhl Professor Dr. Götz Schulze (sog. Law Clinic, siehe <a href="https://fluechtlingshilfe-babelsberg.de/rechtsberatunglaw-clinic/">fluechtlingshilfe-babelsberg.de/rechtsberatunglaw-clinic/</a>),</li>
 		<li>Willkommensfest für Potsdamer*Innen und Geflüchtete mit 600 Teilnehmern, zusammen mit dem Lindenpark</li>
 		<li>Begleitung von Geflüchteten zu Ämtern, Behörden und diversen Freizeit–, Sport– und Kulturangeboten</li>
 		<li>Vermittlung von Geflüchteten in niederschwellige Arbeitsplatzangebote</li>
@@ -155,7 +163,7 @@
 
 <div class="container intro-section">
 	<p>Sie sehen, - Mitmachen bei uns lohnt sich und für jeden ist etwas dabei!</p>
-	<p>Wenden Sie sich direkt an eine Arbeitsgruppe Ihrer Wahl: Die E-Mailadressen der AG-Leiter finden Sie unter <a href="https://fluechtlingshilfe-babelsberg.de/arbeitsgruppen/">https://fluechtlingshilfe-babelsberg.de/arbeitsgruppen/</a> oder abonnieren Sie unseren E-Mail-Newsletter unter <a href="https://fluechtlingshilfe-babelsberg.de/help/">https://fluechtlingshilfe-babelsberg.de/help/</a></p>
+	<p>Wenden Sie sich direkt an eine Arbeitsgruppe Ihrer Wahl: Die E-Mailadressen der AG-Leiter finden Sie unter <a href="https://fluechtlingshilfe-babelsberg.de/arbeitsgruppen/">fluechtlingshilfe-babelsberg.de/arbeitsgruppen/</a> oder abonnieren Sie unseren E-Mail-Newsletter unter <a href="https://fluechtlingshilfe-babelsberg.de/help/">fluechtlingshilfe-babelsberg.de/help/</a></p>
 </div>
 
 <?php get_footer(); ?>
