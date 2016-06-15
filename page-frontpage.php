@@ -112,7 +112,7 @@
 
 <div class="container-fluid annoucement-box intro-section">
 	<div class="container">
-		<p>Das Netzwerk Flüchtlingshilfe Babelsberg wird getragen von einem anerkannt gemeinnützigen Verein, der Flüchtlingshilfe Babelsberg e.V. mit Sitz in Potsdam, der derzeit ca. 70 Vereinsmitglieder hat (siehe <a href="https://fluechtlingshilfe-babelsberg.de/vereinsmitglied-werden/">fluechtlingshilfe-babelsberg.de/vereinsmitglied-werden/</a>). Die Leitidee des Netzwerks Flüchtlingshilfe Babelsberg ist: sozial und engagiert, menschlich, nah und nachbarschaftlich, direkt und unkompliziert, gemeinnützig und unabhängig. Wir wollen gesellschaftliche Teilhabe ermöglichen und den Austausch und gesellschaftlichen Zusammenhalt in der Potsdamer Bevölkerung stärken.</p>
+		<p>Das Netzwerk Flüchtlingshilfe Babelsberg wird getragen von einem anerkannt gemeinnützigen Verein, der Flüchtlingshilfe Babelsberg e.V. mit Sitz in Potsdam, der derzeit ca. 70 Vereinsmitglieder hat (<a href="https://fluechtlingshilfe-babelsberg.de/vereinsmitglied-werden/">fluechtlingshilfe-babelsberg.de/vereinsmitglied-werden/</a>). Die Leitidee des Netzwerks Flüchtlingshilfe Babelsberg ist: sozial und engagiert, menschlich, nah und nachbarschaftlich, direkt und unkompliziert, gemeinnützig und unabhängig. Wir wollen gesellschaftliche Teilhabe ermöglichen und den Austausch und gesellschaftlichen Zusammenhalt in der Potsdamer Bevölkerung stärken.</p>
 		<p>Derzeit arbeiten wir zum einen intensiv daran, Strukturen zu schaffen, um Flüchtlinge beim Eintritt in den Arbeitsmarkt zu unterstützen. Denn sobald die Flüchtlinge ausreichend Deutsch können, ist dies der nächste wichtige Schritt zur Integration. Zum anderen bereitet die Flüchtlingshilfe Babelsberg sich darauf vor, weitere Flüchtlinge zu begleiten, denn in den kommenden Wochen werden zusätzlich 60 Flüchtlinge, v.a. Familien mit Frauen und Kindern in Potsdam-Babelsberg untergebracht.</p>
 
 	<div class="text-center">
@@ -127,43 +127,64 @@
 </div>
 
 <div class="container intro-section">
-	<p>Bei seinen Aktionen kooperiert unser Netzwerk eng mit anderen Potsdamer Institutionen, z.B. mit dem Hasso-Plattner-Institut, der Universität Potsdam, dem Projekthaus Babelsberg, mit dem Lindenpark, Kirchgemeinden oder Potsdamer Schulen, wie z.B. mit der Katholischen Marienschule. Enge Kooperationen bestehen mit den Trägern der Gemeinschaftsunterkünfte in Potsdam, insbesondere mit der AWO Potsdam.</p>
-	<p>Unser Angebot und unser Charakter ist:</p>
-	<ul>
-		<li>universell, d.h. unser kostenloses Angebot richtet sich an alle Geflüchtete und Migranten*Innen in Potsdam,</li>
-		<li>integrationsspezifisch, d.h. das kostenlose Angebot beinhaltet v.a. Maßnahmen, die die Integration von Geflüchteten in die Gesellschaft unterstützen,</li>
-		<li>dienstleistend, d.h. Geflüchtete werden durch unbürokratische Informationsweitergabe und Beratung entlastet,</li>
-		<li>niederschwellig, d.h. durch wohnortnahes Agieren unseres Netzwerks und aufsuchende Arbeit unser ehrenamtlichen Helfer*Innen werden die Geflüchteten unterstützt,</li>
-		<li>deutschsprachlich und bildend, d.h. Geflüchtete werden durch spezifische Bildungsangebote, derzeit v.a. zum Spracherwerb in ihrer Deutschkompetenz gestärkt; Angebote sind auf spezifische Bedarfe ausgerichtet,</li>
-		<li>professionell, d.h. unsere spezifischen Angebote werden von in der jeweiligen Profession tätigen Ehrenamtler*Innen gesteuert und erbracht (z.B. Deutsch-Lehrer, Wiss. Mitarbeiter der Universität Potsdam, Rechtsanwälte),</li>
-		<li>vernetzend, d.h. systematische, themenübergreifende Kooperationen und Vereinbarungen mit anderen haupt- oder ehrenamtlichen Akteuren der Flüchtlingshilfe in Potsdam,</li>
-		<li>teilhabend, d.h. unsere Angebote sind Hilfe zur Selbsthilfe i.S.v. Empowerment der Geflüchteten,</li>
-		<li>selbstlernend, d.h. die Angebote unseres Netzwerks werden durch ständige Evaluation in den Arbeitsgruppen und Wissenstransfer zwischen den Arbeitsgruppen durch gemeinsame Moderatorentreffen fortlaufend überprüft und an den Bedürfnissen der Zielgruppe angepasst.</li>
-	</ul>
+	<p>Die Helfer*Innen des Netzwerks Flüchtlingshilfe Babelsberg sind in insgesamt 12 Arbeitsgruppen zu besonderen Themengebieten (<a href="https://fluechtlingshilfe-babelsberg.de/arbeitsgruppen/">fluechtlingshilfe-babelsberg.de/arbeitsgruppen/</a>). Die Arbeitsgruppen arbeiten spezialisiert, professionell und selbständig und jede*r Interessierte kann sich über die Webseite der Flüchtlingshilfe zum Mitmachen melden (<a href="https://fluechtlingshilfe-babelsberg.de/help/">fluechtlingshilfe-babelsberg.de/help/</a>). Das Netzwerk Flüchtlingshilfe Babelsberg ist ein niedrigschwelliges und kostenloses Angebot für alle Einwohner*Innen und Geflüchtete in der Landeshauptstadt Potsdam.</p>
+
+	<div class="ag-icons">
+		<div><img src=""><span>AG Sprache</span></div>
+		<div><img src=""><span>AG Unterkunft, Sachspenden</span></div>
+		<div><img src=""><span>AG Fahrradwerkstatt</span></div>
+		<div><img src=""><span>AG Begleitung</span></div>
+		<div><img src=""><span>AG Recht</span></div>
+		<div><img src=""><span>AG Sport &amp; Freizeit</span></div>
+		<div><img src=""><span>AG Veranstaltungen</span></div>
+		<div><img src=""><span>AG Arbeit &amp; Praktikum</span></div>
+		<div><img src=""><span>AG Schülerhilfe</span></div>
+		<div><img src=""><span>AG Internet und IT</span></div>
+		<div><img src=""><span>AG Fundraising, Organisation</span></div>
+		<div><img src=""><span>AG Frauen &amp; Kinder</span></div>
+	</div>
 </div>
 
 <div class="container-fluid annoucement-box intro-section">
 	<div class="container">
-		<p>Bisherige Projekte unseres Netzwerks sind u.a. (siehe <a href="https://fluechtlingshilfe-babelsberg.de/news/">fluechtlingshilfe-babelsberg.de/news/</a>):</p>
-		<li>rund 1.200 Zeit-Stunden ehrenamtlicher Deutsch-Unterricht</li>
-		<li>Betrieb eines nachmittäglichen Begegnungscafes (Tea and Talk) an drei Wochentagen, zusammen mit dem Lindenpark</li>
-		<li>Betrieb einer Fahrradwerkstatt mit/für Geflüchtete, zusammen mit dem Projekthaus Babelsberg; Zurverfügungstellung von über 80 verkehrssicheren Fahrrädern an Geflüchtete</li>
-		<li>Gründung und Betrieb einer kostenfreien Rechtsberatungsstelle für Geflüchtete und Flüchtlingsorganisationen in Brandenburg, zusammen mit der Juristischen Fakultät der Universität Potsdam, Lehrstuhl Professor Dr. Götz Schulze (sog. Law Clinic, siehe <a href="https://fluechtlingshilfe-babelsberg.de/rechtsberatunglaw-clinic/">fluechtlingshilfe-babelsberg.de/rechtsberatunglaw-clinic/</a>),</li>
-		<li>Willkommensfest für Potsdamer*Innen und Geflüchtete mit 600 Teilnehmern, zusammen mit dem Lindenpark</li>
-		<li>Begleitung von Geflüchteten zu Ämtern, Behörden und diversen Freizeit–, Sport– und Kulturangeboten</li>
-		<li>Vermittlung von Geflüchteten in niederschwellige Arbeitsplatzangebote</li>
-		<li>Treffen von Potsdamer Schülern mit Geflüchteten anlässlich von Schulprojekttagen</li>
-		<li>organisatorische Begleitung und Übergabe eines offenen Briefes von Geflüchteten zu den Vorkommnissen in der Silvesternacht von Köln an die Potsdamer Stadtverordnetenversammlung</li>
-		<li>Kulturfest mit zahlreichen Potsdamern*Innen und einer Berliner Wandergruppe von 120 Geflüchteten aus Syrien</li>
-		<li>Sozialtag mit Katholischer Marienschule Potsdam zur Mithilfe von Schülern in Flüchtlingsunterkünften</li>
-		<li>Diskussionsabend zur europäischen Migrationspolitik mit Frau Ska Keller (MdEP), zusammen mit der Katholischen Marienschule Potsdam</li>
-		<li>Weihnachtliche Cafe der Kulturen für Geflüchtete und Potsdamer*Innen mit über 200 Teilnehmern</li>
+		<p>Bei seinen Aktionen kooperiert unser Netzwerk eng mit anderen Potsdamer Institutionen, z.B. mit dem Hasso-Plattner-Institut, der Universität Potsdam, dem Projekthaus Babelsberg, mit dem Lindenpark, Kirchgemeinden oder Potsdamer Schulen, wie z.B. mit der Katholischen Marienschule. Enge Kooperationen bestehen mit den Trägern der Gemeinschaftsunterkünfte in Potsdam, insbesondere mit der AWO Potsdam.</p>
+		<p>Unser Angebot und unser Charakter ist:</p>
+		<ul>
+			<li>universell, d.h. unser kostenloses Angebot richtet sich an alle Geflüchtete und Migranten*Innen in Potsdam,</li>
+			<li>integrationsspezifisch, d.h. das kostenlose Angebot beinhaltet v.a. Maßnahmen, die die Integration von Geflüchteten in die Gesellschaft unterstützen,</li>
+			<li>dienstleistend, d.h. Geflüchtete werden durch unbürokratische Informationsweitergabe und Beratung entlastet,</li>
+			<li>niederschwellig, d.h. durch wohnortnahes Agieren unseres Netzwerks und aufsuchende Arbeit unser ehrenamtlichen Helfer*Innen werden die Geflüchteten unterstützt,</li>
+			<li>deutschsprachlich und bildend, d.h. Geflüchtete werden durch spezifische Bildungsangebote, derzeit v.a. zum Spracherwerb in ihrer Deutschkompetenz gestärkt; Angebote sind auf spezifische Bedarfe ausgerichtet,</li>
+			<li>professionell, d.h. unsere spezifischen Angebote werden von in der jeweiligen Profession tätigen Ehrenamtler*Innen gesteuert und erbracht (z.B. Deutsch-Lehrer, Wiss. Mitarbeiter der Universität Potsdam, Rechtsanwälte),</li>
+			<li>vernetzend, d.h. systematische, themenübergreifende Kooperationen und Vereinbarungen mit anderen haupt- oder ehrenamtlichen Akteuren der Flüchtlingshilfe in Potsdam,</li>
+			<li>teilhabend, d.h. unsere Angebote sind Hilfe zur Selbsthilfe i.S.v. Empowerment der Geflüchteten,</li>
+			<li>selbstlernend, d.h. die Angebote unseres Netzwerks werden durch ständige Evaluation in den Arbeitsgruppen und Wissenstransfer zwischen den Arbeitsgruppen durch gemeinsame Moderatorentreffen fortlaufend überprüft und an den Bedürfnissen der Zielgruppe angepasst.</li>
+		</ul>
 	</div>
 </div>
 
 <div class="container intro-section">
-	<p>Sie sehen, - Mitmachen bei uns lohnt sich und für jeden ist etwas dabei!</p>
-	<p>Wenden Sie sich direkt an eine Arbeitsgruppe Ihrer Wahl: Die E-Mailadressen der AG-Leiter finden Sie unter <a href="https://fluechtlingshilfe-babelsberg.de/arbeitsgruppen/">fluechtlingshilfe-babelsberg.de/arbeitsgruppen/</a> oder abonnieren Sie unseren E-Mail-Newsletter unter <a href="https://fluechtlingshilfe-babelsberg.de/help/">fluechtlingshilfe-babelsberg.de/help/</a></p>
+	<p>Bisherige Projekte unseres Netzwerks sind u.a. (<a href="https://fluechtlingshilfe-babelsberg.de/news/">fluechtlingshilfe-babelsberg.de/news/</a>):</p>
+	<li>rund 1.200 Zeit-Stunden ehrenamtlicher Deutsch-Unterricht</li>
+	<li>Betrieb eines nachmittäglichen Begegnungscafes (Tea and Talk) an drei Wochentagen, zusammen mit dem Lindenpark</li>
+	<li>Betrieb einer Fahrradwerkstatt mit/für Geflüchtete, zusammen mit dem Projekthaus Babelsberg; Zurverfügungstellung von über 80 verkehrssicheren Fahrrädern an Geflüchtete</li>
+	<li>Gründung und Betrieb einer kostenfreien Rechtsberatungsstelle für Geflüchtete und Flüchtlingsorganisationen in Brandenburg, zusammen mit der Juristischen Fakultät der Universität Potsdam, Lehrstuhl Professor Dr. Götz Schulze (sog. Law Clinic, <a href="https://fluechtlingshilfe-babelsberg.de/rechtsberatunglaw-clinic/">fluechtlingshilfe-babelsberg.de/rechtsberatunglaw-clinic/</a>),</li>
+	<li>Willkommensfest für Potsdamer*Innen und Geflüchtete mit 600 Teilnehmern, zusammen mit dem Lindenpark</li>
+	<li>Begleitung von Geflüchteten zu Ämtern, Behörden und diversen Freizeit–, Sport– und Kulturangeboten</li>
+	<li>Vermittlung von Geflüchteten in niederschwellige Arbeitsplatzangebote</li>
+	<li>Treffen von Potsdamer Schülern mit Geflüchteten anlässlich von Schulprojekttagen</li>
+	<li>organisatorische Begleitung und Übergabe eines offenen Briefes von Geflüchteten zu den Vorkommnissen in der Silvesternacht von Köln an die Potsdamer Stadtverordnetenversammlung</li>
+	<li>Kulturfest mit zahlreichen Potsdamern*Innen und einer Berliner Wandergruppe von 120 Geflüchteten aus Syrien</li>
+	<li>Sozialtag mit Katholischer Marienschule Potsdam zur Mithilfe von Schülern in Flüchtlingsunterkünften</li>
+	<li>Diskussionsabend zur europäischen Migrationspolitik mit Frau Ska Keller (MdEP), zusammen mit der Katholischen Marienschule Potsdam</li>
+	<li>Weihnachtliche Cafe der Kulturen für Geflüchtete und Potsdamer*Innen mit über 200 Teilnehmern</li>
+</div>
+
+<div class="container-fluid annoucement-box intro-section">
+	<div class="container">
+		<p>Sie sehen, - Mitmachen bei uns lohnt sich und für jeden ist etwas dabei!</p>
+		<p>Wenden Sie sich direkt an eine Arbeitsgruppe Ihrer Wahl: Die E-Mailadressen der AG-Leiter finden Sie unter <a href="https://fluechtlingshilfe-babelsberg.de/arbeitsgruppen/">fluechtlingshilfe-babelsberg.de/arbeitsgruppen/</a> oder abonnieren Sie unseren E-Mail-Newsletter unter <a href="https://fluechtlingshilfe-babelsberg.de/help/">fluechtlingshilfe-babelsberg.de/help/</a></p>
+	</div>
 </div>
 
 <?php get_footer(); ?>

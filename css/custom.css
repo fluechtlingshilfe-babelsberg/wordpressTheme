@@ -166,10 +166,6 @@ hr {
 	padding-bottom: 50px;
 }
 
-.intro-section {
- 	padding: 64px 0;
-}
-
 footer {
 	background-color: #333;
 	color: white;
@@ -304,4 +300,26 @@ input[type='submit'] , input[type='button']{
 	background-position: center center;
 	display: inline-block;
 	margin: 24px;
+}
+
+.intro-section {
+ 	padding: 72px 24px;
+}
+
+.ag-icons {
+	text-align: center;
+}
+.ag-icons img {
+	width: 72px;
+	height: 72px;
+}
+.ag-icons div {
+	margin: 12px;
+	min-width: 200px;
+	display: inline-block;
+	text-align: center;
+}
+.ag-icons span {
+	margin-top: 12px;
+	display: block;
 }
