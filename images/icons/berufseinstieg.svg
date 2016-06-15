@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="24px"
+   version="1.1"
+   viewBox="0 0 24 24"
+   width="24px"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="1466037871_business-suitcase-glyph.svg">
+  <metadata
+     id="metadata16">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="711"
+     id="namedview14"
+     showgrid="false"
+     inkscape:zoom="9.8333333"
+     inkscape:cx="-9.7627119"
+     inkscape:cy="12"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <title
+     id="title4" />
+  <desc
+     id="desc6" />
+  <defs
+     id="defs8" />
+  <g
+     fill="none"
+     fill-rule="evenodd"
+     id="miu"
+     stroke="none"
+     stroke-width="1"
+     style="fill:#3e606f;fill-opacity:1">
+    <g
+       id="Artboard-1"
+       transform="translate(-539.000000, -335.000000)"
+       style="fill:#3e606f;fill-opacity:1">
+      <g
+         id="slice"
+         transform="translate(215.000000, 119.000000)"
+         style="fill:#3e606f;fill-opacity:1" />
+      <path
+         d="M553,346 L554.026245,346 L562,346 L562,354.888889 C562,356 560.9,356 560.9,356 L541.1,356 C541.1,356 540,356 540,354.888889 L540,346 L548.005249,346 L549,346 L549,346.990631 C549,347.54809 549.443353,348 550.009369,348 L551.990631,348 C552.54809,348 553,347.556647 553,346.990631 L553,346 L553,346 Z M552.999958,345 L554,345 L562,345 L562,341.136364 C562,340 560.9,340 560.9,340 L541.1,340 C541.1,340 540,340 540,341.136364 L540,345 L548,345 L549.000041,345 C549.004996,344.438468 549.454989,344 550.009369,344 L551.990631,344 C552.553473,344 552.995023,344.446855 552.999958,345 L552.999958,345 Z M553.054443,337.979248 L549.010986,337.979248 L549.010986,340 L548,340 L548,338.25 C548,337 549.153846,337 549.153846,337 L552.846154,337 C552.846154,337 554,337 554,338.25 L554,340 L553.054443,340 L553.054443,337.979248 Z M550,345 L550,347 L552,347 L552,345 L550,345 Z"
+         fill="#000000"
+         id="business-suitcase-glyph"
+         style="fill:#3e606f;fill-opacity:1" />
+    </g>
+  </g>
+</svg>
