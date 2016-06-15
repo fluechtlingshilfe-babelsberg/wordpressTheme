@@ -125,9 +125,13 @@ hr {
   border-color: rgba(30, 30, 30, 0.2);
 }
 .intro-container {
-  padding: 48px 32px 0 32px;
   background-size: cover;
   background-position: center;
+}
+@media only screen and (min-width : 768px) {
+  .intro-container {
+    padding: 48px 32px 0 32px;
+  }
 }
 .intro-container h1 {
   font-size: 3em;
@@ -144,7 +148,11 @@ hr {
   background-image: url(../images/header.jpg);
   text-shadow: 0 1px 5px rgba(255,255,255,0.6);
   color: #000;
-  padding: 48px 32px 32px 32px;
+}
+@media only screen and (min-width : 768px) {
+  .img .intro-container {
+    padding: 48px 32px 32px 32px;
+  }
 }
 .annoucement-box {
 	background-color: #3E606F;
