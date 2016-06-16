@@ -305,6 +305,18 @@ input[type='submit'] , input[type='button']{
 .intro-section {
  	padding: 72px 24px;
 }
+.intro-section h2 {
+	font-size: 3em;
+	margin-top: 0;
+	color: #3E606F;
+	text-align: right;
+}
+.intro-section h2:before {
+	content: '- ';
+}
+.intro-section.annoucement-box h2 {
+	color: #fff;
+}
 
 .ag-icons {
 	text-align: center;

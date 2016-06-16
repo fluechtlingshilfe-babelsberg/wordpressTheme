@@ -112,41 +112,45 @@
 
 <div class="container-fluid annoucement-box intro-section">
 	<div class="container">
+		<h2>Die Flüchtlingshilfe Babelsberg</h2>
 		<p>Das Netzwerk Flüchtlingshilfe Babelsberg wird getragen von einem anerkannt gemeinnützigen Verein, der Flüchtlingshilfe Babelsberg e.V. mit Sitz in Potsdam, der derzeit ca. 70 Vereinsmitglieder hat (<a href="https://fluechtlingshilfe-babelsberg.de/vereinsmitglied-werden/">fluechtlingshilfe-babelsberg.de/vereinsmitglied-werden/</a>). Die Leitidee des Netzwerks Flüchtlingshilfe Babelsberg ist: sozial und engagiert, menschlich, nah und nachbarschaftlich, direkt und unkompliziert, gemeinnützig und unabhängig. Wir wollen gesellschaftliche Teilhabe ermöglichen und den Austausch und gesellschaftlichen Zusammenhalt in der Potsdamer Bevölkerung stärken.</p>
+
+		<div class="text-center">
+			<div class="circle-image" style="background-image: url(<?= $assetsDir ?>/images/frontpage/circle01.jpg)"></div>
+			<div class="circle-image" style="background-image: url(<?= $assetsDir ?>/images/frontpage/circle02.jpg)"></div>
+			<div class="circle-image" style="background-image: url(<?= $assetsDir ?>/images/frontpage/circle03.jpg)"></div>
+			<div class="circle-image" style="background-image: url(<?= $assetsDir ?>/images/frontpage/circle04.jpg)"></div>
+		</div>
+
 		<p>Derzeit arbeiten wir zum einen intensiv daran, Strukturen zu schaffen, um Flüchtlinge beim Eintritt in den Arbeitsmarkt zu unterstützen. Denn sobald die Flüchtlinge ausreichend Deutsch können, ist dies der nächste wichtige Schritt zur Integration. Zum anderen bereitet die Flüchtlingshilfe Babelsberg sich darauf vor, weitere Flüchtlinge zu begleiten, denn in den kommenden Wochen werden zusätzlich 60 Flüchtlinge, v.a. Familien mit Frauen und Kindern in Potsdam-Babelsberg untergebracht.</p>
 
-	<div class="text-center">
-		<div class="circle-image" style="background-image: url(<?= $assetsDir ?>/images/frontpage/circle01.jpg)"></div>
-		<div class="circle-image" style="background-image: url(<?= $assetsDir ?>/images/frontpage/circle02.jpg)"></div>
-		<div class="circle-image" style="background-image: url(<?= $assetsDir ?>/images/frontpage/circle03.jpg)"></div>
-		<div class="circle-image" style="background-image: url(<?= $assetsDir ?>/images/frontpage/circle04.jpg)"></div>
-	</div>
-
-	<p>Auf Sie warten also tolle Projekte und wir warten auf Ihre tollen Ideen. Es werden jetzt viele Hände und Köpfe gebraucht, denn Potsdam integriert!</p>
+		<p>Auf Sie warten also tolle Projekte und wir warten auf Ihre tollen Ideen. Es werden jetzt viele Hände und Köpfe gebraucht, denn Potsdam integriert!</p>
 	</div>
 </div>
 
 <div class="container intro-section">
+	<h2>Unsere AGs</h2>
 	<p>Die Helfer*Innen des Netzwerks Flüchtlingshilfe Babelsberg sind in insgesamt 12 Arbeitsgruppen zu besonderen Themengebieten (<a href="https://fluechtlingshilfe-babelsberg.de/arbeitsgruppen/">fluechtlingshilfe-babelsberg.de/arbeitsgruppen/</a>). Die Arbeitsgruppen arbeiten spezialisiert, professionell und selbständig und jede*r Interessierte kann sich über die Webseite der Flüchtlingshilfe zum Mitmachen melden (<a href="https://fluechtlingshilfe-babelsberg.de/help/">fluechtlingshilfe-babelsberg.de/help/</a>). Das Netzwerk Flüchtlingshilfe Babelsberg ist ein niedrigschwelliges und kostenloses Angebot für alle Einwohner*Innen und Geflüchtete in der Landeshauptstadt Potsdam.</p>
 
 	<div class="ag-icons">
-		<div><img src="<?= $assetsDir ?>/images/icons/sprache.svg"><span>AG Sprache</span></div>
-		<div><img src="<?= $assetsDir ?>/images/icons/blah.svg"><span>AG Unterkunft, Sachspenden</span></div>
-		<div><img src="<?= $assetsDir ?>/images/icons/fahrrad.svg"><span>AG Fahrradwerkstatt</span></div>
-		<div><img src="<?= $assetsDir ?>/images/icons/blah.svg"><span>AG Begleitung</span></div>
-		<div><img src="<?= $assetsDir ?>/images/icons/law.svg"><span>AG Recht</span></div>
-		<div><img src="<?= $assetsDir ?>/images/icons/freizeit.svg"><span>AG Sport &amp; Freizeit</span></div>
-		<div><img src="<?= $assetsDir ?>/images/icons/events.svg"><span>AG Veranstaltungen</span></div>
-		<div><img src="<?= $assetsDir ?>/images/icons/berufseinstieg.svg"><span>AG Arbeit &amp; Praktikum</span></div>
-		<div><img src="<?= $assetsDir ?>/images/icons/blah.svg"><span>AG Schülerhilfe</span></div>
-		<div><img src="<?= $assetsDir ?>/images/icons/it.svg"><span>AG Internet und IT</span></div>
-		<div><img src="<?= $assetsDir ?>/images/icons/fundrising.svg"><span>AG Fundraising, Organisation</span></div>
-		<div><img src="<?= $assetsDir ?>/images/icons/frauenUndKinder.svg"><span>AG Frauen &amp; Kinder</span></div>
+		<div><img src="<?= $assetsDir ?>/images/icons/sprache.svg"><span>Sprache</span></div>
+		<div><img src="<?= $assetsDir ?>/images/icons/blah.svg"><span>Unterkunft, Sachspenden</span></div>
+		<div><img src="<?= $assetsDir ?>/images/icons/fahrrad.svg"><span>Fahrradwerkstatt</span></div>
+		<div><img src="<?= $assetsDir ?>/images/icons/blah.svg"><span>Begleitung</span></div>
+		<div><img src="<?= $assetsDir ?>/images/icons/law.svg"><span>Recht</span></div>
+		<div><img src="<?= $assetsDir ?>/images/icons/freizeit.svg"><span>Sport &amp; Freizeit</span></div>
+		<div><img src="<?= $assetsDir ?>/images/icons/events.svg"><span>Veranstaltungen</span></div>
+		<div><img src="<?= $assetsDir ?>/images/icons/berufseinstieg.svg"><span>Arbeit &amp; Praktikum</span></div>
+		<div><img src="<?= $assetsDir ?>/images/icons/blah.svg"><span>Schülerhilfe</span></div>
+		<div><img src="<?= $assetsDir ?>/images/icons/it.svg"><span>Internet und IT</span></div>
+		<div><img src="<?= $assetsDir ?>/images/icons/fundrising.svg"><span>Fundraising, Organisation</span></div>
+		<div><img src="<?= $assetsDir ?>/images/icons/frauenUndKinder.svg"><span>Frauen &amp; Kinder</span></div>
 	</div>
 </div>
 
 <div class="container-fluid annoucement-box intro-section">
 	<div class="container">
+		<h2>Unser Angebot &amp; Charakter</h2>
 		<p>Bei seinen Aktionen kooperiert unser Netzwerk eng mit anderen Potsdamer Institutionen, z.B. mit dem Hasso-Plattner-Institut, der Universität Potsdam, dem Projekthaus Babelsberg, mit dem Lindenpark, Kirchgemeinden oder Potsdamer Schulen, wie z.B. mit der Katholischen Marienschule. Enge Kooperationen bestehen mit den Trägern der Gemeinschaftsunterkünfte in Potsdam, insbesondere mit der AWO Potsdam.</p>
 		<p>Unser Angebot und unser Charakter ist:</p>
 		<ul>
@@ -164,6 +168,7 @@
 </div>
 
 <div class="container intro-section">
+	<h2>Projekte</h2>
 	<p>Bisherige Projekte unseres Netzwerks sind u.a. (<a href="https://fluechtlingshilfe-babelsberg.de/news/">fluechtlingshilfe-babelsberg.de/news/</a>):</p>
 	<li>rund 1.200 Zeit-Stunden ehrenamtlicher Deutsch-Unterricht</li>
 	<li>Betrieb eines nachmittäglichen Begegnungscafes (Tea and Talk) an drei Wochentagen, zusammen mit dem Lindenpark</li>
