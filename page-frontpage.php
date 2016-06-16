@@ -170,19 +170,33 @@
 <div class="container intro-section">
 	<h2>Projekte</h2>
 	<p>Bisherige Projekte unseres Netzwerks sind u.a. (<a href="https://fluechtlingshilfe-babelsberg.de/news/">fluechtlingshilfe-babelsberg.de/news/</a>):</p>
-	<li>rund 1.200 Zeit-Stunden ehrenamtlicher Deutsch-Unterricht</li>
-	<li>Betrieb eines nachmittäglichen Begegnungscafes (Tea and Talk) an drei Wochentagen, zusammen mit dem Lindenpark</li>
-	<li>Betrieb einer Fahrradwerkstatt mit/für Geflüchtete, zusammen mit dem Projekthaus Babelsberg; Zurverfügungstellung von über 80 verkehrssicheren Fahrrädern an Geflüchtete</li>
-	<li>Gründung und Betrieb einer kostenfreien Rechtsberatungsstelle für Geflüchtete und Flüchtlingsorganisationen in Brandenburg, zusammen mit der Juristischen Fakultät der Universität Potsdam, Lehrstuhl Professor Dr. Götz Schulze (sog. Law Clinic, <a href="https://fluechtlingshilfe-babelsberg.de/rechtsberatunglaw-clinic/">fluechtlingshilfe-babelsberg.de/rechtsberatunglaw-clinic/</a>),</li>
-	<li>Willkommensfest für Potsdamer*Innen und Geflüchtete mit 600 Teilnehmern, zusammen mit dem Lindenpark</li>
-	<li>Begleitung von Geflüchteten zu Ämtern, Behörden und diversen Freizeit–, Sport– und Kulturangeboten</li>
-	<li>Vermittlung von Geflüchteten in niederschwellige Arbeitsplatzangebote</li>
-	<li>Treffen von Potsdamer Schülern mit Geflüchteten anlässlich von Schulprojekttagen</li>
-	<li>organisatorische Begleitung und Übergabe eines offenen Briefes von Geflüchteten zu den Vorkommnissen in der Silvesternacht von Köln an die Potsdamer Stadtverordnetenversammlung</li>
-	<li>Kulturfest mit zahlreichen Potsdamern*Innen und einer Berliner Wandergruppe von 120 Geflüchteten aus Syrien</li>
-	<li>Sozialtag mit Katholischer Marienschule Potsdam zur Mithilfe von Schülern in Flüchtlingsunterkünften</li>
-	<li>Diskussionsabend zur europäischen Migrationspolitik mit Frau Ska Keller (MdEP), zusammen mit der Katholischen Marienschule Potsdam</li>
-	<li>Weihnachtliche Cafe der Kulturen für Geflüchtete und Potsdamer*Innen mit über 200 Teilnehmern</li>
+
+	<div class="projects-wrapper">
+		<button onclick="projectSlides(-1)">Left</button>
+		<button onclick="projectSlides(1)">Right</button>
+		<div class="projects">
+			<div style="background-image: url(<?= $assetsDir ?>/images/frontpage/circle01.jpg)"></div>
+			<div style="background-image: url(<?= $assetsDir ?>/images/frontpage/circle02.jpg)"></div>
+			<div style="background-image: url(<?= $assetsDir ?>/images/frontpage/circle03.jpg)"></div>
+			<div style="background-image: url(<?= $assetsDir ?>/images/frontpage/circle04.jpg)"></div>
+		</div>
+	</div>
+
+	<ul>
+		<li>rund 1.200 Zeit-Stunden ehrenamtlicher Deutsch-Unterricht</li>
+		<li>Betrieb eines nachmittäglichen Begegnungscafes (Tea and Talk) an drei Wochentagen, zusammen mit dem Lindenpark</li>
+		<li>Betrieb einer Fahrradwerkstatt mit/für Geflüchtete, zusammen mit dem Projekthaus Babelsberg; Zurverfügungstellung von über 80 verkehrssicheren Fahrrädern an Geflüchtete</li>
+		<li>Gründung und Betrieb einer kostenfreien Rechtsberatungsstelle für Geflüchtete und Flüchtlingsorganisationen in Brandenburg, zusammen mit der Juristischen Fakultät der Universität Potsdam, Lehrstuhl Professor Dr. Götz Schulze (sog. Law Clinic, <a href="https://fluechtlingshilfe-babelsberg.de/rechtsberatunglaw-clinic/">fluechtlingshilfe-babelsberg.de/rechtsberatunglaw-clinic/</a>),</li>
+		<li>Willkommensfest für Potsdamer*Innen und Geflüchtete mit 600 Teilnehmern, zusammen mit dem Lindenpark</li>
+		<li>Begleitung von Geflüchteten zu Ämtern, Behörden und diversen Freizeit–, Sport– und Kulturangeboten</li>
+		<li>Vermittlung von Geflüchteten in niederschwellige Arbeitsplatzangebote</li>
+		<li>Treffen von Potsdamer Schülern mit Geflüchteten anlässlich von Schulprojekttagen</li>
+		<li>organisatorische Begleitung und Übergabe eines offenen Briefes von Geflüchteten zu den Vorkommnissen in der Silvesternacht von Köln an die Potsdamer Stadtverordnetenversammlung</li>
+		<li>Kulturfest mit zahlreichen Potsdamern*Innen und einer Berliner Wandergruppe von 120 Geflüchteten aus Syrien</li>
+		<li>Sozialtag mit Katholischer Marienschule Potsdam zur Mithilfe von Schülern in Flüchtlingsunterkünften</li>
+		<li>Diskussionsabend zur europäischen Migrationspolitik mit Frau Ska Keller (MdEP), zusammen mit der Katholischen Marienschule Potsdam</li>
+		<li>Weihnachtliche Cafe der Kulturen für Geflüchtete und Potsdamer*Innen mit über 200 Teilnehmern</li>
+	</ul>
 </div>
 
 <div class="container-fluid annoucement-box intro-section">
@@ -191,5 +205,7 @@
 		<p>Wenden Sie sich direkt an eine Arbeitsgruppe Ihrer Wahl: Die E-Mailadressen der AG-Leiter finden Sie unter <a href="https://fluechtlingshilfe-babelsberg.de/arbeitsgruppen/">fluechtlingshilfe-babelsberg.de/arbeitsgruppen/</a> oder abonnieren Sie unseren E-Mail-Newsletter unter <a href="https://fluechtlingshilfe-babelsberg.de/help/">fluechtlingshilfe-babelsberg.de/help/</a></p>
 	</div>
 </div>
+
+<script src="<?= $assetsDir ?>/js/frontpage.js"></script>
 
 <?php get_footer(); ?>
