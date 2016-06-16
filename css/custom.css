@@ -308,6 +308,7 @@ input[type='submit'] , input[type='button']{
 
 .ag-icons {
 	text-align: center;
+	margin-top: 48px;
 }
 .ag-icons img {
 	width: 72px;
@@ -321,5 +322,7 @@ input[type='submit'] , input[type='button']{
 }
 .ag-icons span {
 	margin-top: 12px;
+	font-family: 'Quattrocento';
 	display: block;
 }
+

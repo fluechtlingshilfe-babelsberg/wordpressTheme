@@ -130,18 +130,18 @@
 	<p>Die Helfer*Innen des Netzwerks Flüchtlingshilfe Babelsberg sind in insgesamt 12 Arbeitsgruppen zu besonderen Themengebieten (<a href="https://fluechtlingshilfe-babelsberg.de/arbeitsgruppen/">fluechtlingshilfe-babelsberg.de/arbeitsgruppen/</a>). Die Arbeitsgruppen arbeiten spezialisiert, professionell und selbständig und jede*r Interessierte kann sich über die Webseite der Flüchtlingshilfe zum Mitmachen melden (<a href="https://fluechtlingshilfe-babelsberg.de/help/">fluechtlingshilfe-babelsberg.de/help/</a>). Das Netzwerk Flüchtlingshilfe Babelsberg ist ein niedrigschwelliges und kostenloses Angebot für alle Einwohner*Innen und Geflüchtete in der Landeshauptstadt Potsdam.</p>
 
 	<div class="ag-icons">
-		<div><img src=""><span>AG Sprache</span></div>
-		<div><img src=""><span>AG Unterkunft, Sachspenden</span></div>
-		<div><img src=""><span>AG Fahrradwerkstatt</span></div>
-		<div><img src=""><span>AG Begleitung</span></div>
-		<div><img src=""><span>AG Recht</span></div>
-		<div><img src=""><span>AG Sport &amp; Freizeit</span></div>
-		<div><img src=""><span>AG Veranstaltungen</span></div>
-		<div><img src=""><span>AG Arbeit &amp; Praktikum</span></div>
-		<div><img src=""><span>AG Schülerhilfe</span></div>
-		<div><img src=""><span>AG Internet und IT</span></div>
-		<div><img src=""><span>AG Fundraising, Organisation</span></div>
-		<div><img src=""><span>AG Frauen &amp; Kinder</span></div>
+		<div><img src="<?= $assetsDir ?>/images/icons/sprache.svg"><span>AG Sprache</span></div>
+		<div><img src="<?= $assetsDir ?>/images/icons/blah.svg"><span>AG Unterkunft, Sachspenden</span></div>
+		<div><img src="<?= $assetsDir ?>/images/icons/fahrrad.svg"><span>AG Fahrradwerkstatt</span></div>
+		<div><img src="<?= $assetsDir ?>/images/icons/blah.svg"><span>AG Begleitung</span></div>
+		<div><img src="<?= $assetsDir ?>/images/icons/law.svg"><span>AG Recht</span></div>
+		<div><img src="<?= $assetsDir ?>/images/icons/freizeit.svg"><span>AG Sport &amp; Freizeit</span></div>
+		<div><img src="<?= $assetsDir ?>/images/icons/events.svg"><span>AG Veranstaltungen</span></div>
+		<div><img src="<?= $assetsDir ?>/images/icons/berufseinstieg.svg"><span>AG Arbeit &amp; Praktikum</span></div>
+		<div><img src="<?= $assetsDir ?>/images/icons/blah.svg"><span>AG Schülerhilfe</span></div>
+		<div><img src="<?= $assetsDir ?>/images/icons/it.svg"><span>AG Internet und IT</span></div>
+		<div><img src="<?= $assetsDir ?>/images/icons/fundrising.svg"><span>AG Fundraising, Organisation</span></div>
+		<div><img src="<?= $assetsDir ?>/images/icons/frauenUndKinder.svg"><span>AG Frauen &amp; Kinder</span></div>
 	</div>
 </div>
 
