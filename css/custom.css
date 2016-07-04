@@ -301,6 +301,13 @@ input[type='submit'] , input[type='button']{
 	display: inline-block;
 	margin: 24px;
 }
+@media screen and (max-width: 768px) {
+	.circle-image {
+	 	width: 150px;
+		height: 150px;
+		margin: 6px;
+	}
+}
 
 .intro-section {
  	padding: 72px 24px;
@@ -311,6 +318,12 @@ input[type='submit'] , input[type='button']{
 	color: #3E606F;
 	text-align: right;
 }
+@media screen and (max-width: 768px) {
+	.intro-section h2 {
+		font-size: 1.8em;
+	}
+}
+
 .intro-section h2:before {
 	content: '- ';
 }
@@ -380,6 +393,12 @@ input[type='submit'] , input[type='button']{
 	z-index: 3;
 	max-width: calc(100% - 148px); /* 100% - ($marginHorizontal + $subtitleOffset) * 2 */
 	left: 74px; /* $marginHorizontal + $subtitleOffset */
+}
+@media screen and (max-width: 768px) {
+	.projects div {
+		width: 25%; /* $100% / $n */
+		margin: 0;
+	}
 }
 
 .projects-wrapper button {

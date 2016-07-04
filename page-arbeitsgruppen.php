@@ -23,7 +23,6 @@
 		<h3><?php echo $i++ ?>. AG <?php echo $ag->name ?></h3>
 		<p><?php echo $ag->description ?></p>
 	<?php } ?>
-	</div>
 
 </div>
 
