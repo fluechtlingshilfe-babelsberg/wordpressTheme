@@ -22,7 +22,7 @@
 		<div class="col-md-offset-1 col-md-5 helpMain">
 			<img src="<?= $assetsDir ?>/images/heart316.svg" width="100px" style="opacity:0.8; margin-bottom: 24px;">
 			<?php the_field('flueba_aside_text'); ?>
-					
+
 			<!--<p>Ob Deutschunterricht, Begleitung zu Behörden und Ärzten, gemeinsame Unternehmungen (z. B. Führungen durch Babelsberg) – Sie können sich auf unterschiedliche Weise einbringen. Hierzu werden wir Arbeitsgruppen bilden: Sprache – Integration – Begleitung – Ausbildung/Arbeit – Veranstaltungen – Kommunikation/Organisation.</p>-->
 			<center>
 				<a href="<?php echo get_page_link(31) ?>" class="help-button">Helfen Sie mit!</a>
@@ -134,14 +134,14 @@
 
 	<div class="ag-icons">
 		<div><img src="<?= $assetsDir ?>/images/icons/sprache.svg"><span>Sprache</span></div>
-		<div><img src="<?= $assetsDir ?>/images/icons/blah.svg"><span>Unterkunft, Sachspenden</span></div>
+		<div><img src="<?= $assetsDir ?>/images/icons/sachspenden.svg"><span>Unterkunft, Sachspenden</span></div>
 		<div><img src="<?= $assetsDir ?>/images/icons/fahrrad.svg"><span>Fahrradwerkstatt</span></div>
-		<div><img src="<?= $assetsDir ?>/images/icons/blah.svg"><span>Begleitung</span></div>
+		<div><img src="<?= $assetsDir ?>/images/icons/begleitung.svg"><span>Begleitung</span></div>
 		<div><img src="<?= $assetsDir ?>/images/icons/law.svg"><span>Recht</span></div>
 		<div><img src="<?= $assetsDir ?>/images/icons/freizeit.svg"><span>Sport &amp; Freizeit</span></div>
 		<div><img src="<?= $assetsDir ?>/images/icons/events.svg"><span>Veranstaltungen</span></div>
 		<div><img src="<?= $assetsDir ?>/images/icons/berufseinstieg.svg"><span>Arbeit &amp; Praktikum</span></div>
-		<div><img src="<?= $assetsDir ?>/images/icons/blah.svg"><span>Schülerhilfe</span></div>
+		<div><img src="<?= $assetsDir ?>/images/icons/schueler.svg"><span>Schülerhilfe</span></div>
 		<div><img src="<?= $assetsDir ?>/images/icons/it.svg"><span>Internet und IT</span></div>
 		<div><img src="<?= $assetsDir ?>/images/icons/fundrising.svg"><span>Fundraising, Organisation</span></div>
 		<div><img src="<?= $assetsDir ?>/images/icons/frauenUndKinder.svg"><span>Frauen &amp; Kinder</span></div>
