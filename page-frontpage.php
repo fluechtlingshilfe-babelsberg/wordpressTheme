@@ -172,13 +172,15 @@
 	<p>Bisherige Projekte unseres Netzwerks sind unter anderem (<a href="https://fluechtlingshilfe-babelsberg.de/news/">fluechtlingshilfe-babelsberg.de/news/</a>):</p>
 
 	<div class="projects-wrapper">
-		<button onclick="projectSlides(-1)">Left</button>
-		<button onclick="projectSlides(1)">Right</button>
+		<button onclick="projectSlides(-1)"><span>&#x2190;</span></button>
+		<button onclick="projectSlides( 1)"><span>&#x2192;</span></button>
+		<div class="subtitle">
+		</div>
 		<div class="projects">
-			<div style="background-image: url(<?= $assetsDir ?>/images/frontpage/circle01.jpg)"></div>
-			<div style="background-image: url(<?= $assetsDir ?>/images/frontpage/circle02.jpg)"></div>
-			<div style="background-image: url(<?= $assetsDir ?>/images/frontpage/circle03.jpg)"></div>
-			<div style="background-image: url(<?= $assetsDir ?>/images/frontpage/circle04.jpg)"></div>
+			<div data-text="Das ist ein Text, der das Bild näher beschreibt und ein paar Background Infos gibt. Er ist nicht allzu lang. Und wenn doch, ist es auch nicht so schlimm, weil wir mehrere Zeilen haben können!" style="background-image: url(<?= $assetsDir ?>/images/frontpage/circle01.jpg)"></div>
+			<div data-text="Hier ein sehr kurzer Text, der nur als Unterzeile dient." style="background-image: url(<?= $assetsDir ?>/images/frontpage/circle02.jpg)"></div>
+			<div data-text="Some label. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor." style="background-image: url(<?= $assetsDir ?>/images/frontpage/circle03.jpg)"></div>
+			<div data-text="Nur ein Wort." style="background-image: url(<?= $assetsDir ?>/images/frontpage/circle04.jpg)"></div>
 		</div>
 	</div>
 
@@ -201,6 +203,9 @@
 
 <div class="container-fluid annoucement-box intro-section">
 	<div class="container">
+		<center>
+			<img src="<?= $assetsDir ?>/images/heart316.svg" width="100px" style="opacity: 0.6; margin-bottom: 52px;">
+		</center>
 		<p>Sie sehen, Mitmachen bei uns lohnt sich und für jeden ist etwas dabei!</p>
 		<p>Wenden Sie sich direkt an eine Arbeitsgruppe Ihrer Wahl: Die E-Mailadressen der AG-Leiter finden Sie unter <a href="https://fluechtlingshilfe-babelsberg.de/arbeitsgruppen/">fluechtlingshilfe-babelsberg.de/arbeitsgruppen/</a> oder abonnieren Sie unseren E-Mail-Newsletter unter <a href="https://fluechtlingshilfe-babelsberg.de/help/">fluechtlingshilfe-babelsberg.de/help/</a></p>
 	</div>

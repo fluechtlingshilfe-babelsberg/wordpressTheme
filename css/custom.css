@@ -340,9 +340,10 @@ input[type='submit'] , input[type='button']{
 
 /*
  * $n := 4;
- * $height := 400px;
+ * $height := 500px;
  * $marginVertical := 30px;
  * $marginHorizontal := 50px;
+ * $subtitleOffset := 24px;
  */
 .projects-wrapper {
 	overflow: hidden;
@@ -362,7 +363,7 @@ input[type='submit'] , input[type='button']{
 .projects div {
 	width: calc(25% - 100px); /* 100% / $n - $marginHorizontal * 2 */
 	margin: 0 50px; /* 0 $marginHorizontal */
-	height: 400px; /* $height */
+	height: 500px; /* $height */
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -370,4 +371,36 @@ input[type='submit'] , input[type='button']{
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 	transform: translate3d(0, 0, 0);
 }
+.projects-wrapper .subtitle {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 12px;
+	color: #fff;
+	bottom: 24px; /* $subtitleOffset */
+	z-index: 3;
+	max-width: calc(100% - 148px); /* 100% - ($marginHorizontal + $subtitleOffset) * 2 */
+	left: 74px; /* $marginHorizontal + $subtitleOffset */
+}
 
+.projects-wrapper button {
+	position: absolute;
+	height: 64px;
+	width: 64px;
+	top: 50%;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 64px;
+	color: #fff;
+	z-index: 4;
+	outline: none;
+	border: none;
+	font-weight: bold;
+}
+.projects-wrapper button span {
+	font-size: 72px;
+	left: -8px;
+	position: relative;
+}
+.projects-wrapper button:first-child {
+	left: 0;
+}
