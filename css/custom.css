@@ -352,7 +352,7 @@ input[type='submit'] , input[type='button']{
 }
 
 /*
- * $n := 4;
+ * $n := 5;
  * $height := 500px;
  * $marginVertical := 30px;
  * $marginHorizontal := 50px;
@@ -363,18 +363,18 @@ input[type='submit'] , input[type='button']{
 	width: 100%;
 	position: relative;
 	height: 460px; /* $marginVertical * 2 */
-	margin: 36px 0; /* $marginVertical 0 */
-	padding-top: 30px; /* $marginVertical */
+	margin: 0;
+	margin-bottom: 36px; /* $marginVertical */
 }
 .projects {
-	width: 400%; /* $n * 100% */
+	width: 500%; /* $n * 100% */
 	transition-duration: 350ms;
 	position: absolute;
 	left: 0;
 	top: 80px; /* $marginVertical */
 }
 .projects div {
-	width: calc(25% - 100px); /* 100% / $n - $marginHorizontal * 2 */
+	width: calc(20% - 100px); /* 100% / $n - $marginHorizontal * 2 */
 	margin: 0 50px; /* 0 $marginHorizontal */
 	height: 500px; /* $height */
 	background-repeat: no-repeat;
@@ -396,7 +396,7 @@ input[type='submit'] , input[type='button']{
 }
 @media screen and (max-width: 768px) {
 	.projects div {
-		width: 25%; /* $100% / $n */
+		width: 20%; /* $100% / $n */
 		margin: 0;
 	}
 }

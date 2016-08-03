@@ -149,25 +149,6 @@
 </div>
 
 <div class="container-fluid annoucement-box intro-section">
-	<div class="container">
-		<h2>Unser Angebot &amp; Charakter</h2>
-		<p>Bei seinen Aktionen kooperiert unser Netzwerk eng mit anderen Potsdamer Institutionen, z.B. mit dem Hasso-Plattner-Institut, der Universität Potsdam, dem Projekthaus Babelsberg, mit dem Lindenpark, Kirchgemeinden oder Potsdamer Schulen, wie z.B. mit der Katholischen Marienschule. Enge Kooperationen bestehen mit den Trägern der Gemeinschaftsunterkünfte in Potsdam, insbesondere mit der AWO Potsdam.</p>
-		<p>Unser Angebot und unser Charakter ist:</p>
-		<ul>
-			<li><strong>Universell</strong>: Unser kostenloses Angebot richtet sich an alle Geflüchtete und Migranten*Innen in Potsdam.</li>
-			<li><strong>Integrationsspezifisch</strong>: Das kostenlose Angebot beinhaltet vor allem Maßnahmen, die die Integration von Geflüchteten in die Gesellschaft unterstützen.</li>
-			<li><strong>Dienstleistend</strong>: Geflüchtete werden durch unbürokratische Informationsweitergabe und Beratung entlastet.</li>
-			<li><strong>Niederschwellig</strong>: Durch wohnortnahes Agieren unseres Netzwerks und aufsuchende Arbeit unser ehrenamtlichen Helfer*Innen werden die Geflüchteten unterstützt.</li>
-			<li><strong>Deutschsprachlich und bildend</strong>: Geflüchtete werden durch spezifische Bildungsangebote, derzeit vor allem zum Spracherwerb in ihrer Deutschkompetenz gestärkt; Angebote sind auf spezifische Bedarfe ausgerichtet.</li>
-			<li><strong>Professionell</strong>: Unsere spezifischen Angebote werden von in der jeweiligen Profession tätigen Ehrenamtler*Innen gesteuert und erbracht (z.B. Deutsch-Lehrer, Wiss. Mitarbeiter der Universität Potsdam, Rechtsanwälte).</li>
-			<li><strong>Vernetzend</strong>: Wir unterstützen systematische, themenübergreifende Kooperationen und Vereinbarungen mit anderen haupt- oder ehrenamtlichen Akteuren der Flüchtlingshilfe in Potsdam.</li>
-			<li><strong>Teilhabend</strong>: Unsere Angebote sind Hilfe zur Selbsthilfe zum Empowerment der Geflüchteten.</li>
-			<li><strong>Selbstlernend</strong>: Die Angebote unseres Netzwerks werden durch ständige Evaluation in den Arbeitsgruppen und Wissenstransfer zwischen den Arbeitsgruppen durch gemeinsame Moderatorentreffen fortlaufend überprüft und an den Bedürfnissen der Zielgruppe angepasst.</li>
-			</ul>
-	</div>
-</div>
-
-<div class="container intro-section">
 	<h2>Projekte</h2>
 	<p>Bisherige Projekte unseres Netzwerks sind unter anderem (<a href="https://fluechtlingshilfe-babelsberg.de/news/">fluechtlingshilfe-babelsberg.de/news/</a>):</p>
 
@@ -177,28 +158,46 @@
 		<div class="subtitle">
 		</div>
 		<div class="projects">
-			<div data-text="Das ist ein Text, der das Bild näher beschreibt und ein paar Background Infos gibt. Er ist nicht allzu lang. Und wenn doch, ist es auch nicht so schlimm, weil wir mehrere Zeilen haben können!" style="background-image: url(<?= $assetsDir ?>/images/frontpage/circle01.jpg)"></div>
-			<div data-text="Hier ein sehr kurzer Text, der nur als Unterzeile dient." style="background-image: url(<?= $assetsDir ?>/images/frontpage/circle02.jpg)"></div>
-			<div data-text="Some label. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor." style="background-image: url(<?= $assetsDir ?>/images/frontpage/circle03.jpg)"></div>
-			<div data-text="Nur ein Wort." style="background-image: url(<?= $assetsDir ?>/images/frontpage/circle04.jpg)"></div>
+			<div data-text="Betrieb eines nachmittäglichen Begegnungscafés (Tea and Talk) an drei Wochentagen, zusammen mit dem Lindenpark"
+				style="background-image: url(<?= $assetsDir ?>/images/bilderSlider/begegnungsCafee.jpg)"></div>
+			<div data-text="Diskussionsabend zur europäischen Migrationspolitik mit Frau Ska Keller (MdEP), zusammen mit der Katholischen Marienschule Potsdam"
+				style="background-image: url(<?= $assetsDir ?>/images/bilderSlider/diskusionsabend.jpg)"></div>
+			<div data-text="Betrieb einer Fahrradwerkstatt mit und für Geflüchtete, zusammen mit dem Projekthaus Babelsberg; Zurverfügungstellung von über 80 verkehrssicheren Fahrrädern an Geflüchtete"
+				style="background-image: url(<?= $assetsDir ?>/images/bilderSlider/Fahrradwerkstatt1.jpg)"></div>
+			<div data-text="rund 1.200 Zeit-Stunden ehrenamtlicher Deutsch-Unterricht"
+				style="background-image: url(<?= $assetsDir ?>/images/bilderSlider/sprachunterricht.jpg)"></div>
+			<div data-text="Willkommensfest für Potsdamer*Innen und Geflüchtete mit 600 Teilnehmern, zusammen mit dem Lindenpark"
+				style="background-image: url(<?= $assetsDir ?>/images/bilderSlider/wilkommensfest.jpg)"></div>
 		</div>
 	</div>
 
 	<ul>
-		<li>rund 1.200 Zeit-Stunden ehrenamtlicher Deutsch-Unterricht</li>
-		<li>Betrieb eines nachmittäglichen Begegnungscafés (Tea and Talk) an drei Wochentagen, zusammen mit dem Lindenpark</li>
-		<li>Betrieb einer Fahrradwerkstatt mit und für Geflüchtete, zusammen mit dem Projekthaus Babelsberg; Zurverfügungstellung von über 80 verkehrssicheren Fahrrädern an Geflüchtete</li>
 		<li>Gründung und Betrieb einer kostenfreien Rechtsberatungsstelle für Geflüchtete und Flüchtlingsorganisationen in Brandenburg, zusammen mit der Juristischen Fakultät der Universität Potsdam, Lehrstuhl Professor Dr. Götz Schulze (die Law Clinic, <a href="https://fluechtlingshilfe-babelsberg.de/rechtsberatunglaw-clinic/">fluechtlingshilfe-babelsberg.de/rechtsberatunglaw-clinic/</a>),</li>
-		<li>Willkommensfest für Potsdamer*Innen und Geflüchtete mit 600 Teilnehmern, zusammen mit dem Lindenpark</li>
 		<li>Begleitung von Geflüchteten zu Ämtern, Behörden und diversen Freizeit–, Sport– und Kulturangeboten</li>
 		<li>Vermittlung von Geflüchteten in niederschwellige Arbeitsplatzangebote</li>
 		<li>Treffen von Potsdamer Schülern mit Geflüchteten anlässlich von Schulprojekttagen</li>
 		<li>Organisatorische Begleitung und Übergabe eines offenen Briefes von Geflüchteten zu den Vorkommnissen in der Silvesternacht von Köln an die Potsdamer Stadtverordnetenversammlung</li>
 		<li>Kulturfest mit zahlreichen Potsdamern*Innen und einer Berliner Wandergruppe von 120 Geflüchteten aus Syrien</li>
 		<li>Sozialtag mit Katholischer Marienschule Potsdam zur Mithilfe von Schülern in Flüchtlingsunterkünften</li>
-		<li>Diskussionsabend zur europäischen Migrationspolitik mit Frau Ska Keller (MdEP), zusammen mit der Katholischen Marienschule Potsdam</li>
 		<li>Weihnachtliches Café der Kulturen für Geflüchtete und Potsdamer*Innen mit über 200 Teilnehmern</li>
 	</ul>
+</div>
+
+<div class="container intro-section">
+	<h2>Unser Angebot &amp; Charakter</h2>
+	<p>Bei seinen Aktionen kooperiert unser Netzwerk eng mit anderen Potsdamer Institutionen, z.B. mit dem Hasso-Plattner-Institut, der Universität Potsdam, dem Projekthaus Babelsberg, mit dem Lindenpark, Kirchgemeinden oder Potsdamer Schulen, wie z.B. mit der Katholischen Marienschule. Enge Kooperationen bestehen mit den Trägern der Gemeinschaftsunterkünfte in Potsdam, insbesondere mit der AWO Potsdam.</p>
+	<p>Unser Angebot und unser Charakter ist:</p>
+	<ul>
+		<li><strong>Universell</strong>: Unser kostenloses Angebot richtet sich an alle Geflüchtete und Migranten*Innen in Potsdam.</li>
+		<li><strong>Integrationsspezifisch</strong>: Das kostenlose Angebot beinhaltet vor allem Maßnahmen, die die Integration von Geflüchteten in die Gesellschaft unterstützen.</li>
+		<li><strong>Dienstleistend</strong>: Geflüchtete werden durch unbürokratische Informationsweitergabe und Beratung entlastet.</li>
+		<li><strong>Niederschwellig</strong>: Durch wohnortnahes Agieren unseres Netzwerks und aufsuchende Arbeit unser ehrenamtlichen Helfer*Innen werden die Geflüchteten unterstützt.</li>
+		<li><strong>Deutschsprachlich und bildend</strong>: Geflüchtete werden durch spezifische Bildungsangebote, derzeit vor allem zum Spracherwerb in ihrer Deutschkompetenz gestärkt; Angebote sind auf spezifische Bedarfe ausgerichtet.</li>
+		<li><strong>Professionell</strong>: Unsere spezifischen Angebote werden von in der jeweiligen Profession tätigen Ehrenamtler*Innen gesteuert und erbracht (z.B. Deutsch-Lehrer, Wiss. Mitarbeiter der Universität Potsdam, Rechtsanwälte).</li>
+		<li><strong>Vernetzend</strong>: Wir unterstützen systematische, themenübergreifende Kooperationen und Vereinbarungen mit anderen haupt- oder ehrenamtlichen Akteuren der Flüchtlingshilfe in Potsdam.</li>
+		<li><strong>Teilhabend</strong>: Unsere Angebote sind Hilfe zur Selbsthilfe zum Empowerment der Geflüchteten.</li>
+		<li><strong>Selbstlernend</strong>: Die Angebote unseres Netzwerks werden durch ständige Evaluation in den Arbeitsgruppen und Wissenstransfer zwischen den Arbeitsgruppen durch gemeinsame Moderatorentreffen fortlaufend überprüft und an den Bedürfnissen der Zielgruppe angepasst.</li>
+		</ul>
 </div>
 
 <div class="container-fluid annoucement-box intro-section">
