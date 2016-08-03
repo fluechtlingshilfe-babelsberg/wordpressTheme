@@ -1,0 +1,266 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2016-08-03 20:31+0200\n"
+"PO-Revision-Date: 2016-08-03 20:43+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.5\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: page-frontpage.php\n"
+
+#: page-frontpage.php:10
+msgid "Willkommen bei der<br>Flüchtlingshilfe Babelsberg!"
+msgstr "Wellcom to the refugee relief"
+
+#: page-frontpage.php:28
+msgid "Helfen Sie mit!"
+msgstr "Help now!"
+
+#: page-frontpage.php:69
+msgid "Im Moment leider keine aktuellen Termine!"
+msgstr "Currently there are now recent events"
+
+#: page-frontpage.php:70
+msgid "Zum Archiv ..."
+msgstr "go to the archive ..."
+
+#: page-frontpage.php:75
+msgid "Alle Termine ..."
+msgstr "All events"
+
+#: page-frontpage.php:79
+msgid "Hilfe benötigt!"
+msgstr "Help needed!"
+
+#: page-frontpage.php:115
+msgid "Die Flüchtlingshilfe Babelsberg"
+msgstr "The refuges relief Babaelsberg"
+
+#: page-frontpage.php:116
+msgid ""
+"Das Netzwerk Flüchtlingshilfe Babelsberg wird getragen von einem anerkannt "
+"gemeinnützigen Verein, der Flüchtlingshilfe Babelsberg e.V. mit Sitz in "
+"Potsdam, der derzeit ca. 70 Vereinsmitglieder hat (<a href=\"https://"
+"fluechtlingshilfe-babelsberg.de/vereinsmitglied-werden/\">fluechtlingshilfe-"
+"babelsberg.de/vereinsmitglied-werden/</a>). Die Leitidee des Netzwerks "
+"Flüchtlingshilfe Babelsberg ist: sozial und engagiert, menschlich, nah und "
+"nachbarschaftlich, direkt und unkompliziert, gemeinnützig und unabhängig "
+"sein. Wir wollen gesellschaftliche Teilhabe ermöglichen und den Austausch "
+"und gesellschaftlichen Zusammenhalt in der Potsdamer Bevölkerung stärken."
+msgstr ""
+
+#: page-frontpage.php:125
+msgid ""
+"Derzeit arbeiten wir zum einen intensiv daran, Strukturen zu schaffen, um "
+"Flüchtlinge beim Eintritt in den Arbeitsmarkt zu unterstützen. Denn sobald "
+"die Flüchtlinge ausreichend Deutsch können, ist dies der nächste wichtige "
+"Schritt zur Integration. Zum anderen bereitet die Flüchtlingshilfe "
+"Babelsberg sich darauf vor, weitere Flüchtlinge zu begleiten, denn in den "
+"kommenden Wochen werden zusätzlich 60 Flüchtlinge, vor allem Familien mit "
+"Frauen und Kindern in Potsdam-Babelsberg untergebracht."
+msgstr ""
+
+#: page-frontpage.php:127
+msgid ""
+"Auf Sie warten also tolle Projekte und wir warten auf Ihre tollen Ideen. Es "
+"werden jetzt viele Hände und Köpfe gebraucht, denn Potsdam integriert!"
+msgstr ""
+
+#: page-frontpage.php:132
+msgid "Unsere AGs"
+msgstr "Our work groups:"
+
+#: page-frontpage.php:133
+msgid ""
+"Die Helfer*Innen des Netzwerks Flüchtlingshilfe Babelsberg sind in insgesamt "
+"12 Arbeitsgruppen zu besonderen Themengebieten (<a href=\"https://"
+"fluechtlingshilfe-babelsberg.de/arbeitsgruppen/\">fluechtlingshilfe-"
+"babelsberg.de/arbeitsgruppen/</a>). Die Arbeitsgruppen arbeiten "
+"spezialisiert, professionell und selbständig und jede*r Interessierte kann "
+"sich über die Webseite der Flüchtlingshilfe zum Mitmachen melden (<a href="
+"\"https://fluechtlingshilfe-babelsberg.de/help/\">fluechtlingshilfe-"
+"babelsberg.de/help/</a>). Das Netzwerk Flüchtlingshilfe Babelsberg ist ein "
+"niedrigschwelliges und kostenloses Angebot für alle Einwohner*Innen und "
+"Geflüchtete in der Landeshauptstadt Potsdam."
+msgstr ""
+
+#: page-frontpage.php:136
+msgid "Sprache"
+msgstr "Gernen lessons"
+
+#: page-frontpage.php:137
+msgid "Unterkunft, Sachspenden"
+msgstr ""
+
+#: page-frontpage.php:138
+msgid "Fahrradwerkstatt"
+msgstr "bicycle repair shop"
+
+#: page-frontpage.php:139
+msgid "Begleitung"
+msgstr "backing"
+
+#: page-frontpage.php:140
+msgid "Recht"
+msgstr "Law"
+
+#: page-frontpage.php:141
+msgid "Sport &amp; Freizeit"
+msgstr "Sports &amp; leisure"
+
+#: page-frontpage.php:142
+msgid "Veranstaltungen"
+msgstr "Events"
+
+#: page-frontpage.php:143
+msgid "Arbeit &amp; Praktikum"
+msgstr "Jobs & internship"
+
+#: page-frontpage.php:144
+msgid "Schülerhilfe"
+msgstr ""
+
+#: page-frontpage.php:145
+msgid "Internet und IT"
+msgstr "Internet  & Computers"
+
+#: page-frontpage.php:146
+msgid "Fundraising, Organisation"
+msgstr "Fundraising & Organisation"
+
+#: page-frontpage.php:147
+msgid "Frauen &amp; Kinder"
+msgstr ""
+
+#: page-frontpage.php:153
+msgid ""
+"Bisherige Projekte unseres Netzwerks sind unter anderem (<a href=\"https://"
+"fluechtlingshilfe-babelsberg.de/news/\">fluechtlingshilfe-babelsberg.de/news/"
+"</a>):"
+msgstr ""
+
+#: page-frontpage.php:161
+msgid ""
+"Betrieb eines nachmittäglichen Begegnungscafés (Tea and Talk) an drei "
+"Wochentagen, zusammen mit dem Lindenpark"
+msgstr ""
+
+#: page-frontpage.php:163
+msgid ""
+"Diskussionsabend zur europäischen Migrationspolitik mit Frau Ska Keller "
+"(MdEP), zusammen mit der Katholischen Marienschule Potsdam"
+msgstr ""
+
+#: page-frontpage.php:165
+msgid ""
+"Betrieb einer Fahrradwerkstatt mit und für Geflüchtete, zusammen mit dem "
+"Projekthaus Babelsberg; Zurverfügungstellung von über 80 verkehrssicheren "
+"Fahrrädern an Geflüchtete"
+msgstr ""
+
+#: page-frontpage.php:167
+msgid "rund 1.200 Zeit-Stunden ehrenamtlicher Deutsch-Unterricht"
+msgstr ""
+
+#: page-frontpage.php:169
+msgid ""
+"Willkommensfest für Potsdamer*Innen und Geflüchtete mit 600 Teilnehmern, "
+"zusammen mit dem Lindenpark"
+msgstr ""
+
+#: page-frontpage.php:175
+msgid ""
+"Gründung und Betrieb einer kostenfreien Rechtsberatungsstelle für "
+"Geflüchtete und Flüchtlingsorganisationen in Brandenburg, zusammen mit der "
+"Juristischen Fakultät der Universität Potsdam, Lehrstuhl Professor Dr. Götz "
+"Schulze (die Law Clinic, <a href=\"https://fluechtlingshilfe-babelsberg.de/"
+"rechtsberatunglaw-clinic/\">fluechtlingshilfe-babelsberg.de/"
+"rechtsberatunglaw-clinic/</a>),"
+msgstr ""
+
+#: page-frontpage.php:176
+msgid ""
+"Begleitung von Geflüchteten zu Ämtern, Behörden und diversen Freizeit–, "
+"Sport– und Kulturangeboten"
+msgstr ""
+
+#: page-frontpage.php:177
+msgid "Vermittlung von Geflüchteten in niederschwellige Arbeitsplatzangebote"
+msgstr ""
+
+#: page-frontpage.php:178
+msgid ""
+"Treffen von Potsdamer Schülern mit Geflüchteten anlässlich von "
+"Schulprojekttagen"
+msgstr ""
+
+#: page-frontpage.php:179
+msgid ""
+"Organisatorische Begleitung und Übergabe eines offenen Briefes von "
+"Geflüchteten zu den Vorkommnissen in der Silvesternacht von Köln an die "
+"Potsdamer Stadtverordnetenversammlung"
+msgstr ""
+
+#: page-frontpage.php:180
+msgid ""
+"Kulturfest mit zahlreichen Potsdamern*Innen und einer Berliner Wandergruppe "
+"von 120 Geflüchteten aus Syrien"
+msgstr ""
+
+#: page-frontpage.php:181
+msgid ""
+"Sozialtag mit Katholischer Marienschule Potsdam zur Mithilfe von Schülern in "
+"Flüchtlingsunterkünften"
+msgstr ""
+
+#: page-frontpage.php:182
+msgid ""
+"Weihnachtliches Café der Kulturen für Geflüchtete und Potsdamer*Innen mit "
+"über 200 Teilnehmern"
+msgstr ""
+
+#: page-frontpage.php:187
+msgid "Unser Angebot &amp; Charakter"
+msgstr ""
+
+#: page-frontpage.php:188
+msgid ""
+"Bei seinen Aktionen kooperiert unser Netzwerk eng mit anderen Potsdamer "
+"Institutionen, z.B. mit dem Hasso-Plattner-Institut, der Universität "
+"Potsdam, dem Projekthaus Babelsberg, mit dem Lindenpark, Kirchgemeinden oder "
+"Potsdamer Schulen, wie z.B. mit der Katholischen Marienschule. Enge "
+"Kooperationen bestehen mit den Trägern der Gemeinschaftsunterkünfte in "
+"Potsdam, insbesondere mit der AWO Potsdam."
+msgstr ""
+
+#: page-frontpage.php:189
+msgid "Unser Angebot und unser Charakter ist:"
+msgstr ""
+
+#: page-frontpage.php:191
+#, php-format
+msgid ""
+"%sUniversell%s: Unser kostenloses Angebot richtet sich an alle Geflüchtete "
+"und Migranten*Innen in Potsdam."
+msgstr ""
+
+#: page-frontpage.php:208
+msgid "Sie sehen, Mitmachen bei uns lohnt sich und für jeden ist etwas dabei!"
+msgstr ""
+
+#: page-frontpage.php:209
+msgid ""
+"Wenden Sie sich direkt an eine Arbeitsgruppe Ihrer Wahl: Die E-Mailadressen "
+"der AG-Leiter finden Sie unter <a href=\"https://fluechtlingshilfe-"
+"babelsberg.de/arbeitsgruppen/\">fluechtlingshilfe-babelsberg.de/"
+"arbeitsgruppen/</a> oder abonnieren Sie unseren E-Mail-Newsletter unter <a "
+"href=\"https://fluechtlingshilfe-babelsberg.de/help/\">fluechtlingshilfe-"
+"babelsberg.de/help/</a>"
+msgstr ""

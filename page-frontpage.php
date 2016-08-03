@@ -188,7 +188,7 @@
 	<p><?= _('Bei seinen Aktionen kooperiert unser Netzwerk eng mit anderen Potsdamer Institutionen, z.B. mit dem Hasso-Plattner-Institut, der Universität Potsdam, dem Projekthaus Babelsberg, mit dem Lindenpark, Kirchgemeinden oder Potsdamer Schulen, wie z.B. mit der Katholischen Marienschule. Enge Kooperationen bestehen mit den Trägern der Gemeinschaftsunterkünfte in Potsdam, insbesondere mit der AWO Potsdam.') ?></p>
 	<p><?= _('Unser Angebot und unser Charakter ist:') ?></p>
 	<ul>
-	<li><?= printf(_('%0Universell%1: Unser kostenloses Angebot richtet sich an alle Geflüchtete und Migranten*Innen in Potsdam.'), '<strong>', '</strong>') ?></li>
+	<li><?= printf(_('%sUniversell%s: Unser kostenloses Angebot richtet sich an alle Geflüchtete und Migranten*Innen in Potsdam.'), '<strong>', '</strong>') ?></li>
 		<li><strong>Integrationsspezifisch</strong>: Das kostenlose Angebot beinhaltet vor allem Maßnahmen, die die Integration von Geflüchteten in die Gesellschaft unterstützen.</li>
 		<li><strong>Dienstleistend</strong>: Geflüchtete werden durch unbürokratische Informationsweitergabe und Beratung entlastet.</li>
 		<li><strong>Niederschwellig</strong>: Durch wohnortnahes Agieren unseres Netzwerks und aufsuchende Arbeit unser ehrenamtlichen Helfer*Innen werden die Geflüchteten unterstützt.</li>
