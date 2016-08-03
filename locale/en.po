@@ -17,7 +17,7 @@ msgstr ""
 
 #: page-frontpage.php:10
 msgid "Willkommen bei der<br>Flüchtlingshilfe Babelsberg!"
-msgstr "Wellcom to the refugee relief"
+msgstr "Welcome to the refugee support Babelsberg"
 
 #: page-frontpage.php:28
 msgid "Helfen Sie mit!"
@@ -25,11 +25,11 @@ msgstr "Help now!"
 
 #: page-frontpage.php:69
 msgid "Im Moment leider keine aktuellen Termine!"
-msgstr "Currently there are now recent events"
+msgstr "Currently there are no upcoming events"
 
 #: page-frontpage.php:70
 msgid "Zum Archiv ..."
-msgstr "go to the archive ..."
+msgstr "Past events"
 
 #: page-frontpage.php:75
 msgid "Alle Termine ..."
@@ -41,7 +41,7 @@ msgstr "Help needed!"
 
 #: page-frontpage.php:115
 msgid "Die Flüchtlingshilfe Babelsberg"
-msgstr "The refuges relief Babaelsberg"
+msgstr "The refuges support Babelsberg"
 
 #: page-frontpage.php:116
 msgid ""
@@ -93,7 +93,7 @@ msgstr ""
 
 #: page-frontpage.php:136
 msgid "Sprache"
-msgstr "Gernen lessons"
+msgstr "Germann lessons"
 
 #: page-frontpage.php:137
 msgid "Unterkunft, Sachspenden"
@@ -105,7 +105,7 @@ msgstr "bicycle repair shop"
 
 #: page-frontpage.php:139
 msgid "Begleitung"
-msgstr "backing"
+msgstr "help visiting the authorities/backing [to do]"
 
 #: page-frontpage.php:140
 msgid "Recht"
@@ -113,7 +113,7 @@ msgstr "Law"
 
 #: page-frontpage.php:141
 msgid "Sport &amp; Freizeit"
-msgstr "Sports &amp; leisure"
+msgstr "Sports &amp; activities"
 
 #: page-frontpage.php:142
 msgid "Veranstaltungen"
@@ -121,7 +121,7 @@ msgstr "Events"
 
 #: page-frontpage.php:143
 msgid "Arbeit &amp; Praktikum"
-msgstr "Jobs & internship"
+msgstr "Jobs &amp; internships"
 
 #: page-frontpage.php:144
 msgid "Schülerhilfe"
@@ -129,7 +129,7 @@ msgstr ""
 
 #: page-frontpage.php:145
 msgid "Internet und IT"
-msgstr "Internet  & Computers"
+msgstr "Internet & Computers"
 
 #: page-frontpage.php:146
 msgid "Fundraising, Organisation"
