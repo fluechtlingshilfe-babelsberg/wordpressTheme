@@ -7,7 +7,7 @@
 
 <div class="container-fluid img">
 	<div class="intro-container row">
-		<h1 class="welcome">Willkommen bei der<br>Flüchtlingshilfe Babelsberg!</h1>
+	<h1 class="welcome"><?= _('Willkommen bei der<br>Flüchtlingshilfe Babelsberg!') ?></h1>
 		<div class="intro-text">
 			<?php the_content(); ?>
 		</div>
@@ -25,7 +25,7 @@
 
 			<!--<p>Ob Deutschunterricht, Begleitung zu Behörden und Ärzten, gemeinsame Unternehmungen (z. B. Führungen durch Babelsberg) – Sie können sich auf unterschiedliche Weise einbringen. Hierzu werden wir Arbeitsgruppen bilden: Sprache – Integration – Begleitung – Ausbildung/Arbeit – Veranstaltungen – Kommunikation/Organisation.</p>-->
 			<center>
-				<a href="<?php echo get_page_link(31) ?>" class="help-button">Helfen Sie mit!</a>
+			<a href="<?php echo get_page_link(31) ?>" class="help-button"><?= _('Helfen Sie mit!') ?></a>
 			</center>
 		</div>
 
@@ -66,17 +66,17 @@
 				?>
 				<?php
 				if($count == 0){
-					echo "<p>Im Moment leider keine aktuellen Termine!<br>";
-					?><a href="<?php echo get_page_link(238);?>">Zum Archiv ...</a></p><?php
+					echo "<p>". _("Im Moment leider keine aktuellen Termine!") ."<br>";
+					?><a href="<?php echo get_page_link(238);?>"><?= _('Zum Archiv ...') ?></a></p><?php
 				}
 				else{
 				?>
 				<br><br>
-				<a href="<?php echo get_page_link(134);?>">Alle Termine ...</a>
+				<a href="<?php echo get_page_link(134);?>"><?= _('Alle Termine ...') ?></a>
 				<?php } ?>
 			</div>
 
-			<h3 class="text-left">Hilfe benötigt!</h3>
+			<h3 class="text-left"><?= _('Hilfe benötigt!') ?></h3>
 			<ul class="text-left">
 			<?php
 				$the_query = new WP_Query(array(
@@ -112,7 +112,7 @@
 
 <div class="container-fluid annoucement-box intro-section">
 	<div class="container">
-		<h2>Die Flüchtlingshilfe Babelsberg</h2>
+		<h2><?= _('Die Flüchtlingshilfe Babelsberg') ?></h2>
 		<p><?= _('Das Netzwerk Flüchtlingshilfe Babelsberg wird getragen von einem anerkannt gemeinnützigen Verein, der Flüchtlingshilfe Babelsberg e.V. mit Sitz in Potsdam, der derzeit ca. 70 Vereinsmitglieder hat (<a href="https://fluechtlingshilfe-babelsberg.de/vereinsmitglied-werden/">fluechtlingshilfe-babelsberg.de/vereinsmitglied-werden/</a>). Die Leitidee des Netzwerks Flüchtlingshilfe Babelsberg ist: sozial und engagiert, menschlich, nah und nachbarschaftlich, direkt und unkompliziert, gemeinnützig und unabhängig sein. Wir wollen gesellschaftliche Teilhabe ermöglichen und den Austausch und gesellschaftlichen Zusammenhalt in der Potsdamer Bevölkerung stärken.') ?></p>
 
 		<div class="text-center">
@@ -135,22 +135,22 @@
 	<div class="ag-icons">
 		<div><img src="<?= $assetsDir ?>/images/icons/sprache.svg"><span><?= _('Sprache') ?></span></div>
 		<div><img src="<?= $assetsDir ?>/images/icons/sachspenden.svg"><span><?= _('Unterkunft, Sachspenden') ?></span></div>
-		<div><img src="<?= $assetsDir ?>/images/icons/fahrrad.svg"><span>Fahrradwerkstatt</span></div>
-		<div><img src="<?= $assetsDir ?>/images/icons/begleitung.svg"><span>Begleitung</span></div>
-		<div><img src="<?= $assetsDir ?>/images/icons/law.svg"><span>Recht</span></div>
-		<div><img src="<?= $assetsDir ?>/images/icons/freizeit.svg"><span>Sport &amp; Freizeit</span></div>
-		<div><img src="<?= $assetsDir ?>/images/icons/events.svg"><span>Veranstaltungen</span></div>
-		<div><img src="<?= $assetsDir ?>/images/icons/berufseinstieg.svg"><span>Arbeit &amp; Praktikum</span></div>
-		<div><img src="<?= $assetsDir ?>/images/icons/schueler.svg"><span>Schülerhilfe</span></div>
-		<div><img src="<?= $assetsDir ?>/images/icons/it.svg"><span>Internet und IT</span></div>
-		<div><img src="<?= $assetsDir ?>/images/icons/fundrising.svg"><span>Fundraising, Organisation</span></div>
-		<div><img src="<?= $assetsDir ?>/images/icons/frauenUndKinder.svg"><span>Frauen &amp; Kinder</span></div>
+		<div><img src="<?= $assetsDir ?>/images/icons/fahrrad.svg"><span><?= _('Fahrradwerkstatt') ?></span></div>
+		<div><img src="<?= $assetsDir ?>/images/icons/begleitung.svg"><span><?= _('Begleitung') ?></span></div>
+		<div><img src="<?= $assetsDir ?>/images/icons/law.svg"><span><?= _('Recht') ?></span></div>
+		<div><img src="<?= $assetsDir ?>/images/icons/freizeit.svg"><span><?= _('Sport &amp; Freizeit') ?></span></div>
+		<div><img src="<?= $assetsDir ?>/images/icons/events.svg"><span><?= _('Veranstaltungen') ?></span></div>
+		<div><img src="<?= $assetsDir ?>/images/icons/berufseinstieg.svg"><span><?= _('Arbeit &amp; Praktikum') ?></span></div>
+		<div><img src="<?= $assetsDir ?>/images/icons/schueler.svg"><span><?= _('Schülerhilfe') ?></span></div>
+		<div><img src="<?= $assetsDir ?>/images/icons/it.svg"><span><?= _('Internet und IT') ?></span></div>
+		<div><img src="<?= $assetsDir ?>/images/icons/fundrising.svg"><span><?= _('Fundraising, Organisation') ?></span></div>
+		<div><img src="<?= $assetsDir ?>/images/icons/frauenUndKinder.svg"><span><?= _('Frauen &amp; Kinder') ?></span></div>
 	</div>
 </div>
 
 <div class="container-fluid annoucement-box intro-section">
 	<h2>Projekte</h2>
-	<p>Bisherige Projekte unseres Netzwerks sind unter anderem (<a href="https://fluechtlingshilfe-babelsberg.de/news/">fluechtlingshilfe-babelsberg.de/news/</a>):</p>
+	<p><?= _('Bisherige Projekte unseres Netzwerks sind unter anderem (<a href="https://fluechtlingshilfe-babelsberg.de/news/">fluechtlingshilfe-babelsberg.de/news/</a>):') ?></p>
 
 	<div class="projects-wrapper">
 		<button onclick="projectSlides(-1)"><span>&#x2190;</span></button>
@@ -158,37 +158,37 @@
 		<div class="subtitle">
 		</div>
 		<div class="projects">
-			<div data-text="Betrieb eines nachmittäglichen Begegnungscafés (Tea and Talk) an drei Wochentagen, zusammen mit dem Lindenpark"
+			<div data-text="<?= _('Betrieb eines nachmittäglichen Begegnungscafés (Tea and Talk) an drei Wochentagen, zusammen mit dem Lindenpark') ?>"
 				style="background-image: url(<?= $assetsDir ?>/images/bilderSlider/begegnungsCafee.jpg)"></div>
-			<div data-text="Diskussionsabend zur europäischen Migrationspolitik mit Frau Ska Keller (MdEP), zusammen mit der Katholischen Marienschule Potsdam"
+			<div data-text="<?= _('Diskussionsabend zur europäischen Migrationspolitik mit Frau Ska Keller (MdEP), zusammen mit der Katholischen Marienschule Potsdam') ?>"
 				style="background-image: url(<?= $assetsDir ?>/images/bilderSlider/diskusionsabend.jpg)"></div>
-			<div data-text="Betrieb einer Fahrradwerkstatt mit und für Geflüchtete, zusammen mit dem Projekthaus Babelsberg; Zurverfügungstellung von über 80 verkehrssicheren Fahrrädern an Geflüchtete"
+			<div data-text="<?= _('Betrieb einer Fahrradwerkstatt mit und für Geflüchtete, zusammen mit dem Projekthaus Babelsberg; Zurverfügungstellung von über 80 verkehrssicheren Fahrrädern an Geflüchtete') ?>"
 				style="background-image: url(<?= $assetsDir ?>/images/bilderSlider/Fahrradwerkstatt1.jpg)"></div>
-			<div data-text="rund 1.200 Zeit-Stunden ehrenamtlicher Deutsch-Unterricht"
+			<div data-text="<?= _('rund 1.200 Zeit-Stunden ehrenamtlicher Deutsch-Unterricht') ?>"
 				style="background-image: url(<?= $assetsDir ?>/images/bilderSlider/sprachunterricht.jpg)"></div>
-			<div data-text="Willkommensfest für Potsdamer*Innen und Geflüchtete mit 600 Teilnehmern, zusammen mit dem Lindenpark"
+			<div data-text="<?= _('Willkommensfest für Potsdamer*Innen und Geflüchtete mit 600 Teilnehmern, zusammen mit dem Lindenpark') ?>"
 				style="background-image: url(<?= $assetsDir ?>/images/bilderSlider/wilkommensfest.jpg)"></div>
 		</div>
 	</div>
 
 	<ul>
-		<li>Gründung und Betrieb einer kostenfreien Rechtsberatungsstelle für Geflüchtete und Flüchtlingsorganisationen in Brandenburg, zusammen mit der Juristischen Fakultät der Universität Potsdam, Lehrstuhl Professor Dr. Götz Schulze (die Law Clinic, <a href="https://fluechtlingshilfe-babelsberg.de/rechtsberatunglaw-clinic/">fluechtlingshilfe-babelsberg.de/rechtsberatunglaw-clinic/</a>),</li>
-		<li>Begleitung von Geflüchteten zu Ämtern, Behörden und diversen Freizeit–, Sport– und Kulturangeboten</li>
-		<li>Vermittlung von Geflüchteten in niederschwellige Arbeitsplatzangebote</li>
-		<li>Treffen von Potsdamer Schülern mit Geflüchteten anlässlich von Schulprojekttagen</li>
-		<li>Organisatorische Begleitung und Übergabe eines offenen Briefes von Geflüchteten zu den Vorkommnissen in der Silvesternacht von Köln an die Potsdamer Stadtverordnetenversammlung</li>
-		<li>Kulturfest mit zahlreichen Potsdamern*Innen und einer Berliner Wandergruppe von 120 Geflüchteten aus Syrien</li>
-		<li>Sozialtag mit Katholischer Marienschule Potsdam zur Mithilfe von Schülern in Flüchtlingsunterkünften</li>
-		<li>Weihnachtliches Café der Kulturen für Geflüchtete und Potsdamer*Innen mit über 200 Teilnehmern</li>
+		<li><?= _('Gründung und Betrieb einer kostenfreien Rechtsberatungsstelle für Geflüchtete und Flüchtlingsorganisationen in Brandenburg, zusammen mit der Juristischen Fakultät der Universität Potsdam, Lehrstuhl Professor Dr. Götz Schulze (die Law Clinic, <a href="https://fluechtlingshilfe-babelsberg.de/rechtsberatunglaw-clinic/">fluechtlingshilfe-babelsberg.de/rechtsberatunglaw-clinic/</a>),') ?></li>
+		<li><?= _('Begleitung von Geflüchteten zu Ämtern, Behörden und diversen Freizeit–, Sport– und Kulturangeboten') ?></li>
+		<li><?= _('Vermittlung von Geflüchteten in niederschwellige Arbeitsplatzangebote') ?></li>
+		<li><?= _('Treffen von Potsdamer Schülern mit Geflüchteten anlässlich von Schulprojekttagen') ?></li>
+		<li><?= _('Organisatorische Begleitung und Übergabe eines offenen Briefes von Geflüchteten zu den Vorkommnissen in der Silvesternacht von Köln an die Potsdamer Stadtverordnetenversammlung') ?></li>
+		<li><?= _('Kulturfest mit zahlreichen Potsdamern*Innen und einer Berliner Wandergruppe von 120 Geflüchteten aus Syrien') ?></li>
+		<li><?= _('Sozialtag mit Katholischer Marienschule Potsdam zur Mithilfe von Schülern in Flüchtlingsunterkünften') ?></li>
+		<li><?= _('Weihnachtliches Café der Kulturen für Geflüchtete und Potsdamer*Innen mit über 200 Teilnehmern') ?></li>
 	</ul>
 </div>
 
 <div class="container intro-section">
-	<h2>Unser Angebot &amp; Charakter</h2>
-	<p>Bei seinen Aktionen kooperiert unser Netzwerk eng mit anderen Potsdamer Institutionen, z.B. mit dem Hasso-Plattner-Institut, der Universität Potsdam, dem Projekthaus Babelsberg, mit dem Lindenpark, Kirchgemeinden oder Potsdamer Schulen, wie z.B. mit der Katholischen Marienschule. Enge Kooperationen bestehen mit den Trägern der Gemeinschaftsunterkünfte in Potsdam, insbesondere mit der AWO Potsdam.</p>
-	<p>Unser Angebot und unser Charakter ist:</p>
+	<h2><?= _('Unser Angebot &amp; Charakter') ?></h2>
+	<p><?= _('Bei seinen Aktionen kooperiert unser Netzwerk eng mit anderen Potsdamer Institutionen, z.B. mit dem Hasso-Plattner-Institut, der Universität Potsdam, dem Projekthaus Babelsberg, mit dem Lindenpark, Kirchgemeinden oder Potsdamer Schulen, wie z.B. mit der Katholischen Marienschule. Enge Kooperationen bestehen mit den Trägern der Gemeinschaftsunterkünfte in Potsdam, insbesondere mit der AWO Potsdam.') ?></p>
+	<p><?= _('Unser Angebot und unser Charakter ist:') ?></p>
 	<ul>
-		<li><strong>Universell</strong>: Unser kostenloses Angebot richtet sich an alle Geflüchtete und Migranten*Innen in Potsdam.</li>
+	<li><?= printf(_('%0Universell%1: Unser kostenloses Angebot richtet sich an alle Geflüchtete und Migranten*Innen in Potsdam.'), '<strong>', '</strong>') ?></li>
 		<li><strong>Integrationsspezifisch</strong>: Das kostenlose Angebot beinhaltet vor allem Maßnahmen, die die Integration von Geflüchteten in die Gesellschaft unterstützen.</li>
 		<li><strong>Dienstleistend</strong>: Geflüchtete werden durch unbürokratische Informationsweitergabe und Beratung entlastet.</li>
 		<li><strong>Niederschwellig</strong>: Durch wohnortnahes Agieren unseres Netzwerks und aufsuchende Arbeit unser ehrenamtlichen Helfer*Innen werden die Geflüchteten unterstützt.</li>
@@ -205,8 +205,8 @@
 		<center>
 			<img src="<?= $assetsDir ?>/images/heart316.svg" width="100px" style="opacity: 0.6; margin-bottom: 52px;">
 		</center>
-		<p>Sie sehen, Mitmachen bei uns lohnt sich und für jeden ist etwas dabei!</p>
-		<p>Wenden Sie sich direkt an eine Arbeitsgruppe Ihrer Wahl: Die E-Mailadressen der AG-Leiter finden Sie unter <a href="https://fluechtlingshilfe-babelsberg.de/arbeitsgruppen/">fluechtlingshilfe-babelsberg.de/arbeitsgruppen/</a> oder abonnieren Sie unseren E-Mail-Newsletter unter <a href="https://fluechtlingshilfe-babelsberg.de/help/">fluechtlingshilfe-babelsberg.de/help/</a></p>
+		<p><?= _('Sie sehen, Mitmachen bei uns lohnt sich und für jeden ist etwas dabei!') ?></p>
+		<p><?= _('Wenden Sie sich direkt an eine Arbeitsgruppe Ihrer Wahl: Die E-Mailadressen der AG-Leiter finden Sie unter <a href="https://fluechtlingshilfe-babelsberg.de/arbeitsgruppen/">fluechtlingshilfe-babelsberg.de/arbeitsgruppen/</a> oder abonnieren Sie unseren E-Mail-Newsletter unter <a href="https://fluechtlingshilfe-babelsberg.de/help/">fluechtlingshilfe-babelsberg.de/help/</a>') ?></p>
 	</div>
 </div>
 
