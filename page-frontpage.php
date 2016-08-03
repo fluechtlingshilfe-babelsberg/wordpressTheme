@@ -1,6 +1,15 @@
-<?php get_header(); ?>
 <?php
 	$assetsDir = get_stylesheet_directory_uri();
+
+	putenv("LANG=en");
+  setlocale(LC_ALL, "en");
+	$domain = "flueba_frontpage";
+	bindtextdomain($domain, "$assetsDir/locale");
+	textdomain($domain);
+	bind_textdomain_codeset($domain, 'UTF-8');
+?>
+<?php get_header(); ?>
+<?php
 	while (have_posts()) {
 					the_post();
 ?>
