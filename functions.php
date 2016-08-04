@@ -25,8 +25,10 @@ add_action('wp_enqueue_scripts', 'flueba_register_assets');
 /* SETUP */
 function flueba_setup() {  
 	register_nav_menu('primary', 'Primary navigation');
+	load_theme_textdomain('flueba', get_template_directory() . '/locale');
 }
 add_action('after_setup_theme', 'flueba_setup' );
+
 
 /* DASHBOARD WIDGET FOR NEWS TEXT */
 function flueba_add_news_widget() {
@@ -104,3 +106,7 @@ function the_termin($full = true) { ?>
 	}
 }
 
+add_filter('locale', 'set_my_locale');
+function set_my_locale($lang) {
+	return 'en';
+}
