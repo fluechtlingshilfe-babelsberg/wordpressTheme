@@ -27,12 +27,21 @@
       <div id="navbar" class="navbar-collapse collapse">
 		<?php /* Primary navigation */
 			wp_nav_menu(array(
-				'menu' => 'top_menu',
+				'menu' => 'Primary',
 				'depth' => 2,
 				'container' => false,
 				'menu_class' => 'nav navbar-nav',
 				'walker' => new wp_bootstrap_navwalker()
 			));
 		?>
+                <?php /* Primary navigation */
+                        wp_nav_menu(array(
+                                'menu' => 'Language',
+                                'depth' => 0,
+                                'container' => false,
+                                'menu_class' => 'nav navbar-nav navbar-right',
+                                'walker' => new wp_bootstrap_navwalker()
+                        ));
+                ?>
       </div><!--/.nav-collapse -->
     </nav>
