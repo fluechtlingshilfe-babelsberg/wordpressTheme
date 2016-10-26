@@ -1,7 +1,12 @@
 <?php
 
+define('ACF_LITE', true);
+
 require_once('lib/wp_bootstrap_navwalker.php');
 require("help-functions.php");
+require_once('include/post-types.php');
+require_once('include/taxonomies.php');
+include_once('advanced-custom-fields/acf.php');
 
 /* THEME ASSETS */
 function flueba_register_assets() {
