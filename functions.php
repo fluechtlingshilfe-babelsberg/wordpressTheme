@@ -29,7 +29,6 @@ function flueba_setup() {
 }
 add_action('after_setup_theme', 'flueba_setup' );
 
-
 /* DASHBOARD WIDGET FOR NEWS TEXT */
 function flueba_add_news_widget() {
 	wp_add_dashboard_widget(

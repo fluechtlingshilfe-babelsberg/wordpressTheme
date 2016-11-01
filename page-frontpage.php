@@ -114,8 +114,9 @@ $assetsDir = get_stylesheet_directory_uri();
 <div class="container-fluid annoucement-box intro-section">
 	<div class="container">
 		<h2><?= __('Die Flüchtlingshilfe Babelsberg', 'flueba') ?></h2>
-		<p><?= __('Das Netzwerk Flüchtlingshilfe Babelsberg wird getragen von einem anerkannt gemeinnützigen Verein, der Flüchtlingshilfe Babelsberg e.V. mit Sitz in Potsdam, der derzeit ca. 70 Vereinsmitglieder hat (<a href="https://fluechtlingshilfe-babelsberg.de/vereinsmitglied-werden/">fluechtlingshilfe-babelsberg.de/vereinsmitglied-werden/</a>). Die Leitidee des Netzwerks Flüchtlingshilfe Babelsberg ist: sozial und engagiert, menschlich, nah und nachbarschaftlich, direkt und unkompliziert, gemeinnützig und unabhängig sein. Wir wollen gesellschaftliche Teilhabe ermöglichen und den Austausch und gesellschaftlichen Zusammenhalt in der Potsdamer Bevölkerung stärken.', 'flueba') ?></p>
-
+		<p><?= __('Unser Netzwerk wird von dem gemeinnützig anerkannten <a href="https://fluechtlingshilfe-babelsberg.de/vereinsmitglied-werden/">Verein</a> Flüchtlingshilfe Babelsberg e.V. getragen. Die Leitidee der Flüchtlingshilfe Babelsberg lautet: sozial und engagiert, menschlich, nah und nachbarschaftlich, direkt und unkompliziert, gemeinnützig und unabhängig. <br> 
+		Wir wollen gesellschaftliche Teilhabe ermöglichen und den Austausch und Zusammenhalt in der Potsdamer Bevölkerung stärken.', 'flueba') ?></p>
+		
 		<div class="text-center">
 			<div class="circle-image" style="background-image: url(<?= $assetsDir ?>/images/frontpage/circle01.jpg)"></div>
 			<div class="circle-image" style="background-image: url(<?= $assetsDir ?>/images/frontpage/circle02.jpg)"></div>
@@ -123,15 +124,15 @@ $assetsDir = get_stylesheet_directory_uri();
 			<div class="circle-image" style="background-image: url(<?= $assetsDir ?>/images/frontpage/circle04.jpg)"></div>
 		</div>
 
-		<p><?= __('Derzeit arbeiten wir zum einen intensiv daran, Strukturen zu schaffen, um Flüchtlinge beim Eintritt in den Arbeitsmarkt zu unterstützen. Denn sobald die Flüchtlinge ausreichend Deutsch können, ist dies der nächste wichtige Schritt zur Integration. Zum anderen bereitet die Flüchtlingshilfe Babelsberg sich darauf vor, weitere Flüchtlinge zu begleiten, denn in den kommenden Wochen werden zusätzlich 60 Flüchtlinge, vor allem Familien mit Frauen und Kindern in Potsdam-Babelsberg untergebracht.', 'flueba') ?></p>
+		<p><?= __('Derzeit arbeiten wir zum einen intensiv daran, Strukturen zu schaffen, um Flüchtlinge beim Eintritt in den Arbeitsmarkt zu unterstützen. <br>Denn sobald die Flüchtlinge ausreichend Deutsch können, ist dies der nächste wichtige Schritt zur Integration.', 'flueba') ?></p>
 
-		<p><?= __('Auf Sie warten also tolle Projekte und wir warten auf Ihre tollen Ideen. Es werden jetzt viele Hände und Köpfe gebraucht, denn Potsdam integriert!', 'flueba') ?></p>
+		<p><?= __('Auf Sie warten also tolle Projekte und auf uns Ihre tollen Ideen. Es werden jetzt viele Hände und Köpfe gebraucht, denn Potsdam integriert!', 'flueba') ?></p>
 	</div>
 </div>
 
 <div class="container intro-section">
 <h2><?= __('Unsere AGs', 'flueba') ?></h2>
-	<p><?= __('Die Helfer*Innen des Netzwerks Flüchtlingshilfe Babelsberg sind in insgesamt 12 Arbeitsgruppen zu besonderen Themengebieten (<a href="https://fluechtlingshilfe-babelsberg.de/arbeitsgruppen/">fluechtlingshilfe-babelsberg.de/arbeitsgruppen/</a>). Die Arbeitsgruppen arbeiten spezialisiert, professionell und selbständig und jede*r Interessierte kann sich über die Webseite der Flüchtlingshilfe zum Mitmachen melden (<a href="https://fluechtlingshilfe-babelsberg.de/help/">fluechtlingshilfe-babelsberg.de/help/</a>). Das Netzwerk Flüchtlingshilfe Babelsberg ist ein niedrigschwelliges und kostenloses Angebot für alle Einwohner*Innen und Geflüchtete in der Landeshauptstadt Potsdam.', 'flueba') ?></p>
+	<p><?= __('Unsere Helfer*Innen sind in insgesamt 12 <a href="https://fluechtlingshilfe-babelsberg.de/arbeitsgruppen/">Arbeitsgruppen</a> organisiert, wie z.B. die Sprach-AG, die Sachspenden AG, oder die AG Veranstaltungen. Die Arbeitsgruppen arbeiten spezialisiert, professionell und selbständig und jede*r Interessierte kann sich über unsere Webseite zum Mitmachen melden.', 'flueba') ?></p>
 
 	<div class="ag-icons">
 		<div><img src="<?= $assetsDir ?>/images/icons/sprache.svg"><span><?= __('Sprache', 'flueba') ?></span></div>
@@ -186,7 +187,7 @@ $assetsDir = get_stylesheet_directory_uri();
 
 <div class="container intro-section">
 	<h2><?= __('Unser Angebot &amp; Charakter', 'flueba') ?></h2>
-	<p><?= __('Bei seinen Aktionen kooperiert unser Netzwerk eng mit anderen Potsdamer Institutionen, z.B. mit dem Hasso-Plattner-Institut, der Universität Potsdam, dem Projekthaus Babelsberg, mit dem Lindenpark, Kirchgemeinden oder Potsdamer Schulen, wie z.B. mit der Katholischen Marienschule. Enge Kooperationen bestehen mit den Trägern der Gemeinschaftsunterkünfte in Potsdam, insbesondere mit der AWO Potsdam.', 'flueba') ?></p>
+	<p><?= __('Wir arbeiten eng mit anderen Potsdamer Institutionen zusammen, z.B. mit dem Hasso-Plattner-Institut, der Universität Potsdam, dem Projekthaus Babelsberg, mit dem Lindenpark, Potsdamer Kirchgemeinden oder Potsdamer Schulen, insbesondere mit der Katholischen Marienschule Potsdam. Enge Kooperationen besteht auch mit den Trägern der Gemeinschaftsunterkünfte in Potsdam, insbesondere mit der AWO Potsdam.', 'flueba') ?></p>
 	<p><?= __('Unser Angebot und unser Charakter ist:', 'flueba') ?></p>
 	<ul>
 	<li><?= printf(__('%sUniversell%s: Unser kostenloses Angebot richtet sich an alle Geflüchtete und Migranten*Innen in Potsdam.', 'flueba'), '<strong>', '</strong>') ?></li>
@@ -207,7 +208,7 @@ $assetsDir = get_stylesheet_directory_uri();
 			<img src="<?= $assetsDir ?>/images/heart316.svg" width="100px" style="opacity: 0.6; margin-bottom: 52px;">
 		</center>
 		<p><?= __('Sie sehen, Mitmachen bei uns lohnt sich und für jeden ist etwas dabei!', 'flueba') ?></p>
-		<p><?= __('Wenden Sie sich direkt an eine Arbeitsgruppe Ihrer Wahl: Die E-Mailadressen der AG-Leiter finden Sie unter <a href="https://fluechtlingshilfe-babelsberg.de/arbeitsgruppen/">fluechtlingshilfe-babelsberg.de/arbeitsgruppen/</a> oder abonnieren Sie unseren E-Mail-Newsletter unter <a href="https://fluechtlingshilfe-babelsberg.de/help/">fluechtlingshilfe-babelsberg.de/help/</a>', 'flueba') ?></p>
+		<p><?= __('Wenden Sie sich direkt an eine Arbeitsgruppe Ihrer Wahl: Die E-Mailadressen der AG-Leiter finden Sie unter <a href="https://fluechtlingshilfe-babelsberg.de/arbeitsgruppen/">fluechtlingshilfe-babelsberg.de/arbeitsgruppen/</a> oder abonnieren Sie unseren <a href="https://fluechtlingshilfe-babelsberg.de/help/">E-Mail-Newsletter</a> .', 'flueba') ?></p>
 	</div>
 </div>
 

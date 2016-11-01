@@ -27,7 +27,7 @@
       <div id="navbar" class="navbar-collapse collapse">
 		<?php /* Primary navigation */
 			wp_nav_menu(array(
-				'menu' => 'top_menu',
+				'menu' => 'primary',
 				'depth' => 2,
 				'container' => false,
 				'menu_class' => 'nav navbar-nav',
