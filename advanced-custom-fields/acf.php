@@ -60,6 +60,65 @@ if(function_exists("register_field_group"))
 		'menu_order' => 0,
 	));
 	register_field_group(array (
+		'id' => 'acf_kontaktdaten',
+		'title' => 'Kontaktdaten',
+		'fields' => array (
+			array (
+				'key' => 'field_581b4f32867a1',
+				'label' => 'Funktion',
+				'name' => 'function',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_581b4e2af3c7c',
+				'label' => 'Adresse',
+				'name' => 'address',
+				'type' => 'textarea',
+				'required' => 1,
+				'default_value' => '',
+				'placeholder' => '',
+				'maxlength' => '',
+				'rows' => '',
+				'formatting' => 'br',
+			),
+			array (
+				'key' => 'field_581b4e5cf3c7d',
+				'label' => 'Aufgaben',
+				'name' => 'tasks',
+				'type' => 'textarea',
+				'default_value' => '',
+				'placeholder' => '',
+				'maxlength' => '',
+				'rows' => '',
+				'formatting' => 'br',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'contact',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+	register_field_group(array (
 		'id' => 'acf_sachspende',
 		'title' => 'Sachspende',
 		'fields' => array (
@@ -97,37 +156,6 @@ if(function_exists("register_field_group"))
 		'title' => 'Termindetails',
 		'fields' => array (
 			array (
-				'key' => 'field_566213af3fbd4',
-				'label' => 'Kurzbeschreibung',
-				'name' => 'subscript',
-				'type' => 'text',
-				'required' => 1,
-				'default_value' => '',
-				'placeholder' => '',
-				'prepend' => '',
-				'append' => '',
-				'formatting' => 'html',
-				'maxlength' => 200,
-			),
-			array (
-				'key' => 'field_566213e83fbd5',
-				'label' => 'Datum',
-				'name' => 'date',
-				'type' => 'date_picker',
-				'required' => 1,
-				'date_format' => 'yymmdd',
-				'display_format' => 'dd/mm/yy',
-				'first_day' => 1,
-			),
-			array (
-				'key' => 'field_56621492ca43e',
-				'label' => 'Auf Startseite anzeigen',
-				'name' => 'show_on_start_page',
-				'type' => 'true_false',
-				'message' => '',
-				'default_value' => 0,
-			),
-			array (
 				'key' => 'field_566214d5ca43f',
 				'label' => 'Beschreibung',
 				'name' => 'description',
@@ -158,3 +186,5 @@ if(function_exists("register_field_group"))
 	));
 }
 
+
+?>
