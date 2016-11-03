@@ -151,6 +151,7 @@ $assetsDir = get_stylesheet_directory_uri();
 </div>
 
 <div class="container-fluid annoucement-box intro-section">
+<div class="container">
 	<h2>Projekte</h2>
 	<p><?= __('Bisherige Projekte unseres Netzwerks sind unter anderem (<a href="https://fluechtlingshilfe-babelsberg.de/news/">fluechtlingshilfe-babelsberg.de/news/</a>):', 'flueba') ?></p>
 
@@ -183,6 +184,7 @@ $assetsDir = get_stylesheet_directory_uri();
 		<li><?= __('Sozialtag mit Katholischer Marienschule Potsdam zur Mithilfe von Schülern in Flüchtlingsunterkünften', 'flueba') ?></li>
 		<li><?= __('Weihnachtliches Café der Kulturen für Geflüchtete und Potsdamer*Innen mit über 200 Teilnehmern', 'flueba') ?></li>
 	</ul>
+</div>
 </div>
 
 <div class="container intro-section">

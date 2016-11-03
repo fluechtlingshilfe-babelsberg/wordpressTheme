@@ -115,7 +115,7 @@ function cptui_register_my_cpts() {
 		"labels" => $labels,
 		"description" => "Unsere Ansprechpartner",
 		"public" => true,
-		"publicly_queryable" => false,
+		"publicly_queryable" => true,
 		"show_ui" => true,
 		"show_in_rest" => false,
 		"rest_base" => "",

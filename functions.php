@@ -21,6 +21,8 @@ function flueba_register_assets() {
 	wp_enqueue_style('custom');
 }
 add_action('wp_enqueue_scripts', 'flueba_register_assets');
+add_theme_support('post-thumbnails');
+
 
 /* SETUP */
 function flueba_setup() {  

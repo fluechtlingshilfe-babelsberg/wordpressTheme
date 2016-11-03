@@ -423,3 +423,36 @@ input[type='submit'] , input[type='button']{
 .projects-wrapper button:first-child {
 	left: 0;
 }
+
+/* contact page */
+.contact-card {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin: 24px 0;
+}
+.contact-card .circle-image,
+.contact-page .circle-image {
+  margin: 0;
+  width: 100%;
+  max-width: 200px;
+  margin: auto;
+  height: auto;
+}
+.contact-page .circle-image {
+  margin: 24px auto;
+  margin-top: 0;
+}
+.contact-card h3 {
+  margin-top: 0;
+}
+.contact-sidebar {
+  background-color: #3E606F;
+  color: #fff;
+  padding: 24px;
+}
+.contact-description {
+  padding: 24px;
+}
+.contact-description h1 {
+  margin-top: 0;
+}
