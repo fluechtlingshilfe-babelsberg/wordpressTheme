@@ -22,13 +22,15 @@ foreach ($posts as $post) {
 ?>
   <div class="contact-card row">
 	<?php if ($i % 2 == 0) echo $thumb; ?>
-	<div class="col-sm-4">
-	  <h3><?= get_the_title($post) ?> </h3>
+	<div class="col-sm-5">
+	  <h3><?= get_the_title($post) ?></h3>
 	  <?php the_field('function', $post) ?><br>
 	  <?php the_field('address', $post) ?>
+	  <br>
+	  <br>
 	</div>
-	<div class="col-sm-5">
-	  <h3>Ich bin Ansprechpartner für ...</h3>
+	<div class="col-sm-4">
+	  <h3>Meine Aufgaben</h3>
 	  <?php the_field('tasks', $post) ?>
 	  <div style="margin-top: 24px">
 	    <a class="contact-more" href="<?= get_the_permalink($post) ?>">Mehr über mich ...</a>
