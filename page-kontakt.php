@@ -31,7 +31,7 @@ foreach ($posts as $post) {
 	  <h3>Ich bin Ansprechpartner für ...</h3>
 	  <?php the_field('tasks', $post) ?>
 	  <div style="margin-top: 24px">
-	    <a class="contact-more" href="<?php get_the_permalink($post) ?>">Mehr über mich ...</a>
+	    <a class="contact-more" href="<?= get_the_permalink($post) ?>">Mehr über mich ...</a>
 	  </div>
 	</div>
 	<?php if ($i % 2 == 1) echo $thumb; ?>
