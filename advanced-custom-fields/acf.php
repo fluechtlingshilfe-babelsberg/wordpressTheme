@@ -98,6 +98,15 @@ if(function_exists("register_field_group"))
 				'rows' => '',
 				'formatting' => 'br',
 			),
+			array (
+				'key' => 'field_581b52a770e1f',
+				'label' => 'Detailierte Beschreibung',
+				'name' => 'description',
+				'type' => 'wysiwyg',
+				'default_value' => '',
+				'toolbar' => 'full',
+				'media_upload' => 'yes',
+			),
 		),
 		'location' => array (
 			array (
@@ -185,6 +194,7 @@ if(function_exists("register_field_group"))
 		'menu_order' => 0,
 	));
 }
+
 
 
 ?>
