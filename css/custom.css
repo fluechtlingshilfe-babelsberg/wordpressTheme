@@ -449,6 +449,7 @@ input[type='submit'] , input[type='button']{
   background-color: #3E606F;
   color: #fff;
   padding: 24px;
+  word-wrap: break-word;
 }
 .contact-sidebar h1 {
   margin-top: 0;
