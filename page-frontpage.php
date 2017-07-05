@@ -183,6 +183,7 @@ $assetsDir = get_stylesheet_directory_uri();
 		<li><?= __('Kulturfest mit zahlreichen Potsdamern*Innen und einer Berliner Wandergruppe von 120 Geflüchteten aus Syrien', 'flueba') ?></li>
 		<li><?= __('Sozialtag mit Katholischer Marienschule Potsdam zur Mithilfe von Schülern in Flüchtlingsunterkünften', 'flueba') ?></li>
 		<li><?= __('Weihnachtliches Café der Kulturen für Geflüchtete und Potsdamer*Innen mit über 200 Teilnehmern', 'flueba') ?></li>
+		<li><?= __('Wöchentlich stattfindendes Erzählcafé im Brauhausberg mit Geflüchteten und Potsdamer*Innen -> siehe <a href="/termine/">Termine</a>', 'flueba') ?></li>
 	</ul>
 </div>
 </div>
