@@ -4,8 +4,8 @@ define('ACF_LITE', true);
 
 require_once('lib/wp_bootstrap_navwalker.php');
 require("help-functions.php");
-require_once('include/post-types.php');
 require_once('include/taxonomies.php');
+require_once('include/post-types.php');
 include_once('advanced-custom-fields/acf.php');
 
 /* THEME ASSETS */
@@ -101,9 +101,11 @@ function the_termin($full = true) { ?>
 	<?php if ($full) {
 		the_field("description");
 		$terms = get_the_terms($post->ID, 'ag');
-		foreach ($terms as &$term) { ?>
-			<a href="<?php echo get_term_link($term) ?>" class="label label-info"><?php echo $term->name; ?></a>
-	<?php }
+		if ($terms) {
+			foreach ($terms as &$term) { ?>
+				<a href="<?php echo get_term_link($term) ?>" class="label label-info"><?php echo $term->name; ?></a>
+			<?php }
+		}
 	}
 }
 
