@@ -1,12 +1,9 @@
 jobs:
   include:
-  - stage: deploy to staging
-    script: "./deploy staging"
-  - stage: deploy to production
-    script: "./deploy production"
+  - script: echo "no tests yet -- success"
 stages:
 - name: deploy to production
-  if: branch = master
+  if: branch = redesign-2018
 after_success:
 - openssl aes-256-cbc -K $encrypted_3151e9772873_key -iv $encrypted_3151e9772873_iv
   -in deploy_rsa.enc -out deploy_rsa -d
