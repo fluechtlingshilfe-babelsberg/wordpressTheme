@@ -1,18 +1,18 @@
 jobs:
-    include:
-        - stage: deploy to staging
-          script: ./deploy staging
-        - stage: deploy to production
-          script: ./deploy production
-
+  include:
+  - stage: deploy to staging
+    script: "./deploy staging"
+  - stage: deploy to production
+    script: "./deploy production"
 stages:
-    - name: deploy to production
-      if: branch = master
-
+- name: deploy to production
+  if: branch = master
 after_success:
-    - openssl aes-256-cbc -K $encrypted_<...>_key -iv $encrypted_<...>_iv -in deploy_rsa.enc -out /tmp/deploy_rsa -d
-    - eval "$(ssh-agent -s)"
-    - chmod 600 /tmp/deploy_key.pem
-    - ssh-add /tmp/deploy_key.pem
-    - git remote add deploy env(DEPLOY_URI)
-    - git push deploy
+- openssl aes-256-cbc -K $encrypted_3151e9772873_key -iv $encrypted_3151e9772873_iv
+  -in deploy_rsa.enc -out deploy_rsa -d
+- eval "$(ssh-agent -s)"
+- chmod 600 /tmp/deploy_key.pem
+- ssh-add /tmp/deploy_key.pem
+- git remote add deploy env(DEPLOY_URI)
+- git push deploy
+before_install:

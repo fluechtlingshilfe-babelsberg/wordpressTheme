@@ -2,6 +2,7 @@
 /*
 !.gitignore
 !.travis.yml
+!deploy_rsa.enc
 !README.md
 !wp-content/
 
