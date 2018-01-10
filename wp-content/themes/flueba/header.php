@@ -45,7 +45,7 @@
     <div class="banner-image" style="background-image: url(<?= get_stylesheet_directory_uri() . '/images/bilderSlider/diskusionsabend.jpg' ?>)">
     </div>
 
-    <nav class="navbar navbar-dark navbar-secondary navbar-expand-lg">
+    <nav class="navbar navbar-dark navbar-secondary navbar-expand">
       <div class="container my-3">
         <?php wp_nav_menu(array(
           'menu' => 'Secondary',
@@ -54,7 +54,7 @@
           'menu_class' => 'navbar-nav ml-auto',
           'walker' => new BootstrapNavWalker()
         )); ?>
-        <form class="form-inline ml-1">
+        <form class="form-inline ml-2">
           <button class="btn btn-light">Spenden</button>
         </form>
       </div>

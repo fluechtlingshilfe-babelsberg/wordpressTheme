@@ -15,7 +15,7 @@ a:hover {
 }
 
 body {
-  margin-bottom: 100px;
+  margin-bottom: 70px;
   font-family: 'Noto Sans';
   font-size: 14px;
   line-height: 1.6em;
@@ -38,11 +38,17 @@ h2 {
 }
 
 /* bs navbar styles overrides */
-.navbar {
+.navbar, .navbar .btn {
   font-size: 18px;
 }
 .navbar-secondary{
   background: #3E606F;
+}
+.nav-link {
+  font-weight: normal;
+}
+.nav-link.active {
+  font-weight: bold;
 }
 /*.navbar .navbar-brand, .navbar-default .navbar-nav>li>a, .navbar .navbar-brand:focus {
   color: #fff;
