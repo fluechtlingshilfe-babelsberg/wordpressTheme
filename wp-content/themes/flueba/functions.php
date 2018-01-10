@@ -1,6 +1,6 @@
 <?php
 
-define('ACF_LITE', true);
+// define('ACF_LITE', true);
 
 require_once('lib/wp_bootstrap_navwalker.php');
 require("help-functions.php");
@@ -13,7 +13,7 @@ function flueba_register_assets() {
   wp_register_style('bootstrap.min', get_template_directory_uri() . '/css/bootstrap.min.css');
   wp_register_style('custom', get_template_directory_uri() . '/css/custom.css');
   wp_register_script('jquery.min', get_template_directory_uri() . '/js/jquery-2.1.4.min.js');
-  wp_register_script('bootstrap.min', get_stylesheet_directory_uri() . '/js/bootstrap.min.js', 'jquery.min');
+  wp_register_script('bootstrap.min', get_stylesheet_directory_uri() . '/js/bootstrap.bundle.min.js', 'jquery.min');
 
   wp_enqueue_script('jquery.min');
   wp_enqueue_script('bootstrap.min');
@@ -27,6 +27,7 @@ add_theme_support('post-thumbnails');
 /* SETUP */
 function flueba_setup() {  
   register_nav_menu('primary', 'Primary navigation');
+  register_nav_menu('secondary', 'Secondary navigation');
   load_theme_textdomain('flueba', get_template_directory() . '/locale');
 }
 add_action('after_setup_theme', 'flueba_setup' );

@@ -14,34 +14,48 @@
   <body>
 
     <!-- Fixed navbar -->
-    <nav class="navbar navbar-default">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+    <nav class="navbar navbar-expand-md">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="<?= get_stylesheet_directory_uri() . '/images/fhb-logo.png' ?>" height="60">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-		<a class="navbar-brand" href="<?php bloginfo('url') ?>"><?php bloginfo('name') ?></a>
+
+        <div class="collapse navbar-collapse navbar-primary" id="navbarTogglerDemo01">
+<?php wp_nav_menu(array(
+  'menu' => 'Primary',
+  'depth' => 2,
+  'container' => false,
+  'menu_class' => 'navbar-nav ml-auto',
+  'walker' => new BootstrapNavWalker()
+)); ?>
+<?php /*wp_nav_menu(array(
+  'menu' => 'Language',
+  'depth' => 0,
+  'container' => false,
+  'menu_class' => 'navbar-nav',
+  'walker' => new wp_bootstrap_navwalker()
+));*/ ?>
+        </div>
       </div>
-      <div id="navbar" class="navbar-collapse collapse">
-		<?php /* Primary navigation */
-                wp_nav_menu(array(
-                  'menu' => 'Primary',
-                  'depth' => 2,
-                  'container' => false,
-                  'menu_class' => 'nav navbar-nav',
-                  'walker' => new wp_bootstrap_navwalker()
-                ));
-		?>
-                <?php /* Primary navigation */
-                wp_nav_menu(array(
-                  'menu' => 'Language',
-                  'depth' => 0,
-                  'container' => false,
-                  'menu_class' => 'nav navbar-nav navbar-right',
-                  'walker' => new wp_bootstrap_navwalker()
-                ));
-                ?>
-      </div><!--/.nav-collapse -->
+    </nav>
+
+    <div class="banner-image" style="background-image: url(<?= get_stylesheet_directory_uri() . '/images/bilderSlider/diskusionsabend.jpg' ?>)">
+    </div>
+
+    <nav class="navbar navbar-dark navbar-secondary navbar-expand-lg">
+      <div class="container">
+        <?php wp_nav_menu(array(
+          'menu' => 'Secondary',
+          'depth' => 2,
+          'container' => false,
+          'menu_class' => 'navbar-nav ml-auto',
+          'walker' => new BootstrapNavWalker()
+        )); ?>
+        <form class="form-inline">
+          <button class="btn btn-light">Spenden</button>
+        </form>
+      </div>
     </nav>

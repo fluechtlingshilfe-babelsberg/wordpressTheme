@@ -5,35 +5,46 @@ html {
 
 a {
   text-decoration: none;
-  color: #ff9900;
+  font-weight: bold;
+  color: #268b9a;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #cc7700;
+  color: #2da1b4;
 }
 
 body {
-  background: #FCFFF5;
   margin-bottom: 100px;
-  font-family: 'Fanwood Text';
-  font-size: 20px;
+  font-family: 'Noto Sans';
+  font-size: 14px;
   line-height: 1.6em;
 }
 h1, h2, h3, h4, h5 {
   font-family: 'Quattrocento';
   line-height: 1.6em;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 1.5em;
+  letter-spacing: -0.5px;
+}
+
+.banner-image {
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 /* bs navbar styles overrides */
-.navbar{
-  background: #3E606F;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
-  border: none;
-  margin-bottom: 0;
-  border-radius: 0;
+.navbar {
+  font-size: 16px;
 }
-.navbar .navbar-brand, .navbar-default .navbar-nav>li>a, .navbar .navbar-brand:focus {
+.navbar-secondary{
+  background: #3E606F;
+}
+/*.navbar .navbar-brand, .navbar-default .navbar-nav>li>a, .navbar .navbar-brand:focus {
   color: #fff;
   font-family: 'Quattrocento';
 }
@@ -42,6 +53,14 @@ h1, h2, h3, h4, h5 {
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
   background-color: #91AA9D;
+}*/
+
+.help-needed {
+  background-color: #59a1ab;
+  color: #fff;
+}
+.help-needed h2 {
+  color: #113f47;
 }
 
 .welcome,

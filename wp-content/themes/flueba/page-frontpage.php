@@ -6,33 +6,15 @@ while (have_posts()) {
   $assetsDir = get_stylesheet_directory_uri();
 ?>
 
-<div class="container-fluid img">
-  <div class="intro-container row">
-  <h1 class="welcome"><?= __('Willkommen bei der<br>Flüchtlingshilfe Babelsberg!', 'flueba') ?></h1>
-  <div class="intro-text">
-    <?php the_content(); ?>
-  </div>
-</div>
-</div>
-
 <div class="container">
+
   <div class="row">
-  </div>
-
-  <div class="row main-items">
-    <div class="col-md-offset-1 col-md-5 helpMain">
-      <img src="<?= $assetsDir ?>/images/heart316.svg" width="100px" style="opacity:0.8; margin-bottom: 24px;">
-      <?php the_field('flueba_aside_text'); ?>
-
-      <!--<p>Ob Deutschunterricht, Begleitung zu Behörden und Ärzten, gemeinsame Unternehmungen (z. B. Führungen durch Babelsberg) – Sie können sich auf unterschiedliche Weise einbringen. Hierzu werden wir Arbeitsgruppen bilden: Sprache – Integration – Begleitung – Ausbildung/Arbeit – Veranstaltungen – Kommunikation/Organisation.</p>-->
-      <center>
-      <a href="<?php echo get_page_link(31) ?>" class="help-button"><?= __('Helfen Sie mit!', 'flueba') ?></a>
-      </center>
+    <div class="col-md-4">
+      <h2>Neuigkeiten</h2>
     </div>
 
-    <div class="col-md-5 col-md-offset-1">
-      <div class="annoucement-box">
-	<?php echo html_entity_decode(get_option('flueba_news')); ?>
+    <div class="col-md-4">
+      <h2>Aktuelle Termine</h2>
 <?php
   $the_query = new WP_Query(array(
     'numberposts' => -1,
@@ -76,8 +58,9 @@ while (have_posts()) {
   <?php } ?>
 </div>
 
-<h3 class="text-left"><?= __('Hilfe benötigt!', 'flueba') ?></h3>
-<ul class="text-left">
+<div class="col-md-4 help-needed pa-4">
+  <h2><?= __('Hilfe benötigt!', 'flueba') ?></h2>
+  <ul>
 <?php
   $the_query = new WP_Query(array(
     'numberposts' => -1,
