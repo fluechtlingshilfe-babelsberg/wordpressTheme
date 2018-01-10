@@ -13,7 +13,6 @@
 
   <body>
 
-    <!-- Fixed navbar -->
     <nav class="navbar navbar-expand-md">
       <div class="container">
         <a class="navbar-brand" href="<?= esc_url(home_url('/')) ?>">
@@ -51,7 +50,7 @@
           'menu' => 'Secondary',
           'depth' => 2,
           'container' => false,
-          'menu_class' => 'navbar-nav ml-auto',
+          'menu_class' => 'navbar-nav ml-sm-auto',
           'walker' => new BootstrapNavWalker()
         )); ?>
         <form class="form-inline ml-2">

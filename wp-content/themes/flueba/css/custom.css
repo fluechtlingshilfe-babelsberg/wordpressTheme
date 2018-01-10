@@ -2,6 +2,11 @@ html {
   position: relative;
   min-height: 100%;
 }
+/* we need positive: relative on our html element to support the fixed footer,
+ * but this will make the wpadminbar hang over the page in its smallest form.
+ * This fixes moves it back up.
+ */
+@media screen and (max-width: 600px) { #wpadminbar { top: -46px; }}
 
 a {
   text-decoration: none;
@@ -43,6 +48,15 @@ h2 {
 }
 .navbar-secondary{
   background: #3E606F;
+}
+.navbar-brand img {
+  max-height: 60px;
+  width: auto;
+}
+@media screen and (max-width: 425px) {
+  .navbar-brand img {
+    max-height: 40px;
+  }
 }
 .nav-link {
   font-weight: normal;

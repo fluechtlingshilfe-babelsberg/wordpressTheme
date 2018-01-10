@@ -59,7 +59,7 @@ while (have_posts()) {
 </div>
 
 <div class="col-md-4 help-needed p-4">
-  <h2><?= __('Hilfe benötigt!', 'flueba') ?></h2>
+  <h2><?= __('Sachspenden / Hilfe gesucht', 'flueba') ?></h2>
   <ul>
 <?php
   $the_query = new WP_Query(array(

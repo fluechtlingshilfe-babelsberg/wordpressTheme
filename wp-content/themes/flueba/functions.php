@@ -28,7 +28,7 @@ add_theme_support('post-thumbnails');
 function flueba_setup() {  
   register_nav_menu('primary', 'Primary navigation');
   register_nav_menu('secondary', 'Secondary navigation');
-  load_theme_textdomain('flueba', get_template_directory() . '/locale');
+  // load_theme_textdomain('flueba', get_template_directory() . '/locale');
 }
 add_action('after_setup_theme', 'flueba_setup' );
 
