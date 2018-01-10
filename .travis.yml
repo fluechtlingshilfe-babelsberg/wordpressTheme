@@ -1,15 +1,17 @@
 jobs:
   include:
   - script: echo "no tests yet -- success"
-stages:
-- name: deploy to production
-  if: branch = redesign-2018
-after_success:
+
+before_deploy:
 - openssl aes-256-cbc -K $encrypted_3151e9772873_key -iv $encrypted_3151e9772873_iv
   -in deploy_rsa.enc -out deploy_rsa -d
 - eval "$(ssh-agent -s)"
 - chmod 600 /tmp/deploy_key.pem
 - ssh-add /tmp/deploy_key.pem
-- git remote add deploy env(DEPLOY_URI)
-- git push deploy
-before_install:
+
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: rsync -a --delete-after --quiet $TRAVIS_BUILD_DIR/wp-content/themes/flueba tom@tmbe.me:www/flueba/wp-content/themes/flueba
+  on:
+    branch: redesign-2018
