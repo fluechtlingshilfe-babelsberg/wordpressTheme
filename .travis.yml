@@ -14,6 +14,6 @@ before_deploy:
 deploy:
   provider: script
   skip_cleanup: true
-  script: rsync -a --delete-after --quiet $TRAVIS_BUILD_DIR/wp-content/themes/flueba tom@tmbe.me:www/flueba/wp-content/themes/
+  script: rsync -a --chmod=g+w --delete-after --quiet $TRAVIS_BUILD_DIR/wp-content/themes/flueba tom@tmbe.me:www/flueba/wp-content/themes/
   on:
     branch: redesign-2018
