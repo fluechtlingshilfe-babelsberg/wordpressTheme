@@ -214,6 +214,7 @@ footer {
 }
 footer a {
   color: inherit;
+  font-weight: normal;
 }
 @media screen and (max-width: 600px) {
   footer {
