@@ -16,14 +16,14 @@
     <!-- Fixed navbar -->
     <nav class="navbar navbar-expand-md">
       <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="<?= get_stylesheet_directory_uri() . '/images/fhb-logo.png' ?>" height="60">
+        <a class="navbar-brand" href="<?= esc_url(home_url('/')) ?>">
+          <img src="<?= get_stylesheet_directory_uri() . '/images/fhb-logo.png' ?>" height="60" class="my-4">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">&#x2630;</span>
         </button>
 
-        <div class="collapse navbar-collapse navbar-primary" id="navbarTogglerDemo01">
+        <div class="collapse navbar-collapse navbar-primary" id="navbarToggler">
 <?php wp_nav_menu(array(
   'menu' => 'Primary',
   'depth' => 2,
@@ -46,7 +46,7 @@
     </div>
 
     <nav class="navbar navbar-dark navbar-secondary navbar-expand-lg">
-      <div class="container">
+      <div class="container my-3">
         <?php wp_nav_menu(array(
           'menu' => 'Secondary',
           'depth' => 2,
@@ -54,7 +54,7 @@
           'menu_class' => 'navbar-nav ml-auto',
           'walker' => new BootstrapNavWalker()
         )); ?>
-        <form class="form-inline">
+        <form class="form-inline ml-1">
           <button class="btn btn-light">Spenden</button>
         </form>
       </div>

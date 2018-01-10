@@ -39,7 +39,7 @@ h2 {
 
 /* bs navbar styles overrides */
 .navbar {
-  font-size: 16px;
+  font-size: 18px;
 }
 .navbar-secondary{
   background: #3E606F;
@@ -186,14 +186,14 @@ hr {
 }
 
 footer {
-  background-color: #333;
+  background: #3E606F;
   color: white;
-  padding: 24px;
   position: absolute;
-  margin-top:100px;
   width: 100%;
-  height: 100px;
   bottom: 0;
+}
+footer a {
+  color: inherit;
 }
 @media screen and (max-width: 600px) {
   footer {
