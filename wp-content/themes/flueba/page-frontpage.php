@@ -11,6 +11,7 @@ while (have_posts()) {
   <div class="row">
     <div class="col-md-4 p-4">
       <h2>Neuigkeiten</h2>
+      <a href=""><?= __('Mehr News ...', 'flueba') ?></a>
     </div>
 
     <div class="col-md-4 p-4">
