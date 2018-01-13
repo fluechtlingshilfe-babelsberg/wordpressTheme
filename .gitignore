@@ -4,6 +4,7 @@
 !.travis.yml
 !deploy_rsa.enc
 !README.md
+!overview.md
 !wp-content/
 
 # Ignore everything in the "wp-content" directory, except the "plugins" and "themes" directories.

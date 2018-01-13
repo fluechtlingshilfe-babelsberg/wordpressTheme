@@ -55,7 +55,7 @@ function flueba_news_widget_function() {
     tinyMCE.triggerSave();
 
     jQuery.post(ajaxurl, {
-    action: 'flueba_news_save',
+      action: 'flueba_news_save',
       flueba_news: form.elements['flueba_news'].value
     }, function(res) {
       // TODO get us some form of feedback to that user
