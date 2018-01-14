@@ -32,6 +32,13 @@ function flueba_setup() {
 }
 add_action('after_setup_theme', 'flueba_setup' );
 
+/* EXCERPT CONFIG */
+add_filter('excerpt_more', function($more) {
+  global $post;
+  return ' ... <a class="moretag" href="'. get_permalink($post->ID) . '">weiterlesen</a>';
+});
+add_filter('excerpt_length', function() { return 12; }, 999);
+
 /* DASHBOARD WIDGET FOR NEWS TEXT */
 function flueba_add_news_widget() {
   wp_add_dashboard_widget(

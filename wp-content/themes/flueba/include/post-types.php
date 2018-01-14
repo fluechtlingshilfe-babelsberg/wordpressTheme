@@ -1,6 +1,6 @@
 <?php
-add_action( 'init', 'cptui_register_my_cpts' );
-function cptui_register_my_cpts() {
+add_action( 'init', 'register_custom_post_types' );
+function register_custom_post_types() {
 	$labels = array(
 		"name" => __( 'Sachspenden', '' ),
 		"singular_name" => __( 'Sachspende', '' ),
@@ -16,7 +16,7 @@ function cptui_register_my_cpts() {
 		"search_items" => __( 'Sachspenden suchen', '' ),
 		"not_found" => __( 'Keine Sachspenden gefunden', '' ),
 		"not_found_in_trash" => __( 'Keine Sachspenden im Papierkorb gefunden', '' ),
-		);
+	);
 
 	$args = array(
 		"label" => __( 'Sachspenden', '' ),
@@ -29,22 +29,22 @@ function cptui_register_my_cpts() {
 		"rest_base" => "",
 		"has_archive" => false,
 		"show_in_menu" => true,
-				"exclude_from_search" => false,
+		"exclude_from_search" => false,
 		"capability_type" => "post",
 		"map_meta_cap" => true,
 		"hierarchical" => false,
 		"rewrite" => array( "slug" => "sachspende", "with_front" => true ),
 		"query_var" => true,
-		
-		"supports" => array( "title", "editor", "custom-fields" ),		
+
+		"supports" => array( "title", "editor", "custom-fields" ),
 		"taxonomies" => array( "post_tag", "ag" ),
-			);
+	);
 	register_post_type( "sachspende", $args );
 
 	$labels = array(
 		"name" => __( 'Termine', '' ),
 		"singular_name" => __( 'Termin', '' ),
-		);
+	);
 
 	$args = array(
 		"label" => __( 'Termine', '' ),
@@ -57,16 +57,16 @@ function cptui_register_my_cpts() {
 		"rest_base" => "",
 		"has_archive" => true,
 		"show_in_menu" => true,
-				"exclude_from_search" => false,
+		"exclude_from_search" => false,
 		"capability_type" => "post",
 		"map_meta_cap" => true,
 		"hierarchical" => false,
 		"rewrite" => array( "slug" => "termin", "with_front" => true ),
 		"query_var" => true,
-		
-		"supports" => array( "title" ),		
+
+		"supports" => array( "title", "editor" ),
 		"taxonomies" => array( "ag" ),
-			);
+	);
 	register_post_type( "termin", $args );
 
 	$labels = array(
@@ -83,7 +83,7 @@ function cptui_register_my_cpts() {
 		"search_items" => __( 'Pressemitteilung suchen', '' ),
 		"not_found" => __( 'Keine Pressemitteilungen gefunden', '' ),
 		"not_found_in_trash" => __( 'Keine Pressemitteilungen im Papierkorb gefunden', '' ),
-		);
+	);
 
 	$args = array(
 		"label" => __( 'Pressemitteilungen', '' ),
@@ -96,19 +96,19 @@ function cptui_register_my_cpts() {
 		"rest_base" => "",
 		"has_archive" => true,
 		"show_in_menu" => true,
-				"exclude_from_search" => false,
+		"exclude_from_search" => false,
 		"capability_type" => "post",
 		"map_meta_cap" => true,
 		"hierarchical" => false,
 		"rewrite" => array( "slug" => "pressemitteilung", "with_front" => true ),
 		"query_var" => true,
-							);
+	);
 	register_post_type( "pressemitteilung", $args );
 
 	$labels = array(
 		"name" => __( 'Kontaktpersonen', '' ),
 		"singular_name" => __( 'Kontaktperson', '' ),
-		);
+	);
 
 	$args = array(
 		"label" => __( 'Kontaktpersonen', '' ),
@@ -121,14 +121,15 @@ function cptui_register_my_cpts() {
 		"rest_base" => "",
 		"has_archive" => false,
 		"show_in_menu" => true,
-				"exclude_from_search" => false,
+		"exclude_from_search" => false,
 		"capability_type" => "post",
 		"map_meta_cap" => true,
 		"hierarchical" => false,
 		"rewrite" => array( "slug" => "contact", "with_front" => true ),
 		"query_var" => true,
-		
-		"supports" => array( "title", "thumbnail" ),					);
+
+		"supports" => array( "title", "thumbnail" ),
+	);
 	register_post_type( "contact", $args );
 
 // End of cptui_register_my_cpts()

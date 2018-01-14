@@ -11,6 +11,12 @@ while (have_posts()) {
   <div class="row">
     <div class="col-md-4 p-4">
       <h2>Neuigkeiten</h2>
+<?php
+  foreach (get_posts() as $post) {
+    setup_postdata($post)?>
+    <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
+  <?php the_excerpt() ?>
+<?php } ?>
       <a href=""><?= __('Mehr News ...', 'flueba') ?></a>
     </div>
 
@@ -41,9 +47,11 @@ while (have_posts()) {
   while ($the_query->have_posts()) {
     $count++;
     $the_query->the_post(); ?>
-  <h3><?php the_title(); ?></h3>
-  <?php the_field('subscript'); ?><br>
-  <a href="<?php the_permalink(); ?>">Mehr ....</a>
+    <a href="<?php the_permalink() ?>">
+      <?php echo date_i18n("l, j. F Y", strtotime(get_field('date'))) ?><br>
+      <?php the_title(); ?>
+    </a>
+    <?php the_excerpt(); ?>
 <?php
   }
   wp_reset_query();

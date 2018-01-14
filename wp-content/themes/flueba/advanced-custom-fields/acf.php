@@ -164,6 +164,8 @@ if(function_exists("register_field_group"))
 		'id' => 'acf_termindetails',
 		'title' => 'Termindetails',
 		'fields' => array (
+			/* APPARENTLY NOT REQUIRED IN REDESIGN.
+			 * remove if sure about that.
 			array (
 				'key' => 'field_566214d5ca43f',
 				'label' => 'Beschreibung',
@@ -173,7 +175,7 @@ if(function_exists("register_field_group"))
 				'toolbar' => 'full',
 				'media_upload' => 'yes',
 			),
-			array (
+			 array (
 				'key' => 'field_5960cd4e432c9',
 				'label' => 'Untertitel',
 				'name' => 'subscript',
@@ -185,7 +187,7 @@ if(function_exists("register_field_group"))
 				'append' => '',
 				'formatting' => 'html',
 				'maxlength' => '',
-			),
+			),*/
 			array (
 				'key' => 'field_5960c86db0698',
 				'label' => 'Datum',
@@ -201,7 +203,7 @@ if(function_exists("register_field_group"))
 				'name' => 'show_on_start_page',
 				'type' => 'true_false',
 				'message' => '',
-				'default_value' => 0,
+				'default_value' => 1,
 			),
 		),
 		'location' => array (
