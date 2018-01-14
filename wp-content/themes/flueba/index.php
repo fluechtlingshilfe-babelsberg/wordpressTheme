@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="container">
+<div class="container mt-4">
 <div class="row">
 <div class="col-md-8 col-md-push-2 col-xs-12">
 <?php while (have_posts()) {

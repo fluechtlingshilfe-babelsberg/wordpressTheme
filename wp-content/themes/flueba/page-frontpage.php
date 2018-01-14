@@ -14,7 +14,7 @@ while (have_posts()) {
 <?php
   foreach (get_posts() as $post) {
     setup_postdata($post)?>
-    <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
+    <a  class="link-title" href="<?php the_permalink() ?>"><?php the_title() ?></a>
   <?php the_excerpt() ?>
 <?php } ?>
       <a href=""><?= __('Mehr News ...', 'flueba') ?></a>
@@ -47,7 +47,7 @@ while (have_posts()) {
   while ($the_query->have_posts()) {
     $count++;
     $the_query->the_post(); ?>
-    <a href="<?php the_permalink() ?>">
+    <a href="<?php the_permalink() ?>" class="link-title">
       <?php echo date_i18n("l, j. F Y", strtotime(get_field('date'))) ?><br>
       <?php the_title(); ?>
     </a>

@@ -5,6 +5,7 @@
 !deploy_rsa.enc
 !README.md
 !overview.md
+!install.sh
 !wp-content/
 
 # Ignore everything in the "wp-content" directory, except the "plugins" and "themes" directories.
