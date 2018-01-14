@@ -1,6 +1,6 @@
 <?php get_header() ?>
 
-<div class="container">
+<div class="container mt-4">
 
   <?php the_post() ?>
   <h1><?php the_title() ?></h1>

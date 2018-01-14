@@ -1,7 +1,6 @@
-<?php flush_rewrite_rules(); ?>
 <?php get_header(); ?>
 
-<div class="container">
+<div class="container mt-4">
 	<h1><?php the_title(); ?></h1>
 
 	<?php

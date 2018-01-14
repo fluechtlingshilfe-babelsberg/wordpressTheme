@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
-<div class="container">
+<div class="container mt-4">
 <?php
 while (have_posts()) {
 	the_post();
-	echo '<h1>';the_title();echo '</h1>';
+	echo '<h3>';the_title();echo '</h3>';
 	the_content();
 }
 

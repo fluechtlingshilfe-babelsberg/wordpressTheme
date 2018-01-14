@@ -23,7 +23,7 @@ a:hover {
 }
 
 body {
-  margin-bottom: 70px;
+  margin-bottom: 94px;
   font-family: 'Noto Sans';
   font-size: 14px;
   line-height: 1.6em;
@@ -63,6 +63,9 @@ h2 {
 }
 .nav-link {
   font-weight: normal;
+}
+.nav-link.active {
+  font-weight: bold;
 }
 
 .help-needed {

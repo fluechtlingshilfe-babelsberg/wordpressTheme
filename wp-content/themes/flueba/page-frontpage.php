@@ -58,12 +58,11 @@ while (have_posts()) {
 ?>
 <?php
   if ($count == 0){
-    echo "<p>". __("Im Moment gibt es keine aktuellen Termine.", 'flueba') ."<br>";
-    ?><a href="<?php echo get_page_link(238);?>"><?= __('Zum Archiv ...', 'flueba') ?></a></p><?php
+    echo "<p>". __('Im Moment gibt es keine aktuellen Termine.', 'flueba') ."<br>";
+    ?><a href="<?= get_permalink(get_page_by_path('termine-archive'));?>"><?= __('Zum Archiv ...', 'flueba') ?></a></p><?php
   } else {
 ?>
-  <br><br>
-  <a href="<?php echo get_page_link(134);?>"><?= __('Alle Termine ...', 'flueba') ?></a>
+  <a href="<?= get_permalink(get_page_by_path('termine')) ?>"><?= __('Alle Termine ...', 'flueba') ?></a>
   <?php } ?>
 </div>
 

@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-<div class="container">
-	<h1><?php the_title(); ?></h1>
+<div class="container mt-4">
+	<h3><?php the_title(); ?></h3>
 	<?php
 		while (have_posts()) {
 			the_post();
@@ -19,8 +19,6 @@
 	foreach ($ags as &$ag) { ?>
 		<a href="<?php echo get_term_link($ag) ?>" class="label label-default"><?php echo $ag->name ?></a>
 	<?php } ?>
-
-	<hr class="clearfix">
 
 <?php
 $the_query = new WP_Query(array(
@@ -44,6 +42,7 @@ while ($the_query->have_posts()) {
 }
 wp_reset_query();
 ?>
+    <a href="<?= get_permalink(get_page_by_path('termine-archiv'));?>"><?= __('Zum Archiv ...', 'flueba') ?></a>
 </div>
 
 <?php get_footer(); ?>

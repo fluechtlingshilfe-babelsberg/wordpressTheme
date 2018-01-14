@@ -14,14 +14,16 @@ wp language core install --activate de
 wp plugin install --activate advanced-custom-fields
 wp theme activate flueba
 
-p1=$(wp post create --post_type=page --post_title='Über uns' --porcelain)
-p2=$(wp post create --post_type=page --post_title='Mitmachen' --porcelain)
-p3=$(wp post create --post_type=page --post_title='Unsere Arbeit' --porcelain)
-p4=$(wp post create --post_type=page --post_title='Hilfreiches' --porcelain)
-p5=$(wp post create --post_type=page --post_title='Kontakt' --porcelain)
-p6=$(wp post create --post_type=page --post_title='Mitglied werden' --porcelain)
-p7=$(wp post create --post_type=page --post_title='Newsletter abbonieren' --porcelain)
-p8=$(wp post create --post_type=page --post_title='Spenden' --porcelain)
+p1=$(wp post create --post_status=publish --post_type=page --post_title='Über uns' --porcelain)
+p2=$(wp post create --post_status=publish --post_type=page --post_title='Mitmachen' --porcelain)
+p3=$(wp post create --post_status=publish --post_type=page --post_title='Unsere Arbeit' --porcelain)
+p4=$(wp post create --post_status=publish --post_type=page --post_title='Hilfreiches' --porcelain)
+p5=$(wp post create --post_status=publish --post_type=page --post_title='Kontakt' --porcelain)
+p6=$(wp post create --post_status=publish --post_type=page --post_title='Mitglied werden' --porcelain)
+p7=$(wp post create --post_status=publish --post_type=page --post_title='Newsletter abbonieren' --porcelain)
+wp post create --post_status=publish --post_type=page --post_title='Spenden'
+wp post create --post_status=publish --post_type=page --post_title='Termine'
+wp post create --post_status=publish --post_type=page --post_title='Termine Archiv'
 
 wp menu create "Primary"
 wp menu location assign "Primary" "primary"

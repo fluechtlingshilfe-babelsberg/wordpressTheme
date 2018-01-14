@@ -101,9 +101,8 @@ function the_termin($full = true) { ?>
   <em class="pull-right text-muted">
     <?php echo date_i18n("l, j. F Y", strtotime(get_field('date'))) ?>
   </em>
-  <a href="<?php the_permalink(); ?>">
-    <h3><?php the_title(); ?></h3>
-  </a>
+  <br>
+  <a class="link-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 
   <h5 class="text-muted"><?php the_field("subscript"); ?></h5>
 <?php if ($full) {
