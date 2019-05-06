@@ -1,5 +1,8 @@
 <?php
 
+include('acf.php');
+include('post-type-news.php');
+
 // Remove useless stuff...
 wp_deregister_script('jquery');
 wp_register_script('jquery', '', '', '', true);
