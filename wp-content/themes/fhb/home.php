@@ -4,6 +4,27 @@
 <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-collapse" uk-grid>
 
   <div>
+    <?php $offers = new WP_Query(['post_type' => 'offers', 'posts_per_page' => -1]); ?>
+    <?php if ($offers->post_count) {?>
+    <div class="news-container">
+      <h2>Aktuelle Angebote</h2>
+      <?php while ($offers->have_posts()) : ?>
+        <?php $offers->the_post(); ?>
+          <div class="offer uk-clearfix">
+            <?php the_post_thumbnail('thumbnail') ?>
+            <a href="<?php echo get_permalink(); ?>">
+              <h3><?php the_title(); ?></h3>
+            </a>
+            <?php the_excerpt(); ?>
+            <a href="<?php echo get_permalink(); ?>" class="button">
+              Weiterlesen
+            </a>
+          </div>
+      <?php endwhile; ?>
+      <?php wp_reset_postdata(); ?>
+    </div>
+    <?php } ?>
+
     <div class="news-container">
       <h2>Neuigkeiten</h2>
       <?php foreach(get_field('news') as $post): setup_postdata($post); ?>

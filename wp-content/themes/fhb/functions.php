@@ -2,6 +2,7 @@
 
 include('acf.php');
 include('post-type-news.php');
+include('post-type-offers.php');
 
 // Remove useless stuff...
 wp_deregister_script('jquery');

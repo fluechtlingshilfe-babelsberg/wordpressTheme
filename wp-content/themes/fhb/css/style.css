@@ -36,6 +36,26 @@ body.home .uk-section-primary h2 {
   color: #00474e;
 }
 
+.offer {
+  background: #00474e;
+  color: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.offer img {
+  margin-bottom: 1rem;
+  float: right;
+}
+.offer h3 {
+  color: #fff;
+}
+.offer .button {
+  background: #fff;
+  padding: 0.5rem;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
 body.home .news p,
 body.home .event p,
 body.home .text p {
