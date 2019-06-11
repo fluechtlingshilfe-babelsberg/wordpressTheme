@@ -23,7 +23,7 @@ add_action('init', function() {
 		"capability_type" => "post",
 		"map_meta_cap" => true,
 		"hierarchical" => false,
-		"rewrite" => array( "slug" => "termine", "with_front" => true ),
+		"rewrite" => array( "slug" => "angebote", "with_front" => true ),
 		"query_var" => true,
 		"menu_icon" => "dashicons-megaphone",
 		"supports" => array( "title", "editor", "thumbnail", "excerpt" ),
