@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <?php if (have_posts()): while(have_posts()): the_post(); ?>
-	<section class="uk-container">
+	<section class="uk-container uk-container-small">
 		<h2><?php the_title(); ?></h2>
 		<?php if (get_field('date')): ?>
 			<div class="fhb-date"><span uk-icon="icon: calendar"></span> <?php the_field('date'); ?></div>

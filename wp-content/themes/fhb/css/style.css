@@ -264,11 +264,11 @@ body.archive .fhb-contact .fhb-profile .email {
   white-space: nowrap;
 }
 
-body.page .uk-container,
+/*body.page .uk-container,
 body.single .uk-container,
 body.archive .uk-container {
   max-width: inherit;
-}
+}*/
 
 body.page .more-link,
 body.single .more-link,

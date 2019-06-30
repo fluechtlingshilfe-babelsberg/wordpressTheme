@@ -2,7 +2,7 @@
 
 <?php while(have_rows('section')): the_row(); ?>
 	<?php if(get_sub_field('content')): ?>
-	<section class="uk-container <?php if (get_sub_field('color')) echo 'uk-section-primary'; ?>">
+	<section class="uk-container uk-container-small <?php if (get_sub_field('color')) echo 'uk-section-primary'; ?>">
 	 <h2><?php the_sub_field('title'); ?></h2>
 	 <?php the_sub_field('content'); ?>
  </section>

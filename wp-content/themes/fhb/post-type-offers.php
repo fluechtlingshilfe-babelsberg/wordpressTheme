@@ -14,7 +14,7 @@ add_action('init', function() {
 		"public" => true,
 		"publicly_queryable" => true,
 		"show_ui" => true,
-		"show_in_rest" => false,
+		"show_in_rest" => true,
 		"rest_base" => "",
 		"has_archive" => true,
 		"show_in_menu" => true,
