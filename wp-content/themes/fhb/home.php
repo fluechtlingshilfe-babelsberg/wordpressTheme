@@ -49,7 +49,7 @@
         if ($now <= get_field('date', $post->ID) || (!empty($end_date) && $now <= $end_date)): ?>
           <div class="event">
             <a href="<?php echo get_permalink(); ?>">
-              <h3><?php echo date('d.m.Y', strtotime(get_field('date', $post->ID))) . ' ' . get_field('time') . (get_field('date_end') || get_field('time_end') ? ' - ' . date('d.m.Y', strtotime(get_field('date_end'))) . ' ' . get_field('time_end') : '') ?><br><?php the_title(); ?></h3>
+              <h3><?php echo date('d.m.Y', strtotime(get_field('date', $post->ID))) . ' ' . get_field('time') . (get_field('date_end') || get_field('time_end') ? ' - ' . (get_field('date_end') ? date('d.m.Y', strtotime(get_field('date_end'))) : '') . ' ' . get_field('time_end') : '') ?><br><?php the_title(); ?></h3>
             </a>
             <?php the_content('weiterlesen'); ?>
           </div>
