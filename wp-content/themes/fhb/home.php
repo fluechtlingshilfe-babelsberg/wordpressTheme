@@ -43,10 +43,13 @@
       <?php $events = new WP_Query(['post_type' => 'termine', 'meta_key' => 'date', 'orderby' => 'meta_value', 'order' => 'ASC', 'posts_per_page' => -1]); ?>
       <?php while ($events->have_posts()) : ?>
         <?php $events->the_post(); ?>
-        <?php if (date('Y-m-d') <= get_field('date', $post->ID)): ?>
+        <?php
+        $now = date('Y-m-d');
+        $end_date = get_field('date_end', $post->ID);
+        if ($now <= get_field('date', $post->ID) || (!empty($end_date) && $now <= $end_date)): ?>
           <div class="event">
             <a href="<?php echo get_permalink(); ?>">
-              <h3><?php echo date('d.m.Y', strtotime(get_field('date', $post->ID))) . ' ' . get_field('time') . (get_field('time_end') ? '-' . get_field('time_end') : '') ?><br><?php the_title(); ?></h3>
+              <h3><?php echo date('d.m.Y', strtotime(get_field('date', $post->ID))) . ' ' . get_field('time') . (get_field('date_end') || get_field('time_end') ? ' - ' . date('d.m.Y', strtotime(get_field('date_end'))) . ' ' . get_field('time_end') : '') ?><br><?php the_title(); ?></h3>
             </a>
             <?php the_content('weiterlesen'); ?>
           </div>

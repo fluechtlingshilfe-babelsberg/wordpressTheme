@@ -4,7 +4,13 @@
 	<section class="uk-container uk-container-small">
 		<h2><?php the_title(); ?></h2>
 		<?php if (get_field('date')): ?>
-			<div class="fhb-date"><span uk-icon="icon: calendar"></span> <?php the_field('date'); ?></div>
+			<div class="fhb-date"><span uk-icon="icon: calendar"></span>
+				<?php echo date('d.m.Y', strtotime(get_field('date')));
+				if (get_field('date_end')) {
+					echo ' - ';
+					echo date('d.m.Y', strtotime(get_field('date_end')));
+				} ?>
+			</div>
 		<?php endif; ?>
 		<?php if (get_field('time')): ?>
 			<div class="fhb-time"><span uk-icon="icon: clock"></span> <?php echo get_field('time') . (get_field('time_end') ? '-' . get_field('time_end') : ''); ?></div>

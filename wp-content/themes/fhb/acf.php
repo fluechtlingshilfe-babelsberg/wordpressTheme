@@ -84,7 +84,7 @@ acf_add_local_field_group(array(
 		11 => 'tags',
 		12 => 'send-trackbacks',
 	),
-	'active' => 1,
+	'active' => true,
 	'description' => '',
 ));
 
@@ -162,7 +162,7 @@ acf_add_local_field_group(array(
 	'label_placement' => 'top',
 	'instruction_placement' => 'label',
 	'hide_on_screen' => '',
-	'active' => 1,
+	'active' => true,
 	'description' => '',
 ));
 
@@ -202,6 +202,23 @@ acf_add_local_field_group(array(
 			),
 			'display_format' => 'H:i',
 			'return_format' => 'H:i',
+		),
+		array(
+			'key' => 'field_5d394d288530c',
+			'label' => 'Enddatum',
+			'name' => 'date_end',
+			'type' => 'date_picker',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'display_format' => 'd.m.Y',
+			'return_format' => 'Y-m-d',
+			'first_day' => 1,
 		),
 		array(
 			'key' => 'field_5ab3e8cfad439',
@@ -285,7 +302,7 @@ acf_add_local_field_group(array(
 		9 => 'tags',
 		10 => 'send-trackbacks',
 	),
-	'active' => 1,
+	'active' => true,
 	'description' => '',
 ));
 
@@ -366,7 +383,7 @@ acf_add_local_field_group(array(
 		11 => 'tags',
 		12 => 'send-trackbacks',
 	),
-	'active' => 1,
+	'active' => true,
 	'description' => '',
 ));
 
@@ -489,7 +506,7 @@ acf_add_local_field_group(array(
 		8 => 'tags',
 		9 => 'send-trackbacks',
 	),
-	'active' => 1,
+	'active' => true,
 	'description' => '',
 ));
 
@@ -646,7 +663,7 @@ acf_add_local_field_group(array(
 		10 => 'tags',
 		11 => 'send-trackbacks',
 	),
-	'active' => 1,
+	'active' => true,
 	'description' => '',
 ));
 
