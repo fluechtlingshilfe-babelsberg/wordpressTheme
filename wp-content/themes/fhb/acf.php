@@ -1,5 +1,4 @@
 <?php
-
 if( function_exists('acf_add_local_field_group') ):
 
 acf_add_local_field_group(array(
@@ -204,23 +203,6 @@ acf_add_local_field_group(array(
 			'return_format' => 'H:i',
 		),
 		array(
-			'key' => 'field_5d394d288530c',
-			'label' => 'Enddatum',
-			'name' => 'date_end',
-			'type' => 'date_picker',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'display_format' => 'd.m.Y',
-			'return_format' => 'Y-m-d',
-			'first_day' => 1,
-		),
-		array(
 			'key' => 'field_5ab3e8cfad439',
 			'label' => 'Endzeit',
 			'name' => 'time_end',
@@ -383,6 +365,49 @@ acf_add_local_field_group(array(
 		11 => 'tags',
 		12 => 'send-trackbacks',
 	),
+	'active' => true,
+	'description' => '',
+));
+
+acf_add_local_field_group(array(
+	'key' => 'group_5db205a384644',
+	'title' => 'Offers',
+	'fields' => array(
+		array(
+			'key' => 'field_5db205c2899d2',
+			'label' => 'Video URL',
+			'name' => 'video_url',
+			'type' => 'text',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'placeholder' => '',
+			'prepend' => '',
+			'append' => '',
+			'maxlength' => '',
+		),
+	),
+	'location' => array(
+		array(
+			array(
+				'param' => 'post_type',
+				'operator' => '==',
+				'value' => 'post',
+			),
+		),
+	),
+	'menu_order' => 0,
+	'position' => 'normal',
+	'style' => 'default',
+	'label_placement' => 'top',
+	'instruction_placement' => 'label',
+	'hide_on_screen' => '',
 	'active' => true,
 	'description' => '',
 ));

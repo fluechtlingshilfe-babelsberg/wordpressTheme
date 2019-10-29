@@ -11,7 +11,17 @@
       <?php while ($offers->have_posts()) : ?>
         <?php $offers->the_post(); ?>
           <div class="offer uk-clearfix">
-            <?php the_post_thumbnail('thumbnail') ?>
+            <?php if (get_field('video_url')) { ?>
+            <div class="responsive-embed">
+              <iframe
+                src="<?php echo get_field('video_url') ?>"
+                frameborder="0"
+                allowfullscreen></iframe>
+            </div>
+            <br>
+            <?php } else {
+              the_post_thumbnail('thumbnail');
+            } ?>
             <a href="<?php echo get_permalink(); ?>">
               <h3><?php the_title(); ?></h3>
             </a>
