@@ -26,7 +26,7 @@ add_action('init', function() {
 		"rewrite" => array( "slug" => "angebote", "with_front" => true ),
 		"query_var" => true,
 		"menu_icon" => "dashicons-megaphone",
-		"supports" => array( "title", "editor", "thumbnail", "excerpt" ),
+		"supports" => array( "title", "editor", "thumbnail", "excerpt", "custom-fields" ),
 	);
 
 	register_post_type( "offers", $args );
