@@ -35,16 +35,7 @@
     </div>
     <?php } ?>
 
-    <div class="news-container">
-      <h2>Neuigkeiten</h2>
-      <?php foreach(get_field('news') as $post): setup_postdata($post); ?>
-        <div class="news">
-          <a href="<?php echo get_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
-          <?php the_content('weiterlesen'); ?>
-        </div>
-        <?php wp_reset_postdata(); ?>
-      <?php endforeach; ?>
-    </div>
+    <div class="news-container"></div>
   </div>
 
   <div>
@@ -69,6 +60,16 @@
       <p>
         <a href="termine" class="more-link">zur Archiv...</a>
       </p>
+
+      <h2>Neuigkeiten</h2>
+      <?php foreach(get_field('news') as $post): setup_postdata($post); ?>
+        <div class="news">
+          <a href="<?php echo get_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+          <?php the_content('weiterlesen'); ?>
+        </div>
+        <?php wp_reset_postdata(); ?>
+      <?php endforeach; ?>
+
       </div>
     </div>
 
