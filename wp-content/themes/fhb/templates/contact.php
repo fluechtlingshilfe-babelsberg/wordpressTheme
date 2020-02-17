@@ -17,7 +17,7 @@
 									<span class="phone"> <span uk-icon="icon: receiver"></span> <?php the_sub_field('phone'); ?></span>
 								<?php endif; ?>
 								<?php if (get_sub_field('email')): ?>
-									<span class="email"><span uk-icon="icon: mail"></span> <a href="<?php the_sub_field('email'); ?>"><?php the_sub_field('email'); ?></a></span>
+									<span class="email"><span uk-icon="icon: mail"></span> <a href="mailto:<?php the_sub_field('email'); ?>"><?php the_sub_field('email'); ?></a></span>
 								<?php endif; ?>
 							</div>
 						</div>
