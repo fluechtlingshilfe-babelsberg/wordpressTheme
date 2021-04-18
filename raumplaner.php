@@ -61,13 +61,14 @@ if (isset($_GET['reserve'])) {
 	die();
 }
 
-$week_offset = (isset($_GET["week_offset"]) ? intval($_GET["week_offset"]) : 0) ?? 0;
+$week_offset = (isset($_GET["week_offset"]) ? intval($_GET["week_offset"]) : 0);
+if (!$week_offset) $week_offset = 0;
 $seconds_offset = $week_offset * 7 * 24 * 60 * 60;
 
 $week_start = strtotime("monday this week") + $seconds_offset;
 $week_end = strtotime("sunday this week") + $seconds_offset;
 
-$stmt = $mysqli->prepare("SELECT * FROM reservation WHERE start >= ? AND start <= ?");
+$stmt = $mysqli->prepare("SELECT start,name,room FROM reservation WHERE start >= ? AND start <= ?");
 if (!$stmt) {
 	die("Failed to prepare query");
 }
@@ -75,19 +76,18 @@ $ws = date('Y-m-d H:i:s', $week_start);
 $we = date('Y-m-d H:i:s', $week_end + 24 * 60 * 60 - 1);
 $stmt->bind_param("ss", $ws, $we);
 $stmt->execute();
-$result = $stmt->get_result();
 
+$stmt->bind_result($start, $name, $room);
 $entries = array();
-while ($row = $result->fetch_assoc()) {
-	$time = strtotime($row['start']);
+while ($stmt->fetch()) {
+	$time = strtotime($start);
 	array_push($entries, array(
 		'day' => intval(date('N', $time)) - 1,
 		'hour' => intval(date('H', $time)),
-		'name' => $row['name'],
-		'room' => $row['room'],
+		'name' => $name,
+		'room' => $room,
 	));
 }
-$stmt->free_result();
 $stmt->close();
 
 function find($list, $cb) {
