@@ -1,6 +1,6 @@
 <nav class="uk-navbar-container uk-preserve-color uk-section-muted" id="nav-bottom" uk-navbar>
  <div class="uk-navbar-left">
-  <span class="fhb-nav-nolink">©2017 Flüchtlingshilfe Babelsberg</span>
+   <span class="fhb-nav-nolink">©<?= date('Y') ?> Flüchtlingshilfe Babelsberg</span>
  </div>
  <div class="uk-navbar-right">
   <ul class="uk-navbar-nav">
