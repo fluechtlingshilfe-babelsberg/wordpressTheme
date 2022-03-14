@@ -512,6 +512,11 @@ acf_add_local_field_group(array(
 				'operator' => '!=',
 				'value' => '42',
 			),
+			array(
+				'param' => 'page_template',
+				'operator' => '!=',
+				'value' => 'template-simple.php',
+			),
 		),
 	),
 	'menu_order' => 0,
