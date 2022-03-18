@@ -42,12 +42,16 @@ body.home .uk-section-primary h2 {
   padding: 1rem;
   margin-bottom: 1rem;
 }
+.offer p {
+  font-size: 0.8rem;
+  margin-top: 0;
+}
 .offer img {
   margin-bottom: 1rem;
-  float: right;
 }
 .offer h3 {
   color: #fff;
+  margin-bottom: 0;
 }
 .offer .button {
   background: #fff;
