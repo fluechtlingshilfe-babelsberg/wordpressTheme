@@ -22,6 +22,7 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script src="<?php echo get_template_directory_uri()?>/lib/uikit/js/uikit.min.js"></script>
 	<script src="<?php echo get_template_directory_uri()?>/lib/uikit/js/uikit-icons.min.js"></script>
+	<script src="<?php echo get_template_directory_uri()?>/js/main.js"></script>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">

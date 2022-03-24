@@ -655,3 +655,49 @@ form .f_newsletter {
     display: none;
   }
 }
+
+/* Tabs */
+.tabs-container {
+    margin-top: 40px;
+}
+.tabs-nav {
+    margin: 0;
+    border-bottom: 2px solid #008087;
+}
+ul.tabs-nav {
+    list-style: none;
+    padding-left: 0;
+}
+.tabs-nav li {
+    display: inline-block;
+    border: 1px solid transparent;
+}
+.tabs-nav li.active {
+    border-color: #999;
+    border-bottom-color: #008087;
+    background-color: #008087;
+}
+.tabs-nav li.active a {
+    color:  #fff;
+}
+.tabs-nav h2 {
+    margin: 0;
+}
+.tabs-nav a {
+    display: block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+div.tab {
+    display: none;
+    margin-left: 1em !important;
+    margin-bottom: 1em;
+    padding: 1em 0;
+}
+div.tab.active {
+    display: block;
+    flex-basis: 100% !important;
+}
+div.tab ul {
+    margin-left: -1em;
+}

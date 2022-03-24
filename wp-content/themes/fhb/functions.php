@@ -7,6 +7,7 @@ include('post-type-offers.php');
 // Remove useless stuff...
 wp_deregister_script('jquery');
 wp_register_script('jquery', '', '', '', true);
+//wp_register_script('main', get_stylesheet_directory_uri() . '/js/main.js');
 add_action( 'wp_footer', function() { wp_deregister_script( 'wp-embed' ); });
 remove_action('wp_head', 'print_emoji_detection_script', 7); // no php needed above it
 remove_action('wp_print_styles', 'print_emoji_styles');
