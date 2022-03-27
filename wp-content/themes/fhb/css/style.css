@@ -667,17 +667,23 @@ form .f_newsletter {
 ul.tabs-nav {
     list-style: none;
     padding-left: 0;
+    display: flex;
 }
 .tabs-nav li {
     display: inline-block;
-    border: 1px solid transparent;
+    flex: 0 1 content;
+    background-color: #f8f8f8;
+    border-top: 1px solid #aaa;
+    border-left: 1px solid #aaa;
+}
+.tabs-nav li:last-of-type {
+    border-right: 1px solid #aaa;
 }
 .tabs-nav li.active {
-    border-color: #999;
-    border-bottom-color: #008087;
+    margin-top: -2px;
     background-color: #008087;
 }
-.tabs-nav li.active a {
+.tabs-nav li.active a, .tabs-nav li.active h2 {
     color:  #fff;
 }
 .tabs-nav h2 {
@@ -688,6 +694,22 @@ ul.tabs-nav {
     padding: 0.5em 1em;
     text-decoration: none;
 }
+@media (max-width: 550px) {
+    .tabs-nav h2 {
+        font-size: 1em;
+    }
+    .tabs-nav a {
+        padding:  0.4em 0.8em;
+    }
+}
+@media (max-width: 375px) {
+    .tabs-nav h2 {
+        font-size: 0.9em;
+    }
+    .tabs-nav a {
+        padding:  0.3em 0.6em;
+    }
+}
 div.tab {
     display: none;
     margin-left: 1em !important;
@@ -697,6 +719,11 @@ div.tab {
 div.tab.active {
     display: block;
     flex-basis: 100% !important;
+}
+@media (min-width: 600px) and (max-width: 781px) {
+    .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column:not(:only-child).tab.active {
+        flex-basis: 100% !important;
+    }
 }
 div.tab ul {
     margin-left: -1em;
