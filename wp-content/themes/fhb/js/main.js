@@ -35,12 +35,19 @@ jQuery(document).ready(function($) {
         tabs.find('div'+decodeURI(window.location.hash)+'.tab').addClass('active');
     }
 
-    // add function to switch between the tabs on click
-    $('.tabs-nav a, a.tab-url').on('click', function(e) {
-        e.preventDefault();
+    function activate() {
         $(this).parents('.tabs-container').find('.tabs-nav li.active').removeClass('active');
         $(this).parents('.tabs-container').find('div.tab.active').removeClass('active');
         $(this).parents('.tabs-container').find('.tabs-nav a[href="'+$(this).attr('href')+'"]').parents('li').addClass('active');
         $(this).parents('.tabs-container').find('div'+$(this).attr('href')+'.tab').addClass('active');
+    }
+
+    // add function to switch between the tabs on click
+    $('.tabs-nav a, a.tab-url').on('click', function(e) {
+        e.preventDefault();
+	const index = $(this).parents('li').index();
+	$('.tabs-container').each(function() {
+	    $(this).find('.tabs-nav a').eq(index).each(activate)
+	})
     });
 });
