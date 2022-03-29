@@ -435,6 +435,31 @@ img.aligncenter {
   color: white;
 }
 
+@media (max-width: 475px) {
+  #nav-sub .uk-navbar-right {
+    width: 100%;
+    padding: 15px;
+  }
+
+  #nav-sub .uk-navbar-nav {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 100%;
+    max-height: 130px;
+  }
+
+  #nav-sub .uk-navbar-nav > li > a {
+    padding: 5px 15px;
+    height: auto;
+  }
+
+  #nav-sub .uk-navbar-nav > li:last-of-type {
+    padding-left: 0;
+    margin-bottom: 12px;
+  }
+}
+
 #nav-bottom {
   padding: 0;
   font-size: 0.7rem;
