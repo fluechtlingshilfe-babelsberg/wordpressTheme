@@ -4,9 +4,7 @@
 <div class="uk-grid-collapse" uk-grid>
 
   <div class="uk-width-2-3@m uk-width-1-2@s">
-    <div class="uk-margin-left uk-margin-right uk-margin-top uk-text-small" uk-alert>
-      Spenden Sie jetzt an die Flüchtlingshilfe Babelsberg e.V. für Geflüchtete aus der Ukraine IBAN: DE68 1605 0000 1000 7267 00 bei der Mittelbrandenburgische Sparkasse, BIC WELADED1PMB, Stichwort: Potsdam hilft. <a href="https://fluechtlingshilfe-babelsberg.de/spenden/">Mehr Infos »</a>
-    </div>
+    <?php get_template_part('templates/home-top-sidebar'); ?>
     <div class="uk-grid-collapse uk-child-width-1-2@m uk-child-width-1-1@s" uk-grid>
       <?php $offers = new WP_Query(['post_type' => 'offers', 'posts_per_page' => -1]); ?>
       <?php if ($offers->post_count) {?>
