@@ -12,7 +12,9 @@
       <?php $offers = new WP_Query(['post_type' => 'offers', 'posts_per_page' => -1]); ?>
       <?php if ($offers->post_count) { ?>
         <div class="news-container">
-          <h2>Aktuelle Angebote</h2>
+          <h2>Aktuelle Aktivitäten</h2>
+          <p>Die Flüchtlingshilfe Babelsberg ist in verschiedenen Arbeitsgruppen aktiv, über die Sie sich im folgenden jeweils informieren oder die Gruppe kontaktieren können.</p>
+          <hr>
           <div class="uk-child-width-1-2 uk-grid-collapse" data-uk-grid>
             <?php while ($offers->have_posts()) : ?>
               <?php $offers->the_post(); ?>
@@ -40,15 +42,21 @@
     </div>
   <?php } ?>
 
-  <div class="events-container uk-width-1-3">
+  <?php
+  $events = get_posts(['post_type' => 'termine', 'meta_key' => 'date', 'orderby' => 'meta_value', 'order' => 'ASC', 'posts_per_page' => -1]);
+  $events = array_filter($events, function ($post) {
+    $now = date('Y-m-d');
+    $end_date = get_field('date_end', $post->ID);
+    return $now <= get_field('date', $post->ID) || (!empty($end_date) && $now <= $end_date);
+  });
+  function show_events($events)
+  {
+    global $post;
+  ?>
     <h2>Aktuelle Termine</h2>
-    <?php $events = new WP_Query(['post_type' => 'termine', 'meta_key' => 'date', 'orderby' => 'meta_value', 'order' => 'ASC', 'posts_per_page' => -1]); ?>
-    <?php while ($events->have_posts()) : ?>
-      <?php $events->the_post(); ?>
+    <?php foreach ($events as $post) : ?>
       <?php
-      $now = date('Y-m-d');
-      $end_date = get_field('date_end', $post->ID);
-      if ($now <= get_field('date', $post->ID) || (!empty($end_date) && $now <= $end_date)) : ?>
+      if (true) : ?>
         <div class="event">
           <a href="<?php echo get_permalink(); ?>">
             <h3><?php echo date('d.m.Y', strtotime(get_field('date', $post->ID))) . ' ' . get_field('time') . (get_field('date_end') || get_field('time_end') ? ' - ' . (get_field('date_end') ? date('d.m.Y', strtotime(get_field('date_end'))) : '') . ' ' . get_field('time_end') : '') ?><br><?php the_title(); ?></h3>
@@ -56,12 +64,15 @@
           <?php the_content('weiterlesen'); ?>
         </div>
       <?php endif; ?>
-    <?php endwhile; ?>
+    <?php endforeach; ?>
     <?php wp_reset_postdata(); ?>
     <p>
       <a href="termine" class="more-link">zum Archiv...</a>
     </p>
+  <?php } ?>
 
+  <div class="events-container uk-width-1-3">
+    <?php if (!empty($events)) show_events($events); ?>
     <h2>Neuigkeiten</h2>
     <?php foreach (get_field('news') as $post) : setup_postdata($post); ?>
       <div class="news">
@@ -72,6 +83,7 @@
       </div>
       <?php wp_reset_postdata(); ?>
     <?php endforeach; ?>
+    <?php if (empty($events)) show_events($events); ?>
 
   </div>
   </div>
