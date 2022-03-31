@@ -54,17 +54,18 @@ body.home .uk-section-primary h2 {
   background: #00474e;
   color: #fff;
   padding: 1rem;
-  border-right: 1rem solid white;
   border-bottom: 1rem solid white;
+  border-left: 1rem solid white;
 }
 
-.news-container .uk-first-column {
+.offer.uk-first-column {
+  border-left: none;
 }
 
 .offer p {
   font-size: 0.8rem;
 }
-@media (min-width: 960px) {
+@media (min-width: 640px) {
   .offer p {
     font-size: 0.9rem;
   }

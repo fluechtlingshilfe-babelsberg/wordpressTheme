@@ -11,7 +11,7 @@
         <div class="news-container">
           <?php dynamic_sidebar('home-top-activities'); ?>
           <hr>
-          <div class="uk-child-width-1-2 uk-grid-collapse" data-uk-grid>
+          <div class="uk-child-width-1-1 uk-child-width-1-2@m uk-grid-collapse" data-uk-grid>
             <?php while ($offers->have_posts()) : ?>
               <?php $offers->the_post(); ?>
               <div class="offer">
