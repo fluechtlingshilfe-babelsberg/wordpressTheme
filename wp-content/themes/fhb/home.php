@@ -9,8 +9,7 @@
       <?php $offers = new WP_Query(['post_type' => 'offers', 'posts_per_page' => -1]); ?>
       <?php if ($offers->post_count) { ?>
         <div class="news-container">
-          <h2>Aktuelle Aktivitäten</h2>
-          <p>Die Flüchtlingshilfe Babelsberg ist in verschiedenen Arbeitsgruppen aktiv, über die Sie sich im folgenden jeweils informieren oder die Gruppe kontaktieren können.</p>
+          <?php dynamic_sidebar('home-top-activities'); ?>
           <hr>
           <div class="uk-child-width-1-2 uk-grid-collapse" data-uk-grid>
             <?php while ($offers->have_posts()) : ?>
