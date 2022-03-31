@@ -3,13 +3,13 @@ html {
 }
 
 h1 {
-  font-family: 'Cambria', serif;
+  font-family: "Cambria", serif;
   font-size: 1.1rem;
   text-transform: uppercase;
 }
 
 h2 {
-  font-family: 'Cambria', serif;
+  font-family: "Cambria", serif;
   font-size: 1.1rem;
   text-transform: uppercase;
   margin-bottom: 1em;
@@ -40,11 +40,15 @@ body.home .uk-section-primary h2 {
   background: #00474e;
   color: #fff;
   padding: 1rem;
-  margin-bottom: 1rem;
+  border-right: 1rem solid white;
+  border-bottom: 1rem solid white;
 }
+
+.news-container .uk-first-column {
+}
+
 .offer p {
   font-size: 0.8rem;
-  margin-top: 0;
 }
 .offer img {
   margin-bottom: 1rem;
@@ -491,7 +495,7 @@ img.aligncenter {
 
 .fhb-article-image:before {
   display: block;
-  content: ' ';
+  content: " ";
   width: 100%;
   padding-top: 54.6875%;
 }
@@ -512,7 +516,7 @@ img.aligncenter {
   }
   .fhb-article-image:before {
     display: block;
-    content: ' ';
+    content: " ";
     width: 100%;
     padding-top: 39.0625%;
   }
@@ -533,7 +537,7 @@ img.aligncenter {
   }
   .fhb-article-image:before {
     display: block;
-    content: ' ';
+    content: " ";
     width: 100%;
     padding-top: 27.34375%;
   }
@@ -561,7 +565,7 @@ img.aligncenter {
 
 .fhb-thumbnail:before {
   display: block;
-  content: ' ';
+  content: " ";
   width: 100%;
   padding-top: 55.36585%;
 }
@@ -579,8 +583,8 @@ form {
   padding: 15px 0;
 }
 
-form input[type='text'],
-form input[type='email'],
+form input[type="text"],
+form input[type="email"],
 form textarea {
   border: solid 1px #008087;
   font-family: inherit;
@@ -589,7 +593,7 @@ form textarea {
   padding: 4px;
 }
 
-form input[type='submit'] {
+form input[type="submit"] {
   color: white;
   height: 2.5em;
   background-color: #008087;
@@ -598,7 +602,7 @@ form input[type='submit'] {
   -webkit-appearance: none;
 }
 
-form input[type='submit']:hover {
+form input[type="submit"]:hover {
   background-color: #559fac;
 }
 
