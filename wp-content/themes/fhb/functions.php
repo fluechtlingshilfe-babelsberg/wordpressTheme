@@ -132,15 +132,19 @@ function fhb_add_login_stylesheet() {
   wp_enqueue_style('custom-login', get_stylesheet_directory_uri() . '/css/style.css');
 }
 
-
-
-
-
-
-
-
-
-
-
+function fhb_register_sidebars() {
+  register_sidebar(
+    array(
+      'name'          => 'Home Top Sidebar',
+      'id'            => 'home-top-sidebar',
+      'description'   => 'Add widgets here to appear at the top of the home page.',
+      'before_widget' => '<div id="%1$s" class="widget %2$s">',
+      'after_widget'  => '</div>',
+      'before_title'  => '',
+      'after_title'   => '',
+    )
+  );
+} 
+add_action( 'widgets_init', 'fhb_register_sidebars' );
 
 ?>

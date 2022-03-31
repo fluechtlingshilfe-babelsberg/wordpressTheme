@@ -2,10 +2,7 @@
 <?php get_header(); ?>
 
 <div>
-
-  <div class="uk-margin-left uk-margin-right uk-margin-top uk-text-small" uk-alert>
-    Spenden Sie jetzt an die Flüchtlingshilfe Babelsberg e.V. für Geflüchtete aus der Ukraine IBAN: DE68 1605 0000 1000 7267 00 bei der Mittelbrandenburgische Sparkasse, BIC WELADED1PMB, Stichwort: Potsdam hilft. <a href="https://fluechtlingshilfe-babelsberg.de/spenden/">Mehr Infos »</a>
-  </div>
+  <?php get_template_part('templates/home-top-sidebar'); ?>
 
   <div class="uk-grid" uk-grid>
     <div class="uk-grid-collapse uk-width-2-3 uk-width" uk-grid>
