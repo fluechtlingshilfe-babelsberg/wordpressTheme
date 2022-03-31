@@ -30,7 +30,6 @@
 			</ul>
 		</div>
 	</nav>
-
 	<?php if (get_the_post_thumbnail_url()): ?>
 		<div class="fhb-article-image" style="background-image: url(<?php echo get_the_post_thumbnail_url($post->ID, 'large'); ?>)">
 			<?php if (get_post_type() == 'page'): ?>
