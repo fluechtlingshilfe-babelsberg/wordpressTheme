@@ -5,7 +5,7 @@
   <?php get_template_part('templates/home-top-sidebar'); ?>
 
   <div class="uk-grid" uk-grid>
-    <div class="uk-grid-collapse uk-width-2-3 uk-width" uk-grid>
+    <div class="uk-grid-collapse uk-width-2-3@m uk-width-1-1@s uk-width" uk-grid>
       <?php $offers = new WP_Query(['post_type' => 'offers', 'posts_per_page' => -1]); ?>
       <div class="news-container">
         <?php dynamic_sidebar('home-top-activities'); ?>
@@ -65,7 +65,7 @@
       </p>
     <?php } ?>
 
-    <div class="events-container uk-width-1-3">
+    <div class="events-container uk-width-1-3@m uk-width-1-1@s">
       <?php if (!empty($events)) show_events($events); ?>
       <h2>Neuigkeiten</h2>
       <?php foreach (get_field('news') as $post) : setup_postdata($post); ?>
