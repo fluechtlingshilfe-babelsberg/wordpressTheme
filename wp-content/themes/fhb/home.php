@@ -13,23 +13,7 @@
         <div class="uk-child-width-1-2@s uk-child-width-1-1@xs uk-grid-collapse" data-uk-grid>
           <?php while ($offers->have_posts()) : ?>
             <?php $offers->the_post(); ?>
-            <div class="offer">
-              <?php if (get_field('video_url')) { ?>
-                <div class="responsive-embed">
-                  <iframe src="<?php echo get_field('video_url') ?>" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <br>
-              <?php } else {
-                the_post_thumbnail('thumbnail');
-              } ?>
-              <a href="<?php echo get_permalink(); ?>">
-                <h3><?php the_title(); ?></h3>
-              </a>
-              <?php the_excerpt(); ?>
-              <a href="<?php echo get_permalink(); ?>" class="button">
-                Weiterlesen
-              </a>
-            </div>
+            <?php get_template_part('templates/offer'); ?>
           <?php endwhile; ?>
           <?php wp_reset_postdata(); ?>
         </div>

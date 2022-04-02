@@ -155,5 +155,16 @@ function fhb_register_sidebars() {
       'after_title'   => '',
     )
   );
+  register_sidebar(
+    array(
+      'name'          => 'Offers Top Description',
+      'id'            => 'offers-top-description',
+      'description'   => 'Add widgets here to appear just above the offers list on the offers page.',
+      'before_widget' => '<div id="%1$s" class="widget %2$s">',
+      'after_widget'  => '</div>',
+      'before_title'  => '',
+      'after_title'   => '',
+    )
+  );
 } 
 add_action( 'widgets_init', 'fhb_register_sidebars' );
