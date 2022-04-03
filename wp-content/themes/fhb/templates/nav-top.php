@@ -1,3 +1,7 @@
+<?php
+global $wp;
+$current_url = home_url(add_query_arg(array(), trailingslashit($wp->request)));
+?>
 <header>
 
 <div id="fhb-logo-small" class="uk-hidden@s boundary-align">
@@ -10,7 +14,7 @@
 			<ul class="uk-nav uk-dropdown-nav">
 				<?php $menu = wp_get_menu_array('Menu 1'); ?>
 				<?php foreach($menu as $item): ?>
-					<li <?php if (get_permalink() == $item['url']) echo 'class="uk-active"'; ?>><a href="<?php echo $item['url']; ?>"><?php echo $item['title']; ?></a></li>
+					<li <?php if ($current_url == $item['url']) echo 'class="uk-active"'; ?>><a href="<?php echo $item['url']; ?>"><?php echo $item['title']; ?></a></li>
 				<?php endforeach; ?>
 			</ul>
 	</div>
@@ -25,7 +29,7 @@
 			<ul class="uk-navbar-nav">
 				<?php $menu = wp_get_menu_array('Menu 1'); ?>
 				<?php foreach($menu as $item): ?>
-					<li <?php if (get_permalink() == $item['url']) echo 'class="uk-active"'; ?>><a href="<?php echo $item['url']; ?>"><?php echo $item['title']; ?></a></li>
+					<li <?php if ($current_url == $item['url']) echo 'class="uk-active"'; ?>><a href="<?php echo $item['url']; ?>"><?php echo $item['title']; ?></a></li>
 				<?php endforeach; ?>
 			</ul>
 		</div>

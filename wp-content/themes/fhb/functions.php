@@ -86,20 +86,28 @@ function wp_get_menu_array($current_menu) {
   $menu = array();
   foreach ($array_menu as $m) {
     if (empty($m->menu_item_parent)) {
+      $url = $m->url;
+      if (!str_starts_with($url, 'http')) {
+        $url = home_url($url);
+      }
       $menu[$m->ID]             = array();
       $menu[$m->ID]['ID']       = $m->ID;
       $menu[$m->ID]['title']    = $m->title;
-      $menu[$m->ID]['url']      = $m->url;
+      $menu[$m->ID]['url']      = $url;
       $menu[$m->ID]['children'] = array();
     }
   }
   $submenu = array();
   foreach ($array_menu as $m) {
     if ($m->menu_item_parent) {
+      $url = $m->url;
+      if (!str_starts_with($url, 'http')) {
+        $url = home_url($url);
+      }
       $submenu[$m->ID]                                = array();
       $submenu[$m->ID]['ID']                          = $m->ID;
       $submenu[$m->ID]['title']                       = $m->title;
-      $submenu[$m->ID]['url']                         = $m->url;
+      $submenu[$m->ID]['url']                         = $url;
       $menu[$m->menu_item_parent]['children'][$m->ID] = $submenu[$m->ID];
     }
   }
@@ -113,7 +121,7 @@ add_filter('excerpt_more', function($more) {
 add_filter('excerpt_length', function($length) { return 30; }, 999);
 
 function fhb_title() {
-  echo esc_html((get_the_title() != 'Home' && get_the_title() != '' ? get_the_title() . ' - ' : '') . get_bloginfo());
+  echo esc_html((get_the_title() != 'Home' && get_the_title() != '' ? wp_title( '-', false, 'right' ) : '') . get_bloginfo());
 }
 
 
