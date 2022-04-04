@@ -1,4 +1,5 @@
 <div class="offer">
+<div class="uk-card uk-card-small uk-padding-small">
   <?php if (get_field('video_url')) { ?>
     <div class="responsive-embed">
       <iframe src="<?php the_field('video_url') ?>" frameborder="0" allowfullscreen></iframe>
@@ -13,4 +14,5 @@
   <a href="<?php the_permalink(); ?>" class="button">
     Weiterlesen
   </a>
+</div>
 </div>

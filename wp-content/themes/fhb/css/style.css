@@ -50,22 +50,20 @@ body.home .uk-section-primary h2 {
   color: #00474e;
 }
 
+.uk-grid .news-container > * > :last-child {
+    margin-bottom: revert;
+}
+
 body.archive section.offer-container {
   padding-top: 0;
 }
 
-.offer {
+.offer .uk-card {
   background: #00474e;
   color: #fff;
-  padding: 1rem;
-  border-bottom: 1rem solid white;
-  border-left: 1rem solid white;
+  height: 100%;
   display: flex;
   flex-direction: column;
-}
-
-.offer.uk-first-column {
-  border-left: none;
 }
 
 .offer p {
@@ -111,64 +109,6 @@ body.home .text h3 {
 body.home .news,
 body.home .event {
   margin-bottom: 1em;
-}
-
-body.home .news-container {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-#home-top-sidebar {
-  padding: 0 15px;
-}
-#home-top-sidebar .wp-block-group {
-  padding: 1rem;
-}
-
-@media (min-width: 640px) {
-  body.home .news-container {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 30px;
-    padding-right: 15px;
-  }
-  #home-top-sidebar {
-    padding: 0 30px;
-  }
-}
-
-@media (min-width: 960px) {
-  body.home .news-container {
-    padding-left: 60px;
-    padding-right: 30px;
-  }
-  #home-top-sidebar {
-    padding: 0 60px;
-  }
-}
-
-body.home .events-container {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 45px;
-  padding-right: 15px;
-}
-
-@media (min-width: 640px) {
-  body.home .events-container {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-right: 30px;
-    padding-left: 45px;
-  }
-}
-
-@media (min-width: 960px) {
-  body.home .events-container {
-    padding-right: 30px;
-    padding-left: 30px;
-  }
 }
 
 body.home .content-container {
@@ -826,36 +766,4 @@ div.tab ul {
 /* Home page top sidebar */
 #home-top-sidebar p:last-of-type {
   margin-bottom: 0;
-}
-
-#home-top-sidebar .wp-block-media-text {
-  grid-template-columns: 25% auto;
-}
-
-#home-top-sidebar .wp-block-media-text .wp-block-media-text__content {
-  padding: 0 0 0 5%;
-}
-
-@media (max-width: 550px) {
-  #home-top-sidebar .wp-block-media-text {
-    grid-template-columns: 0% auto !important;
-  }
-  #home-top-sidebar .wp-block-media-text .wp-block-media-text__content {
-    padding: 0;
-  }
-}
-
-@media (min-width: 640px) and (max-width: 959px) {
-  #home-top-sidebar .wp-block-media-text {
-    grid-template-columns: 0% auto !important;
-  }
-  #home-top-sidebar .wp-block-media-text .wp-block-media-text__content {
-    padding: 0;
-  }
-}
-
-@media (min-width: 960px) {
-  #home-top-sidebar .wp-block-media-text {
-    grid-template-columns: 18% auto;
-  }
 }

@@ -1,22 +1,20 @@
 <?php /* Template Name: Home */ ?>
 <?php get_header(); ?>
 
-<div>
+<section class="uk-container">
   <?php get_template_part('templates/home-top-sidebar'); ?>
 
-  <div class="uk-grid" uk-grid>
-    <div class="uk-grid-collapse uk-width-2-3@m uk-width-1-1@s uk-width" uk-grid>
+  <div class="uk-grid uk-margin-medium-top">
+    <div class="news-container uk-width-2-3@m uk-width-1-2@s">
       <?php $offers = new WP_Query(['post_type' => 'offers', 'posts_per_page' => -1]); ?>
-      <div class="news-container">
-        <?php dynamic_sidebar('home-top-activities'); ?>
-        <hr>
-        <div class="uk-child-width-1-2@s uk-child-width-1-1@xs uk-grid-collapse" data-uk-grid>
-          <?php while ($offers->have_posts()) : ?>
-            <?php $offers->the_post(); ?>
-            <?php get_template_part('templates/offer'); ?>
-          <?php endwhile; ?>
-          <?php wp_reset_postdata(); ?>
-        </div>
+      <?php dynamic_sidebar('home-top-activities'); ?>
+      <hr>
+      <div class="uk-child-width-1-2@m" uk-grid>
+        <?php while ($offers->have_posts()) : ?>
+          <?php $offers->the_post(); ?>
+          <?php get_template_part('templates/offer'); ?>
+        <?php endwhile; ?>
+        <?php wp_reset_postdata(); ?>
       </div>
     </div>
 
@@ -49,7 +47,7 @@
       </p>
     <?php } ?>
 
-    <div class="events-container uk-width-1-3@m uk-width-1-1@s">
+    <div class="events-container uk-width-1-3@m uk-width-1-2@s">
       <?php if (!empty($events)) show_events($events); ?>
       <h2>Neuigkeiten</h2>
       <?php foreach (get_field('news') as $post) : setup_postdata($post); ?>
@@ -65,8 +63,6 @@
 
     </div>
   </div>
-</div>
-
-</div>
+</section>
 
 <?php get_footer(); ?>
