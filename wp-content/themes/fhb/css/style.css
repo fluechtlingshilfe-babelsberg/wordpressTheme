@@ -50,26 +50,32 @@ body.home .uk-section-primary h2 {
   color: #00474e;
 }
 
-.uk-grid .news-container > * > :last-child {
+.uk-grid .offer-container > * > :last-child {
     margin-bottom: revert;
 }
 
-body.archive section.offer-container {
-  padding-top: 0;
-}
-
 .offer .uk-card {
-  background: #00474e;
-  color: #fff;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
 
+.offer-container.dark-theme .offer .uk-card {
+  background-color: #00474e;
+  color: #fff;
+  padding: 15px;
+}
+
 .offer p {
   font-size: 0.8rem;
 }
-.offer .offer-excerpt {
+.offer p:last-of-type {
+  margin-bottom: 0;
+}
+.offer-container.dark-theme .offer p:last-of-type {
+  margin-bottom: 1rem;
+}
+.offer-container.dark-theme .offer .offer-excerpt {
   margin-bottom: auto;
 }
 @media (min-width: 640px) {
@@ -82,15 +88,19 @@ body.archive section.offer-container {
   width: 100%;
 }
 .offer h3 {
-  color: #fff;
   margin-bottom: 0.5rem;
 }
-.offer .button {
+.offer-container.dark-theme .offer h3 {
+  color: #fff;
+}
+.offer-container.dark-theme .offer .more-link {
   background: #fff;
   padding: 0.5rem;
   display: inline-block;
   margin-top: auto;
   width: fit-content;
+  text-transform: capitalize;
+  font-weight: normal;
 }
 
 body.home .news p,
@@ -109,6 +119,10 @@ body.home .text h3 {
 body.home .news,
 body.home .event {
   margin-bottom: 1em;
+}
+
+body.home .news p:last-of-type {
+  margin-bottom: 0;
 }
 
 body.home .content-container {
@@ -188,11 +202,22 @@ body.archive p a {
   font-weight: bold;
 }
 
+body.page .uk-card .uk-card-media-top {
+  margin-bottom: 1rem;
+}
+
 body.page .uk-card .uk-card-title,
 body.single .uk-card .uk-card-title,
 body.archive .uk-card .uk-card-title {
-  margin: 10px 0 0 0;
+  margin: 0 0 0.5rem 0;
   font-size: 1rem;
+}
+@media (min-width: 960px) {
+  body.page .uk-card .uk-card-title,
+body.single .uk-card .uk-card-title,
+body.archive .uk-card .uk-card-title {
+    font-size: 1.1rem;
+  }
 }
 
 body.page .uk-card .uk-card-body p,
@@ -264,7 +289,9 @@ body.page .more-link,
 body.single .more-link,
 body.archive .more-link {
   font-size: 0.9rem;
-  margin-top: 0.2rem;
+  display: block;
+  margin-top: 0.4rem;
+  font-weight: bold;
 }
 
 body.page .fhb-time,

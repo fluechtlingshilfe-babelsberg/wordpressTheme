@@ -15,7 +15,7 @@
   		<a href="<?php echo get_permalink(); ?>">
   			<h3 class="uk-card-title"><?php the_title(); ?></h3>
   		</a>
-		<?php the_excerpt(); /*the_content('weiterlesen');*/ ?>
+		<?php the_content('weiterlesen'); ?>
  	</div>
 </div>
 </div>

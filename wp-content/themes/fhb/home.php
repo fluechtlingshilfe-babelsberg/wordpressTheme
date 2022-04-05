@@ -5,7 +5,7 @@
   <?php get_template_part('templates/home-top-sidebar'); ?>
 
   <div class="uk-grid uk-margin-medium-top">
-    <div class="news-container uk-width-2-3@m uk-width-1-2@s">
+    <div class="offer-container dark-theme uk-width-2-3@m uk-width-1-2@s">
       <?php $offers = new WP_Query(['post_type' => 'offers', 'posts_per_page' => -1]); ?>
       <?php dynamic_sidebar('home-top-activities'); ?>
       <hr>
