@@ -1,8 +1,6 @@
 <?php get_header(); ?>
 
 <section class="uk-container">
-	<h1>Alle Angebote</h1>
-
 	<?php dynamic_sidebar('offers-top-description'); ?>
 </section>
 
