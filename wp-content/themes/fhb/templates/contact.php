@@ -1,5 +1,5 @@
 <section class="uk-container uk-padding fhb-contact">
-	<div class="uk-child-width-expand@m" uk-grid>
+	<div class="uk-child-width-1-1@s uk-child-width-1-2@m" uk-grid>
 		<?php while (have_rows('contact') ): the_row(); ?>
 			<?php $photo = get_sub_field('photo'); ?>
 			<div>
