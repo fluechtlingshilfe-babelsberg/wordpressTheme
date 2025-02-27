@@ -49,7 +49,7 @@
 
     <div class="events-container uk-width-1-3@m uk-width-1-2@s">
       <?php if (!empty($events)) show_events($events); ?>
-      <h2>Neuigkeiten</h2>
+      <h2>Aktuelles</h2>
       <?php foreach (get_field('news') as $post) : setup_postdata($post); ?>
         <div class="news">
           <a href="<?php echo get_permalink(); ?>">

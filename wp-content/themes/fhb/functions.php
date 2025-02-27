@@ -13,6 +13,32 @@ remove_action('wp_print_styles', 'print_emoji_styles');
 remove_action('admin_print_scripts', 'print_emoji_detection_script');
 remove_action('admin_print_styles', 'print_emoji_styles'); // php is not closed in the last line
 
+function custom_cf7_before_send_mail($contact_form) {
+    $submission = WPCF7_Submission::get_instance();
+    
+    if ($submission && !empty($submission->get_posted_data()["f_newsletter"])) {
+        $posted_data = $submission->get_posted_data();
+
+        $url = 'https://fluechtlingshilfe-babelsberg.de/flucht/formSubmit.php';
+        $data = array("name" => $posted_data["f_name"], "email" => $posted_data["f_email"]);
+        $options = [
+          'http' => [
+            'header' => "Content-type: application/x-www-form-urlencoded\r\n",
+            'method' => 'POST',
+            'content' => http_build_query($data),
+          ],
+        ];
+
+        $context = stream_context_create($options);
+        $result = file_get_contents($url, false, $context);
+        if ($result === false) {
+          wp_die("Es gab einen Fehler bei der Anmeldung. Bitte erneut versuchen.");
+        }
+    }
+}
+add_action('wpcf7_before_send_mail', 'custom_cf7_before_send_mail');
+
+
 add_action('admin_menu', function() {
   if (!current_user_can('manage_options')) {
     remove_menu_page('tools.php');
