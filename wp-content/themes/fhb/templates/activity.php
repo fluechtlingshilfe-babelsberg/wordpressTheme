@@ -13,9 +13,13 @@
  	<?php endif; ?>
   	<div class="uk-card-body uk-padding-remove">
   		<a href="<?php echo get_permalink(); ?>">
-  			<h3 class="uk-card-title"><?php the_title(); ?></h3>
+  			<h3 class="uk-card-title uk-margin-remove-bottom"><?php the_title(); ?></h3>
   		</a>
+		<div class="uk-text-meta uk-margin-remove-top uk-margin-small-bottom">
+			<?php echo get_the_date() ?>
+		</div>
 		<?php the_content('weiterlesen'); ?>
  	</div>
 </div>
 </div>
+
