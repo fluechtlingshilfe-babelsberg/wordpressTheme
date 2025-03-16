@@ -1,6 +1,8 @@
 <?php /* Template Name: Home */ ?>
 <?php get_header(); ?>
 
+<!-- LINKHERE <?php get_post_type_archive_link( 'angebot' ) ?> -->
+
 <section class="uk-container">
   <?php get_template_part('templates/home-top-sidebar'); ?>
 
@@ -50,7 +52,7 @@
     <div class="events-container uk-width-1-3@m uk-width-1-2@s">
       <?php if (!empty($events)) show_events($events); ?>
       <h2>Aktuelles</h2>
-      <?php foreach (get_field('news') as $post) : setup_postdata($post); ?>
+      <?php foreach (get_posts(array("posts_per_page" => 8)) as $post) : setup_postdata($post); ?>
         <div class="news">
           <a href="<?php echo get_permalink(); ?>">
             <h3><?php the_title(); ?></h3>
@@ -59,10 +61,10 @@
         </div>
         <?php wp_reset_postdata(); ?>
       <?php endforeach; ?>
-      <?php if (empty($events)) show_events($events); ?>
 
     </div>
   </div>
 </section>
 
 <?php get_footer(); ?>
+
