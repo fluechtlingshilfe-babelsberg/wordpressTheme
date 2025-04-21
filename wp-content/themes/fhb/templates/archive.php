@@ -1,4 +1,7 @@
 <?php
+/*
+ * Template Name: Archive
+ */
 function get_posts_years_array() {
     global $wpdb;
     $result = array();
@@ -10,17 +13,24 @@ function get_posts_years_array() {
     );
     if ( is_array( $years ) && count( $years ) > 0 ) {
         foreach ( $years as $year ) {
-            $result[] = $year[0];
+            $result[] = ['count' => $year[0], 'year' => $year[1]];
         }
     }
     return $result;
 }
-var_dump(get_posts_years_array());
+get_header();
+the_post();
 ?>
 <section class="uk-container">
 <div>
-  <h2 id="archiv">Archiv</h2>
+    <h1><?php the_title() ?></h1>
+    <?php the_content() ?>
   <div class="uk-child-width-1-3@m" uk-grid>
+      <div>
+          <?php for ($year as $years) { ?>
+          <a href="?year=<?php echo $year[1] ?>"><?php echo $year[1] ?> (<?php echo $year[0] ?> Post(s))</a>
+          <?php } ?>
+      </div>
 	<?php
 // "category__not_in" => array(17), 
 $query = new WP_Query(array("orderby" => "date", "order" => "DESC", "posts_per_page" => 12, "post_type" => "post", "post_status" => "publish", "posts_per_page" => -1));
@@ -52,5 +62,4 @@ while($query->have_posts()): $query->the_post(); ?>
 </div>
 </section>
 
-
-
+<?php get_footer(); ?>
