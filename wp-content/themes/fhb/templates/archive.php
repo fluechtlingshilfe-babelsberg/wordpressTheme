@@ -8,9 +8,16 @@ function get_posts_years_array() {
     global $wpdb;
     $result = array();
     $years = $wpdb->get_results(
-        $wpdb->prepare(
-            "SELECT COUNT(*), YEAR(post_date) FROM {$wpdb->posts} WHERE post_type = 'post' AND post_status = 'publish' GROUP BY YEAR(post_date) DESC"
-        ),
+        $wpdb->prepare("SELECT COUNT(DISTINCT p.ID), YEAR(p.post_date) AS post_year
+    FROM {$wpdb->posts} p
+    INNER JOIN {$wpdb->term_relationships} tr ON p.ID = tr.object_id
+    INNER JOIN {$wpdb->term_taxonomy} tt ON tr.term_taxonomy_id = tt.term_taxonomy_id
+    WHERE p.post_type = 'post'
+      AND p.post_status = 'publish'
+      AND tt.taxonomy = 'category'
+      AND tt.term_id IN (8, 7)
+    GROUP BY post_year
+    ORDER BY post_year DESC"),
         ARRAY_N
     );
     if ( is_array( $years ) && count( $years ) > 0 ) {
