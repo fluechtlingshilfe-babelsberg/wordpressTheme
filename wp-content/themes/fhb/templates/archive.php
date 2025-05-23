@@ -2,7 +2,7 @@
 /*
  * Template Name: Archive
  */
-$current = isset($_GET['jahr']) ? $_GET['jahr'] : '2025';
+$current = isset($_GET['jahr']) ? $_GET['jahr'] : date('Y');
 
 function get_posts_years_array() {
     global $wpdb;
