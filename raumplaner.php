@@ -49,13 +49,22 @@ if (isset($_GET['reserve'])) {
 	}
 
 	$duration_minutes = 60;
-	$start = date('Y-m-d H:i:s', intval($_GET["reserve"]));
-	$duration_minutes = 60;
+	$base_start = intval($_GET["reserve"]);
 	$room = $_GET["room"];
 	$name = $_COOKIE["name"];
-	$stmt->bind_param("siss", $start, $duration, $room, $name);
 
-	$stmt->execute();
+	// Check if we need to book multiple weeks ahead
+	$weeks_ahead = isset($_GET["ahead"]) ? intval($_GET["ahead"]) : 0;
+	if ($weeks_ahead < 0) $weeks_ahead = 0;
+
+	// Book for current week and all weeks ahead
+	for ($week = 0; $week <= $weeks_ahead; $week++) {
+		$week_offset_seconds = $week * 7 * 24 * 60 * 60;
+		$start = date('Y-m-d H:i:s', $base_start + $week_offset_seconds);
+		$stmt->bind_param("siss", $start, $duration_minutes, $room, $name);
+		$stmt->execute();
+	}
+
 	$stmt->close();
 	header("Location: $url");
 	die();
@@ -250,6 +259,47 @@ tr td:first-child {
 				</tr>
 			<?php } ?>
 		</table>
+		<br />
+		<p>
+			Mehrere Termine auf einmal buchen:
+			<input type="number" value="1" id="appointments-count" min="1" />
+			<br />
+			<span id="ahead-label"></span>
+			<script>
+				const appointmentsInput = document.getElementById('appointments-count');
+				const aheadLabel = document.getElementById('ahead-label');
+
+				function updateReserveLinks() {
+					const count = parseInt(appointmentsInput.value) || 1;
+					if (count < 1) {
+						appointmentsInput.value = 1;
+						return;
+					}
+
+					// Update label
+					if (count > 1) {
+						aheadLabel.textContent = `Oben Termin auswählen um ${count} Termine auf einmal zu buchen (gleicher Wochentag und Uhrzeit).`;
+					} else {
+						aheadLabel.textContent = '';
+					}
+
+					// Update all reserve links
+					const reserveLinks = document.querySelectorAll('a[href*="reserve="]');
+					reserveLinks.forEach(link => {
+						const url = new URL(link.href);
+						if (count > 1) {
+							url.searchParams.set('ahead', count - 1);
+						} else {
+							url.searchParams.delete('ahead');
+						}
+						link.href = url.toString();
+					});
+				}
+
+				appointmentsInput.addEventListener('input', updateReserveLinks);
+				updateReserveLinks();
+			</script>
+		</p>
 	</body>
 </html>
 
