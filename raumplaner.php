@@ -1,5 +1,7 @@
 <?php
 
+date_default_timezone_set('UTC');
+
 // CREATE DATABASE rooms;
 // CREATE TABLE reservation (start DATETIME, duration_minutes INT, room TEXT, name TEXT, UNIQUE(room, start));
 
@@ -238,7 +240,7 @@ tr td:first-child {
 					<?php } ?>
 				</tr>
 			</tr>
-			<?php for ($hour = 9; $hour <= 18; $hour++) { ?>
+			<?php for ($hour = 9; $hour <= 20; $hour++) { ?>
 				<tr>
 					<td><?= $hour < 10 ? '0' . $hour : $hour ?>:00</td>
 					<?php for ($day = 0; $day < 7; $day++) {
