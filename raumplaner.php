@@ -6,7 +6,7 @@ date_default_timezone_set('UTC');
 // CREATE TABLE reservation (start DATETIME, duration_minutes INT, room TEXT, name TEXT, UNIQUE(room, start));
 
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-$mysqli = new mysqli("localhost", "user", "example", "rooms");
+$mysqli = new mysqli("localhost", "root", "", "rooms");
 
 $url = strtok($_SERVER["REQUEST_URI"], '?');
 if (isset($_GET["week_offset"])) {
@@ -45,11 +45,6 @@ if (isset($_GET['reserve'])) {
 		die("No name saved");
 	}
 
-	$stmt = $mysqli->prepare("INSERT INTO reservation(start, duration_minutes, room, name) VALUES (?, ?, ?, ?)");
-	if (!$stmt) {
-		die("Failed to prepare insert query");
-	}
-
 	$duration_minutes = 60;
 	$base_start = intval($_GET["reserve"]);
 	$room = $_GET["room"];
@@ -59,17 +54,38 @@ if (isset($_GET['reserve'])) {
 	$weeks_ahead = isset($_GET["ahead"]) ? intval($_GET["ahead"]) : 0;
 	if ($weeks_ahead < 0) $weeks_ahead = 0;
 
-	// Book for current week and all weeks ahead
-	for ($week = 0; $week <= $weeks_ahead; $week++) {
-		$week_offset_seconds = $week * 7 * 24 * 60 * 60;
-		$start = date('Y-m-d H:i:s', $base_start + $week_offset_seconds);
-		$stmt->bind_param("siss", $start, $duration_minutes, $room, $name);
-		$stmt->execute();
-	}
+	// Start transaction
+	$mysqli->begin_transaction();
 
-	$stmt->close();
-	header("Location: $url");
-	die();
+	try {
+		$stmt = $mysqli->prepare("INSERT INTO reservation(start, duration_minutes, room, name) VALUES (?, ?, ?, ?)");
+		if (!$stmt) {
+			throw new Exception("Failed to prepare insert query");
+		}
+
+		// Book for current week and all weeks ahead
+		for ($week = 0; $week <= $weeks_ahead; $week++) {
+			$week_offset_seconds = $week * 7 * 24 * 60 * 60;
+			$start = date('Y-m-d H:i:s', $base_start + $week_offset_seconds);
+			$stmt->bind_param("siss", $start, $duration_minutes, $room, $name);
+			$stmt->execute();
+		}
+
+		$stmt->close();
+		$mysqli->commit();
+		header("Location: $url");
+		die();
+	} catch (mysqli_sql_exception $e) {
+		$mysqli->rollback();
+		// Check if it's a duplicate key error
+		if ($e->getCode() == 1062) {
+			die("Fehler: Einer der Termine ist bereits gebucht. Raum $room zur gewünschten Zeit ist nicht für alle " . ($weeks_ahead + 1) . " Termine verfügbar. Bitte wähle einen anderen Zeitpunkt oder reduziere die Anzahl der Termine.");
+		}
+		die("Fehler bei der Buchung: " . $e->getMessage());
+	} catch (Exception $e) {
+		$mysqli->rollback();
+		die("Fehler bei der Buchung: " . $e->getMessage());
+	}
 }
 
 $week_offset = (isset($_GET["week_offset"]) ? intval($_GET["week_offset"]) : 0);
